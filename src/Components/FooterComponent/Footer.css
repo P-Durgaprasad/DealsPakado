@@ -1,0 +1,147 @@
+/* Footer.css */
+
+.custom-footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.logo-img{
+    width: 250px;
+}
+  
+  .logo-text p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+  }
+  
+  .social-links a:hover {
+    background-color: #6864e5;
+    transform: scale(1.1);
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .footer-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  
+.whatsapp {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 125px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 5px;
+}
+
+.whatsapp button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: rgb(36, 188, 25);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.whatsapp-text{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.whatsapp-img{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.whatsapp:active {
+  transform: scale(0.95);
+}
+
+.whatsapp_title{
+font-size: larger;
+}
+
+.quick-offer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .top-offers-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .top-offers-link:hover {
+    color: #ff9900; /* Change to your desired hover color */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo-img img {
+      max-width: 120px;
+    }
+  }

@@ -1,0 +1,365 @@
+.deals-container-main {
+  display: flow;
+  padding-top: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.deals-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-self: center;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.deals-title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.deals-title {
+  font-size: 25px;
+  width: fit-content;
+  width: 377px;
+  border-radius: 80px;
+  background-color: #ff6600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+}
+
+.deals-card {
+  height: 310px;
+  width: 185px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.deals-image-div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.deals-item-title-div {
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.deals-item-title {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.deals-brandName-info {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.deals-brandName-info::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.deals-brandName-info strong {
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.deals-brandName-info a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.deals-brandName-info a:hover {
+  color: #0056b3;
+}
+
+.deals-brandUrl {
+  text-decoration: none;
+}
+
+.deals-rating {
+  display: inline-flex;
+  align-items: center;
+  color: #388e3c;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+.deals-rating-number {
+  font-size: 0.8rem;
+}
+
+#deals-brand-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.deals-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.deals-regular-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1rem;
+}
+
+.deals-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.deals-offer-label {
+  font-size: 15px;
+  background-color: #cc0c39;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pagination-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pagination-button:first-child {
+  margin-left: 0;
+}
+
+.pagination-button:last-child {
+  margin-right: 0;
+}
+
+.pagination-button:hover {
+  background-color: #4161f0;
+  transform: scale(1.05);
+}
+
+.pagination-button.active {
+  background-color: #4161f0;
+  transform: scale(1);
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.arrow-button:hover {
+  background-color: #4161f0;
+  transform: scale(1.1);
+}
+
+.deals-regular-price {
+  text-decoration: line-through;
+}
+
+.no-deals-div {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.no-deals-div {
+  animation: pulse 2s infinite;
+}
+
+@media screen and (width<=320px) {
+  .deals-container-main {
+    padding-top: 5px;
+  }
+
+  .deals-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+  }
+
+  .deals-title-div {
+    padding: 5px 0;
+  }
+
+  .deals-title {
+    width: fit-content;
+    width: 377px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+  }
+
+  .deals-card {
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .deals-image-div {
+    height: 150px;
+  }
+
+  .deals-brandName-info {
+    font-size: 0.8rem;
+  }
+
+  .deals-brandName-info strong {
+    margin-right: 2px;
+  }
+
+  .deals-rating {
+    font-size: 0.9rem;
+  }
+
+  .deals-rating-number {
+    font-size: 0.7rem;
+  }
+
+  .deals-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reqular-price,
+  .deals-price {
+    font-size: 0.9rem;
+  }
+
+  .deals-offer-label {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  .pagination {
+    margin: 10px 0;
+  }
+
+  .pagination-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .arrow-button {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+
+  .no-deals-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: none;
+  }
+}
+
+@media screen and (min-width >=321px) and (max-width <=375px) {}
+
+@media screen and (min-width >=376px) and (max-width<=425px) {}
+
+@media screen and (min-width >=426px) and (max-width<=768px) {}
+
+@media screen and (min-width >=769px) and (max-width<=1024px) {}
+
+@media screen and (min-width >=1025px) and (max-width<=1440px) {}
+
+@media screen and (min-width >=1441px) and (max-width<=2560px) {}

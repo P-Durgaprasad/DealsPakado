@@ -1,0 +1,113 @@
+.coupon-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  max-width: 300px;
+}
+
+.coupon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+}
+
+.coupon-card:hover {
+  transform: translateY(-5px);
+}
+
+.coupon-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.coupon-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.coupon-code {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.coupon-percentage {
+  font-size: 1.1em;
+  color: #e83e8c;
+  /* Change the color to your preference */
+}
+
+.coupon-website a {
+  text-decoration: none;
+  color: #0074cc;
+  margin: 10px 0;
+}
+
+.coupon-category {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.coupon-expires {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.coupon-status {
+  font-size: 0.9em;
+  margin: 5px 0;
+  color: #555;
+}
+
+.coupon-status.active {
+  color: #2ecc71;
+  /* Change the color to your preference */
+}
+
+.coupon-status.expired {
+  color: #e74c3c;
+  /* Change the color to your preference */
+}
+
+.get-deal-button {
+  background-color: #0074cc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.get-deal-button:hover {
+  background-color: #005a9e;
+}
+
+
+
+@media screen and (width<=320px) {}
+
+@media screen and (min-width >=321px) and (max-width <=375px) {}
+
+@media screen and (min-width >=376px) and (max-width<=425px) {}
+
+@media screen and (min-width >=426px) and (max-width<=768px) {}
+
+@media screen and (min-width >=769px) and (max-width<=1024px) {}
+
+@media screen and (min-width >=1025px) and (max-width<=1440px) {}
+
+@media screen and (min-width >=1441px) and (max-width<=2560px) {}

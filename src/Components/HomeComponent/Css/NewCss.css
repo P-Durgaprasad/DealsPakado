@@ -1,0 +1,840 @@
+.deals-container-main {
+  display: flow;
+  width: 100%;
+  justify-content: center;
+}
+
+.deals-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-self: center;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-deal-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 310px;
+  width: 185px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.deal-card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.brandUrl {
+  text-decoration: none;
+}
+
+.deal-image-div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.deal-title-div {
+  width: 100%;
+  height: 18%;
+  line-height: 1.10;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.deal-title {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.deal-down-div {
+  width: 100%;
+  height: auto;
+}
+
+.brand-name-rating {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.brandName-info {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #7e7a7a;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.brandName-info::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.brandName-info strong {
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.brandName-info a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.deal-rating {
+  display: inline-flex;
+  align-items: center;
+  color: #388e3c;
+  font-size: medium;
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: large;
+}
+
+.deals-stars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 2px;
+}
+
+.regular-price {
+  text-decoration: line-through;
+  color: #a06666;
+  font-size: 0.9rem;
+}
+
+.deal-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.offer-label {
+  font-size: 15px;
+  background-color: #cc0c39;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.shopnow {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 5px;
+}
+
+.shop-now-button {
+  display: inline-block;
+  color: #ff6600;
+  text-decoration: none;
+  padding: 6.2px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid;
+}
+
+.shop-now-button:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+.deal-body-div {
+  width: 100%;
+  height: 88%;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pagination-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pagination-button:first-child {
+  margin-left: 0;
+}
+
+.pagination-button:last-child {
+  margin-right: 0;
+}
+
+.pagination-button:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.05);
+}
+
+.pagination-button.active {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1);
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.arrow-button:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+}
+
+.no-reviews {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.whatsapp-share {
+  text-align: center;
+}
+
+.btn-share {
+  background-color: white;
+  color: #38bf4a;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  width: auto;
+  height: 30px;
+  padding: 5px 16px;
+  border: 1px solid;
+}
+
+.deal-rating-number{
+  color: blue; 
+  font-weight: bold; 
+  margin-right: 5px; 
+  font-size: 14px;
+}
+.btn-share:hover {
+  background-color: #38bf4a;
+  color: white;
+  transform: scale(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-share-image {
+  width: 20px;
+  height: 20px;
+  padding-right: 4px;
+}
+
+.btn-share-text {
+  text-shadow: var(--whatsapp-share-text-shadow);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+.title-div {
+  
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background-color: #3498db;
+  background: linear-gradient(45deg, #3498db, #9354b9);
+}
+
+.title {
+  color: #fff; 
+  font-size: 2rem; 
+  text-transform: uppercase; 
+  font-weight: bold; 
+
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.title:hover {
+  text-decoration: underline; 
+}
+
+.no-deals-container {
+  background-color: #3498db; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  width: 400px; 
+  margin: 0 auto; 
+}
+
+.no-deals-div {
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+.no-deals-container:hover {
+  background-color: #e74c3c; 
+  transition: background-color 0.3s; 
+}
+
+
+@media (width <= 366px) {
+  .deals-container {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .main-deal-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 295px;
+    width: 128px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .shop-now-button {
+    display: inline-block;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    padding: 7px 4px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .shop-now-button:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+
+
+  .shopnow {
+    width: 100%;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+  }
+
+  .deal-down-div {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .deal-image-div {
+    height: 60%;
+    width: 100%;
+  }
+
+  .deal-title-div {
+    height: 20%;
+    line-height: 1.15;
+  }
+
+  .deal-title {
+    font-size: 0.9rem;
+  }
+
+  .brandName-info {
+    height: 15%;
+    font-size: 0.6rem;
+  }
+
+  .deal-rating {
+    font-size: 1rem;
+  }
+
+  .no-reviews {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .reqular-price,
+  .deal-price {
+    font-size: 0.8rem;
+  }
+
+  .btn.btn-share {
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+
+  .btn-share-text {
+    font-size: 10px;
+  }
+  .rating{
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .deal-rating-number{
+    color: blue; 
+    font-weight: bold; 
+    margin-right: 5px; 
+    font-size: 10px;
+  }
+  .offer-label {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (width >= 366px) and (width < 600px) {
+  .deals-container {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .main-deal-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 295px;
+    width: 155px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .shop-now-button {
+    display: inline-block;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .shop-now-button:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+
+
+  .shopnow {
+    width: 100%;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+  }
+
+  .deal-down-div {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .deal-image-div {
+    height: 60%;
+    width: 100%;
+  }
+
+  .deal-title-div {
+    height: 20%;
+    line-height: 1.15;
+  }
+
+  .deal-title {
+    font-size: 0.9rem;
+  }
+
+  .brandName-info {
+    height: 15%;
+    font-size: 0.6rem;
+  }
+
+  .deal-rating {
+    font-size: 1rem;
+  }
+
+  .no-reviews {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .reqular-price,
+  .deal-price {
+    font-size: 0.8rem;
+  }
+
+  .btn.btn-share {
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+
+  .btn-share-text {
+    font-size: 10px;
+  }
+  .rating{
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .deal-rating-number{
+    color: blue; 
+    font-weight: bold; 
+    margin-right: 5px; 
+    font-size: 10px;
+  }
+  .offer-label {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (width >= 600px) and (width < 768px) {
+  .deals-container {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .main-deal-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 295px;
+    width: 155px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .shop-now-button {
+    display: inline-block;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .shop-now-button:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+
+
+  .shopnow {
+    width: 100%;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+  }
+
+  .deal-down-div {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .deal-image-div {
+    height: 60%;
+    width: 100%;
+  }
+
+  .deal-title-div {
+    height: 20%;
+    line-height: 1.15;
+  }
+
+  .deal-title {
+    font-size: 0.9rem;
+  }
+
+  .brandName-info {
+    height: 15%;
+    font-size: 0.6rem;
+  }
+
+  .deal-rating {
+    font-size: 1rem;
+  }
+
+  .no-reviews {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .reqular-price,
+  .deal-price {
+    font-size: 0.8rem;
+  }
+
+  .btn.btn-share {
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+
+  .btn-share-text {
+    font-size: 10px;
+  }
+  .rating{
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .deal-rating-number{
+    color: blue; 
+    font-weight: bold; 
+    margin-right: 5px; 
+    font-size: 10px;
+  }
+  .offer-label {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (width >= 600px) and (width < 768px) {
+  .deals-container {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .main-deal-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 295px;
+    width: 155px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .shop-now-button {
+    display: inline-block;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .shop-now-button:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+
+
+  .shopnow {
+    width: 100%;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+  }
+
+  .deal-down-div {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .deal-image-div {
+    height: 60%;
+    width: 100%;
+  }
+
+  .deal-title-div {
+    height: 20%;
+    line-height: 1.15;
+  }
+
+  .deal-title {
+    font-size: 0.9rem;
+  }
+
+  .brandName-info {
+    height: 15%;
+    font-size: 0.6rem;
+  }
+
+  .deal-rating {
+    font-size: 1rem;
+  }
+
+  .no-reviews {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .reqular-price,
+  .deal-price {
+    font-size: 0.8rem;
+  }
+
+  .btn.btn-share {
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+
+  .btn-share-text {
+    font-size: 10px;
+  }
+  .rating{
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .deal-rating-number{
+    color: blue; 
+    font-weight: bold; 
+    margin-right: 5px; 
+    font-size: 10px;
+  }
+  .offer-label {
+    font-size: 12px;
+  }
+}
