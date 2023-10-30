@@ -44,7 +44,6 @@ function BrandBoard() {
               <img className='brandboard-brand-image' src={brand.logo} alt={`Brand ${brand.id}`} />
               </div>
               </Link>
-           
           ))}
         </div>
       </div>

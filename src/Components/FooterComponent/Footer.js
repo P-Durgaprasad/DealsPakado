@@ -20,24 +20,36 @@ const Footer = () => {
                 <div className="footer-links">
 
                     <div className="social-links">
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                             <img src={youtube} alt="YouTube" className="social-icon" />
                         </a>
+                        </div>
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src={twitter} alt="Twitter" className="social-icon" />
                         </a>
+                        </div>
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src={telegram} alt="Twitter" className="social-icon" />
                         </a>
+                        </div>
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src={facebook} alt="Twitter" className="social-icon" />
                         </a>
+                        </div>
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src={instagram} alt="Twitter" className="social-icon" />
                         </a>
+                        </div>
+                        <div className='media-links'>
                         <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src={gmail} alt="Twitter" className="social-icon" />
                         </a>
+                        </div>
                     </div>
                 </div>
                 <div className="quick-offer-links">

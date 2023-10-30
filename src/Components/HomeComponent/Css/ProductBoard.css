@@ -1,4 +1,5 @@
 .productboardmain {
+  width: 33%;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -10,10 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 470px;
+  width: 100%;
   height: 220px;
   background-color: #f0f0f0;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   border: 1px solid black;
   position: relative;
 }
@@ -42,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
-  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -53,6 +56,7 @@
   background-color: #fff;
   border: 1px solid black;
   padding: 2px;
+  width: 96%;
   height: 36px;
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,7 +89,39 @@
   /* margin-left: 5px; */
 }
 
-@media screen and (width<=320px) {}
+@media screen and (width<=320px) {
+  .productlistcontainer {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .productboardmain{
+    width:94%;
+    padding: 5px;
+  }
+  .productlist{
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 5px;
+    max-width: 95%;
+  }
+  .product{
+    height: 25px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .product:hover{
+    transform: none;
+    border-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #productlabetitle{
+    font-size: 12px;
+    padding: 4px 8px;
+    top: -16px;
+  }
+}
 
 @media screen and (min-width >=321px) and (max-width <=375px) {
 

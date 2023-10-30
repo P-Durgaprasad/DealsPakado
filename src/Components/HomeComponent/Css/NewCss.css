@@ -372,7 +372,7 @@
 }
 
 
-@media (width <= 366px) {
+@media (width <= 320px) {
   .deals-container {
     display: flex;
     gap: 0px;
@@ -459,8 +459,12 @@
     font-weight: bold;
   }
 
-  .reqular-price,
+  .regular-price{
+    width: 50%;
+    font-size:0.8rem;
+  }
   .deal-price {
+    width: 50%;
     font-size: 0.8rem;
   }
 
@@ -480,7 +484,7 @@
   .deal-rating-number{
     color: blue; 
     font-weight: bold; 
-    margin-right: 5px; 
+    margin-right: 1px; 
     font-size: 10px;
   }
   .offer-label {
