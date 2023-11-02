@@ -1,4 +1,4 @@
 
-const  API_Config= 'http://10.10.11.82:8082';
+const  API_Config= 'http://192.168.0.106:8082';
 
   export default API_Config;

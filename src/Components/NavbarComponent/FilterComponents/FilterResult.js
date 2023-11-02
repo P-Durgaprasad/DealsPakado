@@ -104,7 +104,7 @@ const FilterResult = ({ products }) => {
                     </a>
                   </div>
                   <div className='whatsapp-share'>
-                    <ShareProduct affiliateLink={deal.affiliateLink} />
+                    <ShareProduct url={deal.affiliateLink} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} />
                   </div>
                 </div>
               </div>
