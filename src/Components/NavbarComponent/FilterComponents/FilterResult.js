@@ -72,14 +72,14 @@ const FilterResult = ({ products }) => {
                           {deal.rating > 0 ? (
                             <div className='deals-stars'>
                               <div className="deal-rating-number">
-                                <span style={{ color: 'blue', fontWeight: 'bold', marginRight: '5px', fontSize: '14px' }}>{parseFloat(deal.rating).toFixed(1)}</span>
+                                <span>{parseFloat(deal.rating).toFixed(1)}</span>
                               </div>
                               <div className='rating'>
                                 {renderStars(deal.rating)}
                               </div>
                             </div>
                           ) : (
-                            <div className="no-reviews" style={{ fontSize: '12px', fontWeight: 'bold' }}>No Reviews</div>
+                            <div className="no-reviews">No Reviews</div>
                           )}
                         </div>
                       </div>

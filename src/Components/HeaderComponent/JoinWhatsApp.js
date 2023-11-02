@@ -3,7 +3,7 @@ import logo from './whatsapp.png';
 
 const JoinWhatsApp = () => {
   const [isDesktop, setIsDesktop] = useState(false);
-  const channelLink = "https://chat.whatsapp.com/Hz1a1dVB35HDu8nZDc76h7";
+  const channelLink = "https://whatsapp.com/channel/0029Va88RYJAjPXIZN7pHm0t";
 
   const handleButtonClick = () => {
     if (isDesktop) {

@@ -12,7 +12,7 @@ const CouponResult = ({ products }) => {
             <div className="coupon-code">{product.code}</div>
             <div className="coupon-percentage">{product.percentage}% off</div>
             <div className="coupon-website">
-              Website: <a href={product.website} target="_blank" rel="noopener noreferrer">{product.website}</a>
+              <a href={product.website} target="_blank" rel="noopener noreferrer">{product.website}</a>
             </div>
             <div className="coupon-category">Category: {product.category}</div>
             <div className="coupon-expires">Expires At: {product.expiresAt}</div>

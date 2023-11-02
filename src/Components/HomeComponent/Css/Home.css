@@ -18,30 +18,111 @@
   margin-top: 10px;
 }
 
-@media screen and (width<=320px) {
+@media screen and (max-width : 320px) {
   .home-main-div {
-    padding-top: 5px; /* Adjust padding for smaller screens */
+    padding-top: 5px; 
   }
 
   .main {
     flex-direction: column;
-    padding-top: 5px; /* Adjust padding for smaller screens */
-    justify-content: flex-start; /* Change justify-content for smaller screens */
+    padding-top: 5px; 
+    justify-content: flex-start; 
   }
 
   .deals-menu {
-    margin-top: 5px; /* Adjust margin for smaller screens */
+    margin-top: 5px;
   }
 }
 
-@media screen and (min-width >=321px) and (max-width <=375px) {}
+@media screen and (min-width : 321px) and (max-width : 376px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
 
-@media screen and (min-width >=376px) and (max-width<=425px) {}
+  .main {
+    flex-direction: column;
+    padding-top: 5px; 
+    justify-content: flex-start; 
+  }
 
-@media screen and (min-width >=426px) and (max-width<=768px) {}
+  .deals-menu {
+    margin-top: 5px;
+  }
+}
 
-@media screen and (min-width >=769px) and (max-width<=1024px) {}
+/* Tablets */
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
 
-@media screen and (min-width >=1025px) and (max-width<=1440px) {}
+  .main {
+    flex-direction: column;
+    padding-top: 5px; 
+    justify-content: flex-start; 
+  }
 
-@media screen and (min-width >=1441px) and (max-width<=2560px) {}
+  .deals-menu {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width : 321px) and (max-width : 376px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
+
+  .main {
+    flex-direction: column;
+    padding-top: 5px; 
+    justify-content: flex-start; 
+  }
+
+  .deals-menu {
+    margin-top: 5px;
+  }
+}
+
+/* Small desktops */
+@media screen and (min-width: 427px) and (max-width: 769px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
+
+  .main {
+    flex-direction: column;
+    padding-top: 5px; 
+    justify-content: flex-start; 
+  }
+
+  .deals-menu {
+    margin-top: 5px;
+  }
+}
+
+/* Medium desktops */
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
+
+  .main {
+    flex-direction: row;
+    padding-top: 5px; 
+    justify-content: flex-start; 
+  }
+
+  .deals-menu {
+    margin-top: 5px;
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1026px) and (max-width: 1441px) {
+ 
+}
+
+/* Extra large desktops */
+@media screen and (min-width: 1442px) and (max-width: 2561px) {
+  
+}

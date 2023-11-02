@@ -21,34 +21,34 @@ const Footer = () => {
 
                     <div className="social-links">
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                            <img src={youtube} alt="YouTube" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <img src={youtube} alt="YouTube" className="social-icon" />
+                            </a>
                         </div>
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src={twitter} alt="Twitter" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src={twitter} alt="Twitter" className="social-icon" />
+                            </a>
                         </div>
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src={telegram} alt="Twitter" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src={telegram} alt="Twitter" className="social-icon" />
+                            </a>
                         </div>
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src={facebook} alt="Twitter" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src={facebook} alt="Twitter" className="social-icon" />
+                            </a>
                         </div>
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src={instagram} alt="Twitter" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src={instagram} alt="Twitter" className="social-icon" />
+                            </a>
                         </div>
                         <div className='media-links'>
-                        <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src={gmail} alt="Twitter" className="social-icon" />
-                        </a>
+                            <a className='social-link' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src={gmail} alt="Twitter" className="social-icon" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-text text-center mt-3">
-                &copy; {new Date().getFullYear()} dealpakado.com. All rights reserved.
+                &copy; {new Date().getFullYear()} dealspakado.com. All rights reserved.
             </div>
             <div className='whatsapp'>
                 <JoinWhatsApp />
