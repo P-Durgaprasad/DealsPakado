@@ -20,7 +20,6 @@ class Under99 extends Component {
   fetchProducts = () => {
    
     let apiUrl = `${API}/api/product/Under99`;
-    console.log(apiUrl);
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {

@@ -32,8 +32,6 @@ class Coupon extends Component {
       apiUrl += `?${filterParams.join('')}`;
     }
 
-    console.log(apiUrl);
-
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {

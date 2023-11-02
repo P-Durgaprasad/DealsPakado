@@ -160,7 +160,7 @@
   }
 
   .whatsapp {
-    width: 100%;
+    width: 100px;
     height: 30px;
   }
 
@@ -176,11 +176,6 @@
   .social-icon {
     height: 20px;
   }
-
-  .whatsapp {
-    width: 100px;
-  }
-
   .footer-links {
     width: 100%;
     height: 30px;
@@ -188,7 +183,6 @@
 
   .social-links {
     width: 100%;
-    height: auto;
     gap: 1px;
     margin-bottom: 10px;
   }
@@ -218,7 +212,7 @@
   }
 
   .whatsapp {
-    width: 100%;
+    width: 100px;
     height: 30px;
   }
 
@@ -233,10 +227,6 @@
 
   .social-icon {
     height: 20px;
-  }
-
-  .whatsapp {
-    width: 100px;
   }
 
   .footer-links {
@@ -442,12 +432,62 @@
   }
 }
 
-/* Large desktops */
-@media screen and (min-width: 1026px) and (max-width: 1441px) {
- 
-}
-
 /* Extra large desktops */
-@media screen and (min-width: 1442px) and (max-width: 2561px) {
-  
-}
+/* @media screen and (min-width:1026px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-img {
+    max-width: 180px;
+  }
+
+  .whatsapp {
+    width: 100%;
+    height: 30px;
+  }
+
+  .whatsapp-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp_title {
+    font-size: 9px;
+  }
+
+  .social-icon {
+    height: 20px;
+  }
+
+  .whatsapp {
+    width: 100px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30px;
+  }
+
+  .social-links {
+    width: 50%;
+    height: auto;
+    gap: 1px;
+    margin-bottom: 10px;
+  }
+
+  .media-links {
+    width: 13%;
+  }
+
+  .quick-offer-links a {
+    font-size: 10px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+  }
+} */

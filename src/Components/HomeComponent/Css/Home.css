@@ -117,12 +117,19 @@
   }
 }
 
-/* Large desktops */
-@media screen and (min-width: 1026px) and (max-width: 1441px) {
- 
-}
-
 /* Extra large desktops */
-@media screen and (min-width: 1442px) and (max-width: 2561px) {
-  
-}
+/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
+  .home-main-div {
+    padding-top: 5px; 
+  }
+
+  .main {
+    flex-direction: row;
+    padding-top: 5px; 
+    justify-content: center; 
+  }
+
+  .deals-menu {
+    margin-top: 5px;
+  }
+} */

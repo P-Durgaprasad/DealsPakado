@@ -228,12 +228,30 @@
   }
 }
 
-/* Large desktops */
-@media screen and (min-width: 1026px) and (max-width: 1441px) {
- 
-}
 
 /* Extra large desktops */
-@media screen and (min-width: 1442px) and (max-width: 2561px) {
-  
-}
+/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
+  .coupon-list{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    align-items: center;
+  }
+  .coupon-code, .coupon-percentage {
+    font-size: 1em;
+    margin: 2px;
+  }
+  .coupon-expires, .coupon-status {
+    display: none;
+  }
+  .coupon-details {
+    padding: 8px;
+  }
+  .coupon-card{
+    max-width: 50%;
+    margin: 0px;
+  }
+  .coupon-image{
+    height: 100px;
+  }
+} */

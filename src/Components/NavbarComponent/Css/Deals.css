@@ -700,12 +700,89 @@
   }
 }
 
-/* Large desktops */
-@media screen and (min-width: 1026px) and (max-width: 1441px) {
- 
-}
-
 /* Extra large desktops */
-@media screen and (min-width: 1442px) and (max-width: 2561px) {
-  
-}
+/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
+  .deals-container-main {
+    padding-top: 5px;
+  }
+
+  .deals-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+  }
+
+  .deals-title-div {
+    padding: 5px 0;
+  }
+
+  .deals-title {
+    width: fit-content;
+    width: 377px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+  }
+
+  .deals-card {
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .deals-image-div {
+    height: 150px;
+  }
+
+  .deals-brandName-info {
+    font-size: 0.8rem;
+  }
+
+  .deals-brandName-info strong {
+    margin-right: 2px;
+  }
+
+  .deals-rating {
+    font-size: 0.9rem;
+  }
+
+  .deals-rating-number {
+    font-size: 0.7rem;
+  }
+
+  .deals-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reqular-price,
+  .deals-price {
+    font-size: 0.9rem;
+  }
+
+  .deals-offer-label {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  .pagination {
+    margin: 10px 0;
+  }
+
+  .pagination-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .arrow-button {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+
+  .no-deals-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: none;
+  }
+} */

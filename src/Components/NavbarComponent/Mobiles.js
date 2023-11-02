@@ -44,7 +44,7 @@ class Mobiles extends Component {
     if (filterParams.length > 0) {
       apiUrl += `&${filterParams.join('&')}`;
     }
-console.log(apiUrl);
+
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {

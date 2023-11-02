@@ -1,37 +1,45 @@
 import React from 'react';
-import './Css/About.css';
 
-const About = () => {
+const AboutUs = () => {
   return (
-    <div className="about-us">
-      <div className="about-us-header">
-        <img src="/images/about-us.png" alt="About Us" />
-        <h1>About Us</h1>
-      </div>
+    <section className="about-us">
+      <h2>About Us</h2>
+      <p>
+        We are DealsPakado, a genuine deals provider that scours the internet to collect the best deals from different e-commerce websites and presents coupon codes in a clear and concise manner. We understand that searching for the finest deals can be time-consuming, so we do the work for you. Our team of experts searches the web to find the latest and greatest deals on a wide range of products, from clothing and electronics to home goods and travel. Each deal is meticulously verified to ensure accuracy and up-to-dateness.
+      </p>
 
-      <div className="about-us-body">
-        <p>
-          We are a company that is passionate about building innovative and user-friendly products. We believe that everyone should have access to great technology, and we are committed to making our products affordable and accessible to everyone.
-        </p>
+      <p>
+        We firmly believe that everyone, regardless of their budget or technical expertise, should have access to the best deals. That's why we've designed our website to be user-friendly and easy to navigate. Additionally, we offer a range of features to help you pinpoint deals that are most relevant to your needs, including filtering options by category, brand, and price.
+      </p>
 
-        <p>
-          We have a team of experienced and talented engineers and designers who are constantly working on new and exciting products. We are always looking for new ways to improve our products and make them even more useful and enjoyable for our users.
-        </p>
+      <p>
+        At DealsPakado, we are committed to providing our users with the best possible experience. We back this commitment with a money-back guarantee on all of our deals. If, for any reason, you are not satisfied with your purchase, simply contact us, and we will refund your money.
+      </p>
 
-        <p>
-          If you have any questions or feedback about our products, please don't hesitate to contact us. We would love to hear from you!
-        </p>
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>We are a genuine deals provider. We verify each deal to ensure that it is accurate and up-to-date.</li>
+        <li>We make it easy to find the deals that are most relevant to you. You can filter by category, brand, and price.</li>
+        <li>We offer a money-back guarantee on all of our deals.</li>
+      </ul>
 
-        <div className="about-us-image">
-          <img src="/images/about-us-image.png" alt="About Us Image" />
-        </div>
-      </div>
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is to help people save money by finding the best deals on the internet. We believe that everyone should have access to the best deals, regardless of their budget or technical expertise.
+      </p>
 
-      <div className="about-us-footer">
-        <img src="/images/about-us-footer.png" alt="About Us Footer" />
-      </div>
-    </div>
+      <h3>Our Values</h3>
+      <ul>
+        <li><strong>Integrity:</strong> We are committed to honest and ethical business practices.</li>
+        <li><strong>Transparency:</strong> We are transparent about our deals and how we make money.</li>
+        <li><strong>Customer satisfaction:</strong> We are committed to providing our customers with the best possible experience.</li>
+      </ul>
+
+      <p>
+        We hope you will give us a try and see for yourself why we are the best place to find the latest and greatest deals on the internet.
+      </p>
+    </section>
   );
 };
 
-export default About;
+export default AboutUs;

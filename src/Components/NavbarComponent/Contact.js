@@ -15,7 +15,6 @@ const Contact = () => {
   return (
     <div className="contact-form">
       <div className="contact-form-header">
-        <img src="/images/contact-us.png" alt="Contact Us" />
         <h1>Contact Us</h1>
       </div>
 
@@ -50,7 +49,6 @@ const Contact = () => {
       </div>
 
       <div className="contact-form-footer">
-        <img src="/images/contact-us-footer.png" alt="Contact Us Footer" />
       </div>
     </div>
   );
