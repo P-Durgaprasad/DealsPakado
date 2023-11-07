@@ -51,7 +51,7 @@ function DealsDisplay() {
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (currentDeals.map((deal) => (
-                    <div className='main-deal-card'>
+                    <div className='main-deal-card' key={deal.itemId}>
                         <div key={deal.itemId} className="deal-card">
                             <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">
                                 <div className='deal-body-div'>

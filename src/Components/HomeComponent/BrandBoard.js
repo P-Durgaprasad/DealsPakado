@@ -39,8 +39,8 @@ function BrandBoard() {
       <div id="label-title">Brand Board</div>
         <div className='brand-list'>
           {brands.map(brand => (
-            <Link to={`/brand/${brand.brandName}`}>
-            <div className='brand' key={brand.id}>
+            <Link to={`/brand/${brand.brandName}`} key={brand.id}>
+            <div className='brand'>
               <img className='brandboard-brand-image' src={brand.logo} alt={`Brand ${brand.id}`} />
               </div>
               </Link>
