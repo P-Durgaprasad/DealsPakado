@@ -18,18 +18,18 @@ import { Link } from 'react-router-dom';
 
 function ProductBoard() {
   const brands = [
-    { id: 1, logo: mobile, title: 'Mobile',value:'Mobile' },
-    { id: 2, logo: laptop, title: 'Laptop',value:'Laptop' },
-    { id: 3, logo: smartwatch, title: 'Smart Watch',value:'smartwatch' },
-    { id: 4, logo: ac, title: 'AC',value:'AirConditioners' },
-    { id: 5, logo: tv, title: 'TV',value:'Televisions' },
+    { id: 1, logo: mobile, title: 'Mobile', value:'Mobile' },
+    { id: 2, logo: laptop, title: 'Laptop', value:'Laptop' },
+    { id: 3, logo: smartwatch, title: 'Smart Watch', value:'smartwatch' },
+    { id: 4, logo: ac, title: 'AC', value:'AirConditioners' },
+    { id: 5, logo: tv, title: 'TV', value:'Televisions' },
     { id: 6, logo: fridge, title: 'Refrigerator' ,value:'Refrigerators'},
-    { id: 7, logo: headphone, title: 'HeadPhone',value:'Headphones' },
-    { id: 8, logo: shoe, title: 'Shoe',value:'shoes' },
-    { id: 9, logo: buds, title: 'Ear Buds',value:'Buds' },
-    { id: 10, logo: printer, title: 'Printer',value:'printer' },
-    { id: 11, logo: beauty, title: 'Beauty',value:'Beauty' },
-    { id: 12, logo: footware, title: 'Footware',value:'Footware' }
+    { id: 7, logo: headphone, title: 'HeadPhone', value:'Headphones' },
+    { id: 8, logo: shoe, title: 'Shoe', value:'shoes' },
+    { id: 9, logo: buds, title: 'Ear Buds', value:'Buds' },
+    { id: 10, logo: printer, title: 'Printer', value:'printer' },
+    { id: 11, logo: beauty, title: 'Beauty', value:'Beauty' },
+    { id: 12, logo: footware, title: 'Footware', value:'Footware' }
   ];
 
   return (
@@ -39,10 +39,10 @@ function ProductBoard() {
         <div className='productlist'>
           {brands.map(brand => (
             <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
-            <div className='product' >
-              <img src={brand.logo} alt={`Product ${brand.id}`} className='productlogo'/>
-              <p className='producttitle'>{brand.title}</p>
-            </div>
+              <div className='product' >
+                <img src={brand.logo} alt={`Product ${brand.id}`} className='productlogo'/>
+                <p className='producttitle'>{brand.title}</p>
+              </div>
             </Link>
           ))}
         </div>

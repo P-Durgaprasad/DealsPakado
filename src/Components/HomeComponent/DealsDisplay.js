@@ -8,19 +8,15 @@ function DealsDisplay() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-
-        const Url = `${API}/api/product/allDeals`;
-        fetch(Url)
-            .then(response => response.json())
-            .then(data => {
-                setDeals(data);
-                setIsLoading(false);
-            })
-            .catch(error => {
-                console.error('Error fetching deals:', error);
-                setIsLoading(false);
-            });
-    }, []);
+        const fetchDeals = async () => {
+          const response = await fetch(`${API}/api/product/allDeals`);
+          const data = await response.json();
+          setDeals(data);
+          setIsLoading(false);
+        };
+    
+        fetchDeals();
+      }, []);
     const [currentPage, setCurrentPage] = useState(1);
     const dealsPerPage = 49;
 
@@ -44,6 +40,28 @@ function DealsDisplay() {
             setCurrentPage(currentPage + 1);
         }
     }
+    function renderStars(rating) {
+        if (rating === 0) {
+          return "No reviews";
+        }
+    
+        const fullStars = Math.floor(rating);
+        const halfStarred = rating - fullStars >= 0.5;
+    
+        const stars = [];
+        for (let i = 1; i <= 5; i++) {
+          if (i <= fullStars) {
+            stars.push(<span key={i} className="star">&#9733;</span>);
+          } else if (halfStarred && i === Math.ceil(rating)) {
+            stars.push(<span key={i} className="star">&#9733;</span>);
+          } else {
+            stars.push(<span key={i} className="star">&#9734;</span>);
+          }
+        }
+    
+        return stars;
+      }
+    
 
     return (
         <div className='deals-container-main'>
@@ -109,7 +127,7 @@ function DealsDisplay() {
                     </div>
                 )))}
             </div>
-            <div className="pagination">
+            <div className="pagination-container">
                 <button
                     onClick={goToPreviousPage}
                     className="pagination-button arrow-button"
@@ -136,27 +154,6 @@ function DealsDisplay() {
             </div>
         </div>
     );
-}
-function renderStars(rating) {
-
-    if (rating === 0) {
-        return "No reviews";
-    }
-    const fullStars = Math.floor(rating);
-    const halfStar = rating - fullStars >= 0.5;
-
-    const stars = [];
-    for (let i = 1; i <= 5; i++) {
-        if (i <= fullStars) {
-            stars.push(<span key={i} className="star">&#9733;</span>);
-        } else if (halfStar && i === Math.ceil(rating)) {
-            stars.push(<span key={i} className="star">&#9733;</span>);
-        } else {
-            stars.push(<span key={i} className="star">&#9734;</span>);
-        }
-    }
-
-    return stars;
 }
 
 export default DealsDisplay;

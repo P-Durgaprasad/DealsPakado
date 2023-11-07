@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import './Header.css';
-import { Link } from 'react-router-dom';
-import logo from './Logo_1.png';
-
-
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "./Logo_1.png";
+import "./Header.css";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,20 +14,19 @@ const Header = () => {
         setIsSticky(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
-
   return (
-    <header className={`header-fill ${isSticky ? 'sticky' : ''}`}>
+    <header className={`header-fill ${isSticky ? "sticky" : ""}`}>
       <div className="header-fill-bar">
         <div className="logo">
-          <Link to="">
+          <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
         </div>

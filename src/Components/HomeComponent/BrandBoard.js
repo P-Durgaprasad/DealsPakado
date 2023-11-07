@@ -14,41 +14,47 @@ import bigbusket from './Images/BigBasket_Logo.png';
 import blinkit from './Images/blinkit_logo.webp';
 import { Link } from 'react-router-dom';
 
+  
+const brands = [
+  { id: 1, logo: amazon, brandName: "Amazon" },
+  { id: 2, logo: flipkart, brandName: "Flipkart" },
+  { id: 3, logo: ajio, brandName: "Ajio" },
+  { id: 4, logo: myntra, brandName: "Myntra" },
+  { id: 5, logo: tata, brandName: "Tata" },
+  { id: 6, logo: paytm, brandName: "Paytm" },
+  { id: 7, logo: nykaa, brandName: "Nykaa" },
+  { id: 8, logo: snapdeal, brandName: "Snapdeal" },
+  { id: 9, logo: zomato, brandName: "Zomato" },
+  { id: 10, logo: swiggy, brandName: "Swiggy" },
+  { id: 11, logo: bigbusket, brandName: "BigBasket" },
+  { id: 12, logo: blinkit, brandName: "Blinkit" },
+];
 
-function BrandBoard() {
-  // Example brand data
-  const brands = [
-    { id: 1, logo: amazon,brandName:'Amazon' },
-    { id: 2, logo: flipkart,brandName:'Flipkart' },
-    { id: 3, logo: ajio,brandName:'Ajio' },
-    { id: 4, logo: myntra,brandName:'Myntra' },
-    { id: 5, logo: tata ,brandName:'Tata'},
-    { id: 6, logo: paytm,brandName:'Paytm' },
-    { id: 7, logo: nykaa,brandName:'Nykaa' },
-    { id: 8, logo: snapdeal,brandName:'Snapdeal'},
-    { id: 9, logo: zomato,brandName:'Zomato' },
-    { id: 10, logo: swiggy,brandName:'Swiggy' },
-    { id: 11, logo: bigbusket,brandName:'BigBusket' },
-    { id: 12, logo: blinkit,brandName:'Blinkit'},
-    // Add more brands here
-  ];
-
+const BrandBoard = () => {
   return (
-    <div className='brand-board-main'>
-      <div className='brand-list-container'>
-      <div id="label-title">Brand Board</div>
-        <div className='brand-list'>
-          {brands.map(brand => (
-            <Link to={`/brand/${brand.brandName}`} key={brand.id}>
-            <div className='brand'>
-              <img className='brandboard-brand-image' src={brand.logo} alt={`Brand ${brand.id}`} />
+    <div className="brand-board-main">
+      <div className="brand-list-container">
+        <h1 id="label-title">Brand Board</h1>
+        <div className="brand-list">
+          {brands.map((brand) => (
+            <Link
+              to={`/brand/${brand.brandName}`}
+              key={brand.id}
+              className="brand-link"
+            >
+              <div className='brand'>
+              <img
+                className="brandboard-brand-image"
+                src={brand.logo}
+                alt={`Brand ${brand.id}`}
+              />
               </div>
-              </Link>
+            </Link>
           ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default BrandBoard;
