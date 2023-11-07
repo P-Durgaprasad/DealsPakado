@@ -8,6 +8,11 @@ import telegram from './Images/Telegram_Logo.png';
 import gmail from './Images/Gmail_icon.png';
 import facebook from './Images/Facebook_logo_.png';
 import JoinWhatsApp from '../HeaderComponent/JoinWhatsApp';
+import JoinTelegram from '../HeaderComponent/JoinTelegram';
+import JoinTwitter from '../HeaderComponent/JoinTwitter';
+import JoinFacebook from '../HeaderComponent/JoinFacebook';
+import JoinInsta from '../HeaderComponent/JoinInsta';
+import JoinYouTube from '../HeaderComponent/JoinYoutube';
 
 const Footer = () => {
     return (
@@ -64,8 +69,14 @@ const Footer = () => {
             <div className="footer-text text-center mt-3">
                 &copy; {new Date().getFullYear()} dealspakado.com. All rights reserved.
             </div>
-            <div className='whatsapp'>
+            <div className='social-media'>
+                <p className='follow-on'>Follow on</p>
+                <JoinFacebook />
                 <JoinWhatsApp />
+                <JoinInsta />
+                <JoinTelegram />
+                <JoinYouTube />
+                <JoinTwitter />
             </div>
         </footer>
     );

@@ -11,7 +11,6 @@ const Navbar = lazy(() => import('./Components/NavbarComponent/Navbar'));
 const Header = lazy(() => import('./Components/HeaderComponent/Header'));
 const About = lazy(() => import('./Components/NavbarComponent/About'));
 const Contact = lazy(() => import('./Components/NavbarComponent/Contact'));
-//const DealsDisplay = lazy(() => import('./Components/HomeComponent/DealsDisplay'));
 const Mobiles = lazy(() => import('./Components/NavbarComponent/Mobiles'));
 const Electronics = lazy(() => import('./Components/NavbarComponent/Electronics'));
 const Furniture = lazy(() => import('./Components/NavbarComponent/Furniture'));

@@ -19,11 +19,12 @@ const ShareProduct = ({ url, title ,imageUrl,price}) => {
   };
 
   return (
+    <>
     <button type="button" onClick={handleShare} className="btn btn-share">
     <img src={whatsapp} alt="Share" className="btn-share-image" />
     <p className="btn-share-text"> Share</p>
   </button>
-  
+  </>
   );
 };
 

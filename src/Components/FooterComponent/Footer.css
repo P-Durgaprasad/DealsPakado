@@ -93,55 +93,90 @@
 }
 
 
-.whatsapp {
+.social-media {
   display: flex;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 125px;
-  height: 50px;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 5px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+
 }
 
-.whatsapp button {
+.social-media button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   border: none;
   background-color: transparent;
-  color: rgb(36, 188, 25);
-  font-size: 10px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-}
-
-.whatsapp-text {
-  width: 50px;
-  height: 50px;
   cursor: pointer;
 }
 
 .whatsapp-img {
-  width: 50px;
-  height: 50px;
+  width: 115%;
+  height: 108%;
   cursor: pointer;
+  object-fit: contain;
 }
 
-.whatsapp:active {
-  transform: scale(0.95);
+.telegram-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
 }
 
-.whatsapp_title {
-  font-size: larger;
+.twitter-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.facebook-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.instagram-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.youtube-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.follow-on {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ff00f7;
+  text-transform: uppercase;
+}
+
+.follow-on:hover {
+  color: #000;
 }
 
 .quick-offer-links {
@@ -149,6 +184,7 @@
   justify-content: space-between;
   margin: 20px 0;
 }
+
 @media screen and (max-width : 320px) {
   .footer-content {
     flex-direction: column;
@@ -159,14 +195,39 @@
     max-width: 180px;
   }
 
+  .social-media {
+    right: 1px;
+    bottom: 5px;
+    width: auto;
+  }
+
+  .follow-on {
+    display: none;
+  }
+
+  .facebook-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .telegram-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .twitter-img {
+    width: 18px;
+    height: 18px;
+  }
+
   .whatsapp {
     width: 100px;
     height: 30px;
   }
 
   .whatsapp-img {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
   }
 
   .whatsapp_title {
@@ -176,6 +237,7 @@
   .social-icon {
     height: 20px;
   }
+
   .footer-links {
     width: 100%;
     height: 30px;
@@ -216,9 +278,35 @@
     height: 30px;
   }
 
+  .social-media {
+    bottom: 1px;
+    right: 1px;
+    height: auto;
+    width: auto;
+  }
+
+  .follow-on {
+    display: none;
+  }
+
   .whatsapp-img {
     width: 30px;
     height: 30px;
+  }
+
+  .facebook-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .telegram-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .twitter-img {
+    width: 20px;
+    height: 20px;
   }
 
   .whatsapp_title {
