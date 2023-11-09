@@ -112,7 +112,7 @@ const FilterResult = ({ products }) => {
           ))
         )}
       </div>
-      <div className="pagination">
+      <div className="pagination-container">
         <button
           onClick={goToPreviousPage}
           className="pagination-button arrow-button"

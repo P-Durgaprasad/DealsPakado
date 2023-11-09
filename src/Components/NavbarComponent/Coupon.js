@@ -43,8 +43,7 @@ class Coupon extends Component {
         this.setState({ products: data, error: null });
       })
       .catch((error) => {
-        console.error('Error fetching products:', error);
-        this.setState({ error });
+        this.setState({ });
       });
   };
 

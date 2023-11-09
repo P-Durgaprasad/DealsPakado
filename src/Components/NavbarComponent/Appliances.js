@@ -52,9 +52,8 @@ class Appliances extends Component {
       .then((data) => {
         this.setState({ products: data, error: null });
       })
-      .catch((error) => {
-        console.error('Error fetching products:', error);
-        this.setState({ error });
+      .catch((error) => { 
+        this.setState({  });
       });
   };
 

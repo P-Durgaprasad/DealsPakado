@@ -47,23 +47,6 @@
   align-items: center;
 }
 
-.social-link {
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-link:hover {
-  color: #000;
-}
-
-.social-icon {
-  object-fit: contain;
-  width: 100%;
-  height: 30px;
-}
 
 .quick-offer-link {
   color: #fff;
@@ -98,7 +81,7 @@
   position: fixed;
   bottom: 5px;
   right: 5px;
-  width: 35px;
+  width: 40px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -169,12 +152,18 @@
 }
 
 .follow-on {
-  font-size: 10px;
+  animation: blink 1s linear infinite;
+  color:green;
+  font-size: 15px;
+  border-radius: 4px;
   font-weight: bold;
-  color: #ff00f7;
-  text-transform: uppercase;
-}
 
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 .follow-on:hover {
   color: #000;
 }
@@ -198,44 +187,57 @@
   .social-media {
     right: 1px;
     bottom: 5px;
-    width: auto;
   }
 
   .follow-on {
     display: none;
   }
 
-  .facebook-img {
-    width: 20px;
-    height: 20px;
-  }
+  
+.whatsapp-img {
+  width: 115%;
+  height: 108%;
+  cursor: pointer;
+  object-fit: contain;
+}
 
-  .telegram-img {
-    width: 20px;
-    height: 20px;
-  }
+.telegram-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
 
-  .twitter-img {
-    width: 18px;
-    height: 18px;
-  }
+.twitter-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
 
-  .whatsapp {
-    width: 100px;
-    height: 30px;
-  }
+.facebook-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
 
-  .whatsapp-img {
-    width: 26px;
-    height: 26px;
-  }
+.instagram-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.youtube-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
 
   .whatsapp_title {
     font-size: 9px;
-  }
-
-  .social-icon {
-    height: 20px;
   }
 
   .footer-links {
@@ -281,8 +283,6 @@
   .social-media {
     bottom: 1px;
     right: 1px;
-    height: auto;
-    width: auto;
   }
 
   .follow-on {
@@ -311,10 +311,6 @@
 
   .whatsapp_title {
     font-size: 9px;
-  }
-
-  .social-icon {
-    height: 20px;
   }
 
   .footer-links {
@@ -365,10 +361,6 @@
 
   .whatsapp_title {
     font-size: 9px;
-  }
-
-  .social-icon {
-    height: 20px;
   }
 
   .whatsapp {
@@ -424,11 +416,6 @@
   .whatsapp_title {
     font-size: 9px;
   }
-
-  .social-icon {
-    height: 20px;
-  }
-
   .whatsapp {
     width: 100px;
   }
@@ -485,9 +472,7 @@
     font-size: 9px;
   }
 
-  .social-icon {
-    height: 20px;
-  }
+  
 
   .whatsapp {
     width: 100px;
@@ -519,63 +504,3 @@
     font-size: 11px;
   }
 }
-
-/* Extra large desktops */
-/* @media screen and (min-width:1026px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-img {
-    max-width: 180px;
-  }
-
-  .whatsapp {
-    width: 100%;
-    height: 30px;
-  }
-
-  .whatsapp-img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .whatsapp_title {
-    font-size: 9px;
-  }
-
-  .social-icon {
-    height: 20px;
-  }
-
-  .whatsapp {
-    width: 100px;
-  }
-
-  .footer-links {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30px;
-  }
-
-  .social-links {
-    width: 50%;
-    height: auto;
-    gap: 1px;
-    margin-bottom: 10px;
-  }
-
-  .media-links {
-    width: 13%;
-  }
-
-  .quick-offer-links a {
-    font-size: 10px;
-  }
-
-  .footer-text {
-    font-size: 11px;
-  }
-} */

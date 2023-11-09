@@ -20,7 +20,6 @@ function SelectBrand() {
                 setIsLoading(false);
             })
             .catch(error => {
-                console.error('Error fetching deals:', error);
                 setIsLoading(false);
             });
     }, [url]);

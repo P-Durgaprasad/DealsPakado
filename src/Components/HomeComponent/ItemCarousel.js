@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
-import 'react-image-gallery/styles/css/image-gallery.css';
 import './Css/ItemCarousel.css';
 import API from '../API_Config';
 import useSWR from 'swr';
@@ -10,24 +9,29 @@ function ItemCarousel() {
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  const { data: carouselData, error } = useSWR(`${API}/api/carousel/showAll`, async () => {
-    const response = await fetch(`${API}/api/carousel/showAll`);
-    const jsonData = await response.json();
-    if (Array.isArray(jsonData)) {
-      return jsonData;
+  const { data: carouselData } = useSWR(
+    `${API}/api/carousel/showAll`,
+    async (url) => {
+      try {
+        const response = await fetch(url);
+        const jsonData = await response.json();
+        if (Array.isArray(jsonData)) {
+          return jsonData;
+        }
+        return [];
+      } catch (err) {
+        setData([]);
+        return []; // Return an empty array to prevent errors in the ImageGallery component
+      }
     }
-    return [];
-  });
+  );
 
   useEffect(() => {
     if (carouselData) {
       setData(carouselData);
       setIsLoading(false);
-    } else if (error) {
-      console.error('Error fetching data:', error);
-      setData([]);
     }
-  }, [carouselData, error]);
+  }, [carouselData]);
 
   const handleChangeIndex = (selectedIndex) => {
     setIndex(selectedIndex);
@@ -38,18 +42,27 @@ function ItemCarousel() {
       {isLoading ? (
         <p>Loading...</p>
       ) : data.length === 0 ? (
-        <div className='empty-deals'>
-          <p className="no-deals-div">Currently No Deals Are available</p>
+        <div className="empty-deals">
+          <p className="no-deals-div">Currently, No Deals Are Available</p>
         </div>
       ) : (
         <ImageGallery
-          items={carouselData.map((item) => ({
+          items={data.map((item) => ({
             original: item.imageUrl,
             thumbnailLabel: item.title,
             renderItem: () => (
-              <a href={`${item.affiliateLink}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                <div className='image-div'>
-                  <img className='image-slider' src={item.imageUrl} alt={item.title} />
+              <a
+                href={`${item.affiliateLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none' }}
+              >
+                <div className="image-div">
+                  <img
+                    className="image-slider"
+                    src={item.imageUrl}
+                    alt={item.title}
+                  />
                 </div>
               </a>
             ),
@@ -58,7 +71,7 @@ function ItemCarousel() {
           onClick={(currentIndex) => handleChangeIndex(currentIndex)}
           slidesPerView={1}
           spaceBetween={10}
-          autoPlay={true}
+          autoplay={true}
           disableKeyDown={true}
           autoplayTimeout={5000}
           loop={true}

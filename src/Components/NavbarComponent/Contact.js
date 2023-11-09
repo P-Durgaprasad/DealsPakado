@@ -8,8 +8,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    
   };
 
   return (

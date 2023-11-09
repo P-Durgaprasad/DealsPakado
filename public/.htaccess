@@ -1,7 +1,4 @@
+Options -MultiViews
 RewriteEngine On
-   
- # Serve static files from the public folder
-RewriteRule ^(.*)$ public/$1 [L]
-
-# Redirect all other requests to index.html
-RewriteRule ^ index.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]

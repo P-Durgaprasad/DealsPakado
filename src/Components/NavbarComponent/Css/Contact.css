@@ -1,26 +1,21 @@
 .contact-form {
-  width: 100%;
-  max-width: 600px;
+  width: 500px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   background-color: #fff;
 }
 
 .contact-form-header {
   text-align: center;
-}
-
-.contact-form-header img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .contact-form-header h1 {
   font-size: 24px;
-  font-weight: 700;
-  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
 }
 
 .contact-form-body {
@@ -30,71 +25,65 @@
 .contact-form-body p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  color: #666;
 }
 
 .contact-form-body form {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.contact-form-body input,
-.contact-form-body textarea {
+.contact-form-body form input,
+.contact-form-body form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
   margin-bottom: 10px;
 }
 
-.contact-form-body button {
-  width: 100%;
-  padding: 10px;
-  background-color: #000;
+.contact-form-body form textarea {
+  height: 100px;
+}
+
+.contact-form-body form button {
+  background-color: #007bff;
   color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.contact-form-footer {
-  text-align: center;
+
+
+@media screen and (max-width :320px) {
+  .contact-form{
+    width: 95%;
+    padding: 0px;
+  }
 }
-
-.contact-form-footer img {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-
-@media screen and (max-width :320px) {}
 
 /* Mobile devices */
 @media screen and (min-width: 321px) and (max-width: 376px) {
-
+  .contact-form{
+    width: 95%;
+    padding: 0px;
+  }
 }
 
 /* Tablets */
 @media screen and (min-width: 377px) and (max-width: 426px) {
-
+  .contact-form{
+    width: 95%;
+    padding: 0px;
+  }
 }
 
 /* Small desktops */
 @media screen and (min-width: 427px) and (max-width: 769px) {
-
-}
-
-/* Medium desktops */
-@media screen and (min-width: 770px) and (max-width: 1025px) {
-
-}
-
-/* Large desktops */
-@media screen and (min-width: 1026px) and (max-width: 1441px) {
- 
-}
-
-/* Extra large desktops */
-@media screen and (min-width: 1442px) and (max-width: 2561px) {
-  
+  .contact-form{
+    width: 95%;
+    padding: 0px;
+  }
 }

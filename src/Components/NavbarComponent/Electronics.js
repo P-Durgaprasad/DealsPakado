@@ -55,8 +55,7 @@ class Electronics extends Component {
         this.setState({ products: data, error: null });
       })
       .catch((error) => {
-        console.error('Error fetching products:', error);
-        this.setState({ error });
+        this.setState({  });
       });
   };
 
@@ -83,7 +82,7 @@ class Electronics extends Component {
           onSubCategoryChange={this.handleSubCategoryChange}
         />
         {error ? (
-          <p>Error fetching products: {error.message}</p>
+          <p className="no-deals-div">Currently No Deals Are available</p>
         ) : (
           <FilterResult products={products} />
         )}

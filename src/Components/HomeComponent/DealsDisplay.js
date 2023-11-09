@@ -6,17 +6,27 @@ import ShareProduct from '../NavbarComponent/FilterComponents/ShareProduct';
 function DealsDisplay() {
     const [deals, setDeals] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-
     useEffect(() => {
         const fetchDeals = async () => {
-          const response = await fetch(`${API}/api/product/allDeals`);
-          const data = await response.json();
-          setDeals(data);
-          setIsLoading(false);
+          try {
+            const response = await fetch(`${API}/api/product/allDeals`);
+            const data = await response.json();
+      
+            if (Array.isArray(data)) {
+              setDeals(data);
+            } else {
+              setDeals([]);
+            }
+      
+            setIsLoading(false);
+          } catch (error) {
+            setIsLoading(false);
+          }
         };
-    
+      
         fetchDeals();
       }, []);
+
     const [currentPage, setCurrentPage] = useState(1);
     const dealsPerPage = 49;
 
@@ -42,32 +52,36 @@ function DealsDisplay() {
     }
     function renderStars(rating) {
         if (rating === 0) {
-          return "No reviews";
+            return "No reviews";
         }
-    
+
         const fullStars = Math.floor(rating);
         const halfStarred = rating - fullStars >= 0.5;
-    
+
         const stars = [];
         for (let i = 1; i <= 5; i++) {
-          if (i <= fullStars) {
-            stars.push(<span key={i} className="star">&#9733;</span>);
-          } else if (halfStarred && i === Math.ceil(rating)) {
-            stars.push(<span key={i} className="star">&#9733;</span>);
-          } else {
-            stars.push(<span key={i} className="star">&#9734;</span>);
-          }
+            if (i <= fullStars) {
+                stars.push(<span key={i} className="star">&#9733;</span>);
+            } else if (halfStarred && i === Math.ceil(rating)) {
+                stars.push(<span key={i} className="star">&#9733;</span>);
+            } else {
+                stars.push(<span key={i} className="star">&#9734;</span>);
+            }
         }
-    
+
         return stars;
-      }
-    
+    }
+
 
     return (
         <div className='deals-container-main'>
             <div className="deals-container">
                 {isLoading ? (
                     <p>Loading...</p>
+                ) : currentDeals.length === 0 ? (
+                    <div className='no-deals-container'>
+                        <p className="no-deals-div">Currently No Deals Are available</p>
+                    </div>
                 ) : (currentDeals.map((deal) => (
                     <div className='main-deal-card' key={deal.itemId}>
                         <div key={deal.itemId} className="deal-card">
@@ -120,7 +134,7 @@ function DealsDisplay() {
                                     </a>
                                 </div>
                                 <div className='whatsapp-share'>
-                                    <ShareProduct url={deal.affiliateLink} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice}/>
+                                    <ShareProduct url={deal.affiliateLink} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} />
                                 </div>
                             </div>
                         </div>

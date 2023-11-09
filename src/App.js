@@ -21,6 +21,7 @@ const Fashion = lazy(() => import('./Components/NavbarComponent/Fashion'));
 const Coupon = lazy(() => import('./Components/NavbarComponent/Coupon'));
 const Sports = lazy(() => import('./Components/NavbarComponent/Sports'));
 const Baby = lazy(() => import('./Components/NavbarComponent/Baby'));
+const ServerDown =lazy(() => import('./Components/HomeComponent/ServerDown'));
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path='/product/:ProductName' element={<SelectProduct />} />
             <Route path='/babyitems' element={<Baby />} />
             <Route path='/sports' element={<Sports />} />
+            <Route path="/server-down" element={<ServerDown />} />
           </Routes>
         </Suspense>
         <Footer />
