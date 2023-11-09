@@ -80,7 +80,7 @@ function DealsDisplay() {
                     <p>Loading...</p>
                 ) : currentDeals.length === 0 ? (
                     <div className='no-deals-container'>
-                        <p className="no-deals-div">Currently No Deals Are available</p>
+                        <p className="no-deals-div">Currently, No Deals Are available</p>
                     </div>
                 ) : (currentDeals.map((deal) => (
                     <div className='main-deal-card' key={deal.itemId}>

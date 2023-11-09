@@ -15,6 +15,7 @@
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
+  padding: 10px;
 
 }
 
@@ -95,6 +96,20 @@
   background-color: #005a9e;
 }
 
+.no-coupons-container{
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: auto;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+.no-coupons-message{
+  font-size: 24px;
+  font-weight: bold;
+}
 @media screen and (max-width : 320px) {
   .coupon-list{
     width: 100%;
@@ -227,31 +242,3 @@
     height: 100px;
   }
 }
-
-
-/* Extra large desktops */
-/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
-  .coupon-list{
-    width: 100%;
-    height: auto;
-    margin-top: 5px;
-    align-items: center;
-  }
-  .coupon-code, .coupon-percentage {
-    font-size: 1em;
-    margin: 2px;
-  }
-  .coupon-expires, .coupon-status {
-    display: none;
-  }
-  .coupon-details {
-    padding: 8px;
-  }
-  .coupon-card{
-    max-width: 50%;
-    margin: 0px;
-  }
-  .coupon-image{
-    height: 100px;
-  }
-} */

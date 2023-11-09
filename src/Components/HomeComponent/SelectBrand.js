@@ -74,8 +74,8 @@ function SelectBrand() {
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : deals.length === 0 ? (
-                    <div className='empty-deals'>
-                        <p className="no-deals-div">Currently No Deals Are available</p>
+                    <div className='no-deals-container'>
+                        <p className="no-deals-div">Currently, No Deals Are available</p>
                     </div>
                 ) : (
                     currentDeals.map((deal) => (

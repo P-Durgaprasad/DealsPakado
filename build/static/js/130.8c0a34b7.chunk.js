@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdealsfinderindia=self.webpackChunkdealsfinderindia||[]).push([[130],{2130:function(e,n,r){r.r(n);r(2791);var i=r(184);n.default=function(){return(0,i.jsxs)("div",{children:[(0,i.jsx)("h2",{children:"Server Down"}),(0,i.jsx)("p",{children:"We apologize, but the server is currently unavailable. Please try again later."})]})}}}]);
+//# sourceMappingURL=130.8c0a34b7.chunk.js.map

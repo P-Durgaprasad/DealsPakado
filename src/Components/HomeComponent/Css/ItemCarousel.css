@@ -52,11 +52,13 @@
 }
 
 .image-gallery-fullscreen-button {
-  right: 0
+  right: 20px;
+  bottom: 10px;
 }
 
 .image-gallery-play-button {
-  left: 0
+  bottom: 10px;
+  left: 20px;
 }
 
 .image-gallery-left-nav,
