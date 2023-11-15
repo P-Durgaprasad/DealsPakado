@@ -43,7 +43,6 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      {/* Display search results here */}
     </header>
   );
 };

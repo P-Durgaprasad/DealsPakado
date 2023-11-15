@@ -11,14 +11,16 @@
 
 .coupon-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  padding: 10px;
-
+  flex-direction: column;
 }
 
+.coupon-display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
 .coupon-card:hover {
   transform: translateY(-5px);
 }

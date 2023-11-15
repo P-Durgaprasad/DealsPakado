@@ -6,7 +6,7 @@ import DealsDisplay from './DealsDisplay';
 import './Css/Home.css';
 
 function Home() {
-  
+
   return (
     <div className="home-main-div">
       <div className="main">

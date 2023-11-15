@@ -18,26 +18,27 @@ const Footer = () => {
                 </div>
                 <div className="footer-links">
 
-                    {/* <div className="social-links">
-                        <div className='media-links'>
-                            <JoinYouTube />
-                        </div>
-                        <div className='media-links'>
-                            <JoinTwitter />
-                        </div>
-                        <div className='media-links'>
-                            <JoinTelegram />
-                        </div>
-                        <div className='media-links'>
-                            <JoinFacebook />
-                        </div>
-                        <div className='media-links'>
-                           <JoinInsta />
-                        </div>
-                        <div className='media-links'>
-                            <JoinWhatsApp />
-                        </div>
-                    </div> */}
+                    <div className="social-links">
+                       
+                            {/* <div className='media-links'>
+                                <JoinYouTube />
+                            </div>
+                            <div className='media-links'>
+                                <JoinTwitter />
+                            </div>
+                            <div className='media-links'>
+                                <JoinTelegram />
+                            </div>
+                            <div className='media-links'>
+                                <JoinFacebook />
+                            </div>
+                            <div className='media-links'>
+                                <JoinInsta />
+                            </div>
+                            <div className='media-links'>
+                                <JoinWhatsApp />
+                            </div> */}
+                    </div>
                 </div>
                 <div className="quick-offer-links">
                     {/* <a href="/top-mobile-offers" className="top-offers-link">

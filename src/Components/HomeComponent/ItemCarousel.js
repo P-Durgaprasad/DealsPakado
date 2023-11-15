@@ -20,8 +20,8 @@ function ItemCarousel() {
         }
         return [];
       } catch (err) {
-        setData([]);
-        return []; // Return an empty array to prevent errors in the ImageGallery component
+        console.error('Error fetching data:', err);
+        return [];
       }
     }
   );
@@ -71,9 +71,9 @@ function ItemCarousel() {
           onClick={(currentIndex) => handleChangeIndex(currentIndex)}
           slidesPerView={1}
           spaceBetween={10}
-          autoplay={true}
+          autoPlay={true} 
           disableKeyDown={true}
-          autoplayTimeout={5000}
+          autoplayTimeout={1000}
           loop={true}
         />
       )}
