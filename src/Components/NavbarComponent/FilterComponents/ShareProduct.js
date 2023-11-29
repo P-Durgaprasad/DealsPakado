@@ -1,8 +1,17 @@
 import React from "react";
 import whatsapp from '../../HeaderComponent/whatsapp.png';
 
-const ShareProduct = ({ url, title ,imageUrl,price}) => {
-  const formattedMessage = `*${title}* - Offer Price: Rs.${price}\n\nImage: ${imageUrl}\n\nBuy : ${url}`;
+const ShareProduct = ({ url, title ,imageUrl,price,MRP}) => {
+  const formattedMessage = `
+  🤩 **Snatch This Deal!** ${title} - Only Rs.${price} (Save Rs.${MRP - price})! 🤑
+  
+  ✨ **Don't Miss Out!** Hurry! Limited Stock Available. ⌛
+  
+  👀 Check out this amazing product: ${imageUrl}
+  
+  🛒 **Grab Yours Now!** Click here: http://dealspakado.com/buyAt/${encodeURIComponent(url)}`;
+  
+
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -10,10 +19,8 @@ const ShareProduct = ({ url, title ,imageUrl,price}) => {
   };
   const handleShare = () => {
     if (isMobile()) {
-      // Open WhatsApp on mobile
       window.open(`whatsapp://send?text=${encodeURIComponent(formattedMessage)}`);
     } else {
-      // Open WhatsApp Web on desktop
       window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(formattedMessage)}`);
     }
   };

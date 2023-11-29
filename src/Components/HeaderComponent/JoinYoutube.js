@@ -29,7 +29,6 @@ const JoinYouTube = () => {
   return (
     <button className="youtube_text" onClick={handleButtonClick}>
       <img src={logo} className='youtube-img' alt="YouTube logo" />
-      {/* <p className="youtube_title">Subscribe to Our YouTube Channel</p> */}
     </button>
   );
 };

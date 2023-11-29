@@ -47,7 +47,6 @@
 .coupon-percentage {
   font-size: 1.1em;
   color: #e83e8c;
-  /* Change the color to your preference */
 }
 
 .coupon-website a {
@@ -74,12 +73,10 @@
 
 .coupon-status.active {
   color: #2ecc71;
-  /* Change the color to your preference */
 }
 
 .coupon-status.expired {
   color: #e74c3c;
-  /* Change the color to your preference */
 }
 
 .get-deal-button {
@@ -112,6 +109,7 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 @media screen and (max-width : 320px) {
   .coupon-list{
     width: 100%;
@@ -137,7 +135,7 @@
     height: 100px;
   }
 }
-/* Mobile devices */
+
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .coupon-list{
     width: 100%;
@@ -164,7 +162,6 @@
   }
 }
 
-/* Tablets */
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .coupon-list{
     width: 100%;
@@ -191,7 +188,6 @@
   }
 }
 
-/* Small desktops */
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .coupon-list{
     width: 100%;
@@ -218,7 +214,6 @@
   }
 }
 
-/* Medium desktops */
 @media screen and (min-width: 770px) and (max-width: 1025px) {
   .coupon-list{
     width: 100%;
@@ -243,4 +238,4 @@
   .coupon-image{
     height: 100px;
   }
-}
+} 

@@ -1,37 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import './Css/ItemCarousel.css';
-import API from '../API_Config';
 import useSWR from 'swr';
+import API from '../API_Config';
 
 function ItemCarousel() {
   const [data, setData] = useState([]);
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const { data: carouselData } = useSWR(
+  const { data: carouselData, error: fetchError } = useSWR(
     `${API}/api/carousel/showAll`,
     async (url) => {
       try {
         const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
         const jsonData = await response.json();
         if (Array.isArray(jsonData)) {
           return jsonData;
         }
         return [];
       } catch (err) {
-        console.error('Error fetching data:', err);
-        return [];
+        throw new Error('Failed to fetch data');  
       }
     }
   );
 
   useEffect(() => {
-    if (carouselData) {
+    if (fetchError) {
+      setError(fetchError);
+      setIsLoading(false);
+    } else if (carouselData) {
       setData(carouselData);
       setIsLoading(false);
     }
-  }, [carouselData]);
+  }, [fetchError, carouselData]);
 
   const handleChangeIndex = (selectedIndex) => {
     setIndex(selectedIndex);
@@ -41,6 +47,8 @@ function ItemCarousel() {
     <div className="carousel-container">
       {isLoading ? (
         <p>Loading...</p>
+      ) : error ? (
+        <p>Server Down, Please Try again !</p>
       ) : data.length === 0 ? (
         <div className="empty-deals">
           <p className="no-deals-div">Currently, No Deals Are Available</p>
@@ -71,7 +79,7 @@ function ItemCarousel() {
           onClick={(currentIndex) => handleChangeIndex(currentIndex)}
           slidesPerView={1}
           spaceBetween={10}
-          autoPlay={true} 
+          autoPlay={true}
           disableKeyDown={true}
           autoplayTimeout={1000}
           loop={true}

@@ -20,7 +20,7 @@ function Navbar() {
       <ul className="menu-bar">
         <li className="selected">
           <Link to="/deals">
-            <img src={Deals} alt="Mobiles" className='nav-img' />
+            <img src={Deals} alt="Best_Deals" className='nav-img' />
            <div className='nav-text'>Deals </div>
           </Link>
         </li>
@@ -56,7 +56,7 @@ function Navbar() {
         </li>
         <li className="selected">
           <Link to="/babyitems">
-            <img src={Personal} alt="personal" className='nav-img'/>
+            <img src={Personal} alt="Baby_Items" className='nav-img'/>
             <div className='nav-text'>Baby's</div>
           </Link>
         </li>

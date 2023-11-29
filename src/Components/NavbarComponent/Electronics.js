@@ -16,17 +16,14 @@ class Electronics extends Component {
     };
   }
 
-  componentDidMount() {
-    
+  componentDidMount() { 
     this.fetchProducts();
   }
 
-  // Function to fetch products based on filters
   fetchProducts = () => {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Electronics`;
 
-    // Construct the API URL based on filter selections
     const filterParams = [];
 
     if (selectedSubCategory) {

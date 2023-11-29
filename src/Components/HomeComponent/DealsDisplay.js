@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import './Css/NewCss.css';
-import API from '../API_Config';
 import ShareProduct from '../NavbarComponent/FilterComponents/ShareProduct';
+import API from '../API_Config';
+
 
 function DealsDisplay() {
     const [deals, setDeals] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
         const fetchDeals = async () => {
-          try {
-            const response = await fetch(`${API}/api/product/allDeals`);
-            const data = await response.json();
-      
-            if (Array.isArray(data)) {
-              setDeals(data);
-            } else {
-              setDeals([]);
+            try {
+                const response = await fetch(`${API}/api/product/allDeals`);
+                const data = await response.json();
+
+                if (Array.isArray(data)) {
+                    setDeals(data);
+                } else {
+                    setDeals([]);
+                }
+
+                setIsLoading(false);
+            } catch (error) {
+                setIsLoading(false);
             }
-      
-            setIsLoading(false);
-          } catch (error) {
-            setIsLoading(false);
-          }
         };
-      
+
         fetchDeals();
-      }, []);
+    }, []);
 
     const [currentPage, setCurrentPage] = useState(1);
     const dealsPerPage = 49;
@@ -134,7 +136,7 @@ function DealsDisplay() {
                                     </a>
                                 </div>
                                 <div className='whatsapp-share'>
-                                    <ShareProduct url={deal.affiliateLink} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} />
+                                    <ShareProduct url={deal.affiliateLink} title={deal.itemTitle} id={deal.itemId} imageUrl={deal.imageUrl} price={deal.offerPrice} MRP={deal.originalMRP} />
                                 </div>
                             </div>
                         </div>

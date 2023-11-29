@@ -56,7 +56,7 @@
 }
 
 
-
+ 
 @media screen and (max-width :320px) {
   .contact-form{
     width: 95%;
@@ -64,7 +64,6 @@
   }
 }
 
-/* Mobile devices */
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .contact-form{
     width: 95%;
@@ -72,7 +71,6 @@
   }
 }
 
-/* Tablets */
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .contact-form{
     width: 95%;
@@ -80,10 +78,9 @@
   }
 }
 
-/* Small desktops */
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .contact-form{
     width: 95%;
     padding: 0px;
   }
-}
+} 

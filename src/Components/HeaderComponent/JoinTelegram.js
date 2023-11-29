@@ -29,7 +29,6 @@ const JoinTelegram = () => {
   return (
     <button className="telegram_text" onClick={handleButtonClick}>
       <img src={logo} className='telegram-img' alt="Telegram logo" />
-      {/* <p className="telegram_title">Follow Our Telegram Channel</p> */}
     </button>
   );
 };

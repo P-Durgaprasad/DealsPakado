@@ -3,7 +3,6 @@ import GroceryFilter from './FilterComponents/GroceryFilter';
 import FilterResult from './FilterComponents/FilterResult';
 import '../HomeComponent/Css/NewCss.css';
 import API from '../API_Config';
-
 class Grocery extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +15,10 @@ class Grocery extends Component {
     };
   }
 
-  componentDidMount() {
-    
+  componentDidMount() {   
     this.fetchProducts();
   }
 
-  // Function to fetch products based on filters
   fetchProducts = () => {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Grocery`;

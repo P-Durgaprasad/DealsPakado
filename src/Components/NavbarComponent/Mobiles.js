@@ -17,11 +17,9 @@ class Mobiles extends Component {
   }
 
   componentDidMount() {
-    // Fetch initial product data when the component mounts
     this.fetchProducts();
   }
 
-  // Function to fetch products based on filters
   fetchProducts = () => {
     const { selectedBrand, minPrice,maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Mobiles`;

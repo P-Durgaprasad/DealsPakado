@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import API from '../API_Config';
 import './Css/NewCss.css';
 import ShareProduct from '../NavbarComponent/FilterComponents/ShareProduct';
+import API from '../API_Config';
 
 function SelectProduct() {
     const { ProductName } = useParams();
@@ -10,7 +10,6 @@ function SelectProduct() {
     const [isLoading, setIsLoading] = useState(true);
 
     const url = `${API}/api/product/search?query=${ProductName}`;
-    console.log(url);
     useEffect(() => {
 
         fetch(url)

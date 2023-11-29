@@ -13,10 +13,8 @@ function Home() {
         <BrandBoard />
         <ItemCarousel />
         <ProductBoard />
-      </div>
-      <div className="deals-menu">
+      </div>    
         <DealsDisplay />
-      </div>
     </div>
   );
 }

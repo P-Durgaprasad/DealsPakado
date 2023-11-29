@@ -1,7 +1,7 @@
 .menubar {
   background-color: #ffffff;
-  padding-bottom: 10px;
-  margin-top: 5px;
+  padding-bottom: 0.5vw;
+  margin-top: 1vh;
 }
 
 .menu-bar {
@@ -19,14 +19,14 @@
 .menu-bar li {
   position: relative;
   flex: 1;
-  margin: 0 10px;
+  margin: 0 1vw;
   text-align: center;
 }
 
 .nav-text {
   color: #403a3a;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: calc(0.4em + 0.5vw);
 }
 
 .menu-bar li a {
@@ -39,9 +39,11 @@
 }
 
 .nav-img {
-  width: 50%;
+  width: 100%;
+  max-height: 8vh;
+  height: auto;
   object-fit: contain;
-  margin-top: 5px;
+  margin-top: 01vh;
 }
 
 .menu-bar li :hover {
@@ -53,7 +55,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.3vh;
   background-image: linear-gradient(90deg, transparent, #ff6600);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
@@ -65,21 +67,16 @@
   transform: scaleX(1);
 }
 
-
-.menu-bar li.selected a {
-  position: relative;
-}
-
 .menu-bar li.selected a::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.3vh;
   background-color: #ff6600;
   bottom: -5px;
   left: 0;
 }
-
+ 
 @media screen and (max-width : 320px) {
   .menu-bar {
     display: flex;
@@ -93,11 +90,6 @@
     padding-right: inherit;
   }
 
-  .menubar {
-    padding-top: 0px;
-    padding-left: 10px;
-
-  }
 
   .menu-bar li {
     margin: 5px 0;
@@ -120,7 +112,7 @@
     font-size: 10px;
   }
 }
-/* Mobile devices */
+
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .menu-bar {
     display: flex;
@@ -162,7 +154,6 @@
   }
 }
 
-/* Tablets */
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .menu-bar {
     display: flex;
@@ -204,7 +195,6 @@
   }
 }
 
-/* Small desktops */
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .menu-bar {
     display: flex;
@@ -246,7 +236,6 @@
   }
 }
 
-/* Medium desktops */
 @media screen and (min-width: 770px) and (max-width: 1025px) {
   .menu-bar {
     display: flex;
@@ -286,45 +275,4 @@
   .nav-text {
     font-size: 13px;
   }
-}
-/* Extra large desktops */
-/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
-  .menu-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    overflow-x: auto;
-    align-content: space-between;
-    justify-content: space-between;
-    gap: 10px;
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-
-  .menubar {
-    padding-top: 0px;
-    padding-left: 10px;
-
-  }
-
-  .menu-bar li {
-    margin: 5px 0;
-    flex: 1;
-    text-align: center;
-  }
-
-  .menu-bar li a {
-    display: flex;
-    padding: 5px;
-    font-size: 14px;
-  }
-
-  .menu-bar li a img {
-    width: 190%;
-    height: 75px;
-  }
-
-  .nav-text {
-    font-size: 25px;
-  }
-} */
+} 

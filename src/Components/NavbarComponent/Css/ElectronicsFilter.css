@@ -147,7 +147,6 @@
   font-size: 20px;
 }
 
-
 @media screen and (max-width :320px) {
   .product-filter {
     flex-direction: column;
@@ -197,7 +196,7 @@
     align-items: center;
   }
 }
-/* Mobile devices */
+
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .product-filter {
     flex-direction: column;
@@ -248,7 +247,7 @@
   }
 }
 
-/* Tablets */
+
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .product-filter {
     flex-direction: column;
@@ -299,7 +298,7 @@
   }
 }
 
-/* Small desktops */
+
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .product-filter {
     flex-direction: column;
@@ -350,7 +349,7 @@
   }
 }
 
-/* Medium desktops */
+
 @media screen and (min-width: 770px) and (max-width: 1025px) {
   .product-filter {
     flex-direction: row;
@@ -400,58 +399,6 @@
   .price-filter input{
     width: 60px;
   }
-}
+} 
 
 
-/* Extra large desktops */
-/* @media screen and (min-width: 1442px) and (max-width: 2561px) {
-  .product-filter {
-    flex-direction: row;
-  }
-
-  .brand-section {
-    justify-content: flex-start;
-    overflow-x: auto;
-    width: 75%;
-    padding-bottom: 5px;
-    
-  }
-
-  .brand-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .filter-option {
-    width: 12%;
-    height: auto;
-  }
-
-  .filter-text{
-    font-size: 18px;
-  }
-
-  .filter-section-price {
-    width: 25%;
-    align-self: center;
-  }
-
-  .filter-text {
-    max-width: 110px;
-    padding-bottom: 5px;
-  }
-
-  .filter-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .filter-section-brand {
-    flex-direction: column;
-    align-items: center;
-  }
-  .price-filter input{
-    width: 60px;
-  }
-} */

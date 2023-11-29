@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import API from '../API_Config';
 import './Css/NewCss.css';
 import ShareProduct from '../NavbarComponent/FilterComponents/ShareProduct';
+import API from '../API_Config';
 
 function SelectBrand() {
     const { brandName } = useParams();

@@ -14,7 +14,7 @@ import bigbusket from './Images/BigBasket_Logo.png';
 import blinkit from './Images/blinkit_logo.webp';
 import { Link } from 'react-router-dom';
 
-  
+
 const brands = [
   { id: 1, logo: amazon, brandName: "Amazon" },
   { id: 2, logo: flipkart, brandName: "Flipkart" },
@@ -35,24 +35,25 @@ const BrandBoard = () => {
     <div className="brand-board-main">
       <div className="brand-list-container">
         <h1 id="label-title">Brand Board</h1>
-        <div className="brand-list">
-          {brands.map((brand) => (
-            <Link
-              to={`/brand/${brand.brandName}`}
-              key={brand.id}
-              className="brand-link"
-            >
-              <div className='brand'>
+      </div>
+      <div className="brand-list">
+        {brands.map((brand) => (
+          <Link
+            to={`/brand/${brand.brandName}`}
+            key={brand.id}
+            className="brand-link"
+          >
+            <div className='brand'>
               <img
                 className="brandboard-brand-image"
                 src={brand.logo}
                 alt={`Brand ${brand.id}`}
               />
-              </div>
-            </Link>
-          ))}
-        </div>
+            </div>
+          </Link>
+        ))}
       </div>
+
     </div>
   );
 };

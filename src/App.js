@@ -5,6 +5,7 @@ import SelectBrand from './Components/HomeComponent/SelectBrand';
 import Footer from './Components/FooterComponent/Footer';
 import DealsDisplay from './Components/HomeComponent/DealsDisplay';
 import SelectProduct from './Components/HomeComponent/SelectProduct';
+import TitleSearch from './Components/HomeComponent/TitleSearch';
 
 const Home = lazy(() => import('./Components/HomeComponent/Home'));
 const Navbar = lazy(() => import('./Components/NavbarComponent/Navbar'));
@@ -22,6 +23,7 @@ const Coupon = lazy(() => import('./Components/NavbarComponent/Coupon'));
 const Sports = lazy(() => import('./Components/NavbarComponent/Sports'));
 const Baby = lazy(() => import('./Components/NavbarComponent/Baby'));
 const ServerDown =lazy(() => import('./Components/HomeComponent/ServerDown'));
+
 
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
             <Route path='/babyitems' element={<Baby />} />
             <Route path='/sports' element={<Sports />} />
             <Route path="/server-down" element={<ServerDown />} />
+            <Route path="/buyAt/:affurl" element={<TitleSearch />} />
           </Routes>
         </Suspense>
         <Footer />

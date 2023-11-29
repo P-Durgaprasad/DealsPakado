@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import CouponResult from './FilterComponents/CouponResult';
 import '../HomeComponent/Css/NewCss.css';
-import API from '../API_Config';
 import CouponFilter from './FilterComponents/CouponFilter';
+import API from '../API_Config';
 
 class Coupon extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedCategory: '', // Changed to selectedCategory
+      selectedCategory: '', 
       products: [],
       error: null,
     };

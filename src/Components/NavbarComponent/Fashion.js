@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import FilterResult from './FilterComponents/FilterResult';
 import '../HomeComponent/Css/NewCss.css';
-import API from '../API_Config';
 import FashionFilter from './FilterComponents/FashionFilter';
+import API from '../API_Config';
 
 class Fashion extends Component {
   constructor(props) {
