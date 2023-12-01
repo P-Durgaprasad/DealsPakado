@@ -3,6 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import './Css/ItemCarousel.css';
 import useSWR from 'swr';
 import API from '../API_Config';
+import { Col } from 'react-bootstrap';
 
 function ItemCarousel() {
   const [data, setData] = useState([]);
@@ -44,6 +45,7 @@ function ItemCarousel() {
   };
 
   return (
+    <Col sm={4}>
     <div className="carousel-container">
       {isLoading ? (
         <p>Loading...</p>
@@ -86,6 +88,7 @@ function ItemCarousel() {
         />
       )}
     </div>
+    </Col>
   );
 }
 

@@ -1,15 +1,16 @@
 .brand-board-main {
-  width: 30vw;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 25.5vh;
-  background-color: #f0f0f0;
-  padding:25px 10px;
+  /* height: 25.5vh; */
+  background-color: #fff;
+  padding:20px 20px;
   border: 1px solid black;
+ 
   
 }
 
@@ -36,14 +37,15 @@
 
 .brand-list {
   display: flex;
-  align-content: space-around;
+  /* align-content: space-around; */
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
 
@@ -53,9 +55,9 @@
   justify-content: center;
   background-color: #fff;
   border: 1px solid black;
-  padding:4px 2px;
-  width: 9vw;
-  max-height: 2rem;
+  padding:8px 8px;
+  width: 100%;
+  max-height: 4rem;
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -64,7 +66,7 @@
 
 .brand img {
   width: 8vw;
-  height: 4vh;
+  height: 8vh;
   object-fit: contain;
 }
 .brand:hover {

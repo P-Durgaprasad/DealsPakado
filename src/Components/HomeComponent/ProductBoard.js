@@ -13,6 +13,7 @@ import printer from './Images/printer-78-64.png';
 import beauty from './Images/beauty-care-2-64.png';
 import footware from './Images/footware.jpg';
 import { Link } from 'react-router-dom';
+import { Col } from 'react-bootstrap';
 
 
 
@@ -33,11 +34,12 @@ function ProductBoard() {
   ];
 
   return (
+    <Col sm={4}>
     <div className='productboardmain'>
       <div className='productlistcontainer'>
         <div id="productlabetitle">Product Board</div>
       </div>
-      <div className='productlist'>
+      <div className='productlist 1234'>
         {brands.map(brand => (
           <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
             <div className='product' >
@@ -49,6 +51,7 @@ function ProductBoard() {
       </div>
 
     </div>
+    </Col>
   );
 }
 

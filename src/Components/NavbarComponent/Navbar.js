@@ -16,7 +16,7 @@ import Sports from './Images/Sports.png';
 
 function Navbar() {
   return (
-    <nav className='menubar'>
+    <nav className='menubar menubarview  fluid '>
       <ul className="menu-bar">
         <li className="selected">
           <Link to="/deals">
