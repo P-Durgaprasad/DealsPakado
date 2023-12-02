@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { row } from 'react-bootstrap';
 import './Css/Navbar.css';
 
 import mobileIcon from './Images/mobile-icon.png';
@@ -16,7 +17,9 @@ import Sports from './Images/Sports.png';
 
 function Navbar() {
   return (
-    <nav className='menubar menubarview  fluid '>
+    
+    <nav className='menubar menubarview  container-fluid '>
+      <div class="row">
       <ul className="menu-bar">
         <li className="selected">
           <Link to="/deals">
@@ -85,7 +88,9 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+      </div>
     </nav>
+ 
   );
 }
 
