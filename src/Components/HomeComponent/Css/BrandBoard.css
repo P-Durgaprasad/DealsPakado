@@ -65,8 +65,8 @@
 
 
 .brand img {
-  width: 8vw;
-  height: 8vh;
+  width: 7vw;
+  height: 7vh;
   object-fit: contain;
 }
 .brand:hover {

@@ -18,8 +18,9 @@ import Sports from './Images/Sports.png';
 function Navbar() {
   return (
     
-    <nav className='menubar menubarview  container-fluid '>
-      <div class="row">
+    <nav className='container-fluid '>
+      <div class=" ">
+        <div className='menubar menubarview'>
       <ul className="menu-bar">
         <li className="selected">
           <Link to="/deals">
@@ -88,6 +89,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+       </div>
       </div>
     </nav>
  

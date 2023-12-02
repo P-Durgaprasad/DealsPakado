@@ -28,7 +28,8 @@
   justify-content: center; */
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 1vmax;
+  /* font-size: 0.9rem; */
 }
 
 .productlist {
@@ -84,6 +85,7 @@
   font-size: 1vmax;
   font-weight: bold;
   overflow: hidden;
+  margin-bottom: 0px;
   /* margin-left: 5px; */
 }
  
