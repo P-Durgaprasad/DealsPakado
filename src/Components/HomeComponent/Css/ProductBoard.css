@@ -14,22 +14,21 @@
 
 #productlabetitle {
   position: absolute;
-  top: -1rem;
+  top: -2vmax;
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ff1493;
+  background-color: #1c41d6;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 12px;
+  border-radius: 6px;
   /* display: flex;
   align-items: center;
   justify-content: center; */
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1vmax;
-  /* font-size: 0.9rem; */
+  font-size: 13px;
 }
 
 .productlist {

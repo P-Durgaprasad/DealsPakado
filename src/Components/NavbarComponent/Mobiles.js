@@ -75,7 +75,7 @@ class Mobiles extends Component {
     const { selectedBrand, products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid'>
         <MobileFilter
           selectedBrand={selectedBrand}
           onBrandChange={this.handleBrandChange}

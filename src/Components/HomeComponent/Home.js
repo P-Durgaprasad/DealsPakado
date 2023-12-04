@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
 
   return (
-    <div className="home-main-div">
+    <div className="home-main-div container-fluid">
       <div className="main ">
         <BrandBoard />
         <ItemCarousel />

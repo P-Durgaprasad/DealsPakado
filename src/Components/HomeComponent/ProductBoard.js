@@ -37,7 +37,7 @@ function ProductBoard() {
     <Col sm={4}>
     <div className='productboardmain'>
       <div className='productlistcontainer'>
-        <div id="productlabetitle">Product Board</div>
+        <h1 id="productlabetitle">Product Board</h1>
       </div>
       <div className='productlist 1234'>
         {brands.map(brand => (
