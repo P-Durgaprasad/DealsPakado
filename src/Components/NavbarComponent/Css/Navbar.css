@@ -2,6 +2,7 @@
   background-color: #ffffff;
   padding-bottom: 0.5vw;
   margin-top: 1vh;
+  padding: 10px 10px 15px 10px;
 }
 
 .menu-bar {
@@ -276,3 +277,7 @@
     font-size: 13px;
   }
 } 
+
+.menubarview{
+  
+}

@@ -13,6 +13,7 @@ import swiggy from './Images/Swiggy_logo.svg.png';
 import bigbusket from './Images/BigBasket_Logo.png';
 import blinkit from './Images/blinkit_logo.webp';
 import { Link } from 'react-router-dom';
+import { Col } from 'react-bootstrap';
 
 
 const brands = [
@@ -32,7 +33,8 @@ const brands = [
 
 const BrandBoard = () => {
   return (
-    <div className="brand-board-main">
+    <Col sm={4}>
+    <div className="brand-board-main sm={8}">
       <div className="brand-list-container">
         <h1 id="label-title">Brand Board</h1>
       </div>
@@ -41,7 +43,7 @@ const BrandBoard = () => {
           <Link
             to={`/brand/${brand.brandName}`}
             key={brand.id}
-            className="brand-link"
+            className="brand-link "
           >
             <div className='brand'>
               <img
@@ -55,6 +57,7 @@ const BrandBoard = () => {
       </div>
 
     </div>
+    </Col>
   );
 };
 

@@ -34,7 +34,7 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} dealspakado.com. All rights reserved.
             </div>
             <div className='social-media'>
-                <p className='follow-on'>Follow on</p>
+                {/* <p className='follow-on'>Follow on</p> */}
                 <JoinFacebook />
                 <JoinWhatsApp />
                 <JoinInsta />

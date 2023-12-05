@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div c>Loading...</div>}>
           <Header />
           <Navbar />
           <Routes>
