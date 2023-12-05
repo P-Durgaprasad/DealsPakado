@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import './Css/ItemCarousel.css';
-<<<<<<< HEAD
 // import useSWR from 'swr';
 // import API from '../API_Config';
-=======
-import useSWR from 'swr';
-import API from '../API_Config';
-import { Col } from 'react-bootstrap';
->>>>>>> 24ce747ef44a6c70b460bf58456e94284dfda89d
 
 function ItemCarousel() {
   const [data, setData] = useState([]);
