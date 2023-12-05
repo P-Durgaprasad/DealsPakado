@@ -7,10 +7,9 @@ const ShareProduct = ({ url, title ,imageUrl,price,MRP}) => {
   
   ✨ **Don't Miss Out!** Hurry! Limited Stock Available. ⌛
   
-  👀 Check out this amazing product: ${imageUrl}
+  👀 Check out this amazing product: ${encodeURIComponent(imageUrl)}"
   
   🛒 **Grab Yours Now!** Click here: http://dealspakado.com/buyAt/${encodeURIComponent(url)}`;
-  
 
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
