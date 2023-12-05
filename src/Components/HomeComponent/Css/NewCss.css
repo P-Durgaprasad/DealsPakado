@@ -23,15 +23,18 @@
   justify-content: space-between;
   height: 19.5em;
   max-width: 100%;
-  /* border: 1px solid #ccc; */
+  /* border: 1px solid #e0e0e0; */
   padding:25px 10px 10px 10px;
   background-color: #fff;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  transition: box-shadow .2s ease-in-out;
+  -webkit-filter: none!important;
+  filter: none!important;
 }
 
-.main-deal-card:hover{    box-shadow: 0 3px 16px 0 rgba(0,0,0,.11); transition: box-shadow .2s ease-in-out;}
+.main-deal-card:hover{    box-shadow: 0 3px 16px 0 rgba(0,0,0,.11); position: relative; z-index: 2; }
 
 .deal-card {
   width: 100%;
@@ -42,6 +45,8 @@
 .brandUrl {
   text-decoration: none;
 }
+
+.brandUrl:hover h1{ color: #1c41d6;}
 
 .deal-image-div {
   position: relative;
@@ -70,12 +75,14 @@
 
 .deal-title {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
   color: #333;
   display: block;
   display: -webkit-box;
   max-width: 100%;
-  height: 43px;
+  height: 52px;
   margin: 0 auto;
   /* font-size: 14px; */
   /* line-height: 1; */
@@ -115,7 +122,7 @@
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: #ff6600;
+  background-color: #1c41d6;
   border-radius: 50%;
   margin-right: 6px;
 }
@@ -203,7 +210,7 @@
 
 .show-now-link{}
 
-.whatsapp-share .btn-share{ padding: 0px; display: flex; width: 100%; flex-direction: row;}
+.whatsapp-share .btn-share{ padding: 10px; display: flex; width: 100%; flex-direction: row;}
 
 .whatsapp-share .btn-share p{ margin: 0px;}
 
@@ -326,7 +333,7 @@
   background-color: #38bf4a;
   color: white;
   transform: scale(1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .btn-share-image {
@@ -336,10 +343,10 @@
 }
 
 .btn-share-text {
-  text-shadow: var(--whatsapp-share-text-shadow);
-  font-size: 1.7vmin;
-  font-weight: bold;
-  font-family: sans-serif;
+  /* text-shadow: var(--whatsapp-share-text-shadow); */
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 

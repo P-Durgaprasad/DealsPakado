@@ -26,7 +26,7 @@ const ShareProduct = ({ url, title ,imageUrl,price,MRP}) => {
 
   return (
     <>
-    <button type="button" onClick={handleShare} className="btn btn-share">
+    <button type="button" onClick={handleShare} className=" btn-share">
     <img src={whatsapp} alt="Share" className="btn-share-image" />
     <p className="btn-share-text"> Share</p>
   </button>
