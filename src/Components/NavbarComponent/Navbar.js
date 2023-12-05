@@ -18,14 +18,11 @@ import Sports from './Images/Sports.png';
 function Navbar() {
   return (
     
-<<<<<<< HEAD
-    <nav className='menubar menubarview  container-fluid '>
-      <div class="row">
-=======
+
     <nav className='container-fluid '>
-      <div class=" ">
+  
         <div className='menubar menubarview'>
->>>>>>> 24ce747ef44a6c70b460bf58456e94284dfda89d
+
       <ul className="menu-bar">
         <li className="selected">
           <Link to="/deals">
@@ -94,10 +91,8 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-<<<<<<< HEAD
-=======
-       </div>
->>>>>>> 24ce747ef44a6c70b460bf58456e94284dfda89d
+      
+
       </div>
     </nav>
  

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Css/NewCss.css';
 import ShareProduct from '../NavbarComponent/FilterComponents/ShareProduct';
+import { Col } from 'react-bootstrap';
 // import API from '../API_Config';
 
 
@@ -259,6 +260,7 @@ function DealsDisplay() {
 
 
     return (
+        <div className='container-fluid ' style={{padding:'0px'}}>
         <div className='deals-container-main'>
             <div className="deals-container">
                 {isLoading ? (
@@ -268,6 +270,7 @@ function DealsDisplay() {
                         <p className="no-deals-div">Currently, No Deals Are available</p>
                     </div>
                 ) : (currentDeals.map((deal) => (
+                    <Col lg={2} md={2} sm={12}>
                     <div className='main-deal-card' key={deal.itemId}>
                         <div key={deal.itemId} className="deal-card">
                             <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">
@@ -324,6 +327,8 @@ function DealsDisplay() {
                             </div>
                         </div>
                     </div>
+                    </Col>
+
                 )))}
             </div>
             <div className="pagination-container">
@@ -351,6 +356,7 @@ function DealsDisplay() {
                     &#8250;
                 </button>
             </div>
+        </div>
         </div>
     );
 }
