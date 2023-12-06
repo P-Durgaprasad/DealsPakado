@@ -156,7 +156,7 @@
   }
 
   .brand-board-main {
-    width: 94%;
+    width: 100%;
     padding: 5px;
   }
 
@@ -167,8 +167,9 @@
   }
 
   .brand {
-    height: 25px;
+    /* height: 25px; */
     width: 100%;
+   
   }
 
   .brand:hover {
@@ -180,7 +181,7 @@
   #label-title {
     font-size: 12px;
     padding: 4px 8px;
-    top: -24px;
+    /* top: -24px; */
   }
 }
 
@@ -193,18 +194,19 @@
   }
 
   .brand-board-main {
-    width: 95%;
+    width: 100%;
    padding-left: 10px;
   }
 
   .brand-list {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 5px;
-    max-width: 95%;
+    max-width: 100%;
+    margin: 0px;
   }
 
   .brand {
-    height: 20px;
+    /* height: 20px; */
     width: 100%;
   }
 

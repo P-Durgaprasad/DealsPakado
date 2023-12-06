@@ -180,18 +180,19 @@
   }
 
   .productboardmain {
-    width: 94%;
+    width: 100%;
     padding: 5px;
   }
 
   .productlist {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 5px;
-    max-width: 95%;
+    max-width: 100%;
+    margin: 0px;
   }
 
   .product {
-    height: 25px;
+    /* height: 25px; */
     width: 100%;
     justify-content: flex-start;
   }
@@ -222,18 +223,19 @@
   }
 
   .productboardmain {
-    width: 95%;
-    padding-left: 10px;
+    width: 100%;
+    /* padding-left: 10px; */
   }
 
   .productlist {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 5px;
-    max-width: 95%;
+    max-width: 100%;
+    margin: 0px;
   }
 
   .product {
-    height: 25px;
+    /* height: 25px; */
     width: 100%;
     justify-content: flex-start;
   }

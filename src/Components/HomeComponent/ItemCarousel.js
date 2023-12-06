@@ -71,7 +71,7 @@ function ItemCarousel() {
   };
 
   return (
-    <Col sm={4}>
+    <Col lg={4} sm={12}>
     <div className="carousel-container">
       {isLoading ? (
         <p>Loading...</p>

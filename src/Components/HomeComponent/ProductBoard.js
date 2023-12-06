@@ -34,7 +34,7 @@ function ProductBoard() {
   ];
 
   return (
-    <Col sm={4}>
+    <Col lg={4} sm={12}>
     <div className='productboardmain'>
       <div className='productlistcontainer'>
         <h1 id="productlabetitle">Product Board</h1>
