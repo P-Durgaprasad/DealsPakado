@@ -260,7 +260,7 @@ function DealsDisplay() {
 
 
     return (
-        <div className='container-fluid ' style={{padding:'0px'}}>
+        <div className='container-fluid '>
         <div className='deals-container-main'>
             <div className="deals-container">
                 {isLoading ? (
