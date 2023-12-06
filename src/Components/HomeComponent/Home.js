@@ -11,9 +11,11 @@ function Home() {
   return (
     <div className="home-main-div container-fluid">
       <div className="main ">
-        <BrandBoard />
-        <ItemCarousel />
-        <ProductBoard />
+        <div className='row'>
+          <BrandBoard />
+          <ItemCarousel />
+          <ProductBoard />
+        </div>
       </div>    
         <DealsDisplay />
     </div>

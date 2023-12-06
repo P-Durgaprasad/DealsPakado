@@ -263,6 +263,7 @@ function DealsDisplay() {
         <div className='container-fluid '>
         <div className='deals-container-main'>
             <div className="deals-container">
+            <div className='row'>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : currentDeals.length === 0 ? (
@@ -270,7 +271,8 @@ function DealsDisplay() {
                         <p className="no-deals-div">Currently, No Deals Are available</p>
                     </div>
                 ) : (currentDeals.map((deal) => (
-                    <Col lg={2} md={2} sm={12}>
+                    
+                    <Col lg={2} md={2} sm={12} style={{marginBottom:'24px'}}>
                     <div className='main-deal-card' key={deal.itemId}>
                         <div key={deal.itemId} className="deal-card">
                             <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">
@@ -328,8 +330,9 @@ function DealsDisplay() {
                         </div>
                     </div>
                     </Col>
-
+                   
                 )))}
+                </div>
             </div>
             <div className="pagination-container">
                 <button

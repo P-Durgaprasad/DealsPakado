@@ -33,7 +33,7 @@ const brands = [
 
 const BrandBoard = () => {
   return (
-    <Col lg={4} sm={12}>
+    <Col lg={4} sm={12} >
     <div className="brand-board-main sm={8}">
       <div className="brand-list-container">
         <h1 id="label-title">Brand Board</h1>
