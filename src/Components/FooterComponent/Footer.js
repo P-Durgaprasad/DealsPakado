@@ -11,15 +11,15 @@ import JoinYouTube from '../HeaderComponent/JoinYoutube';
 const Footer = () => {
     return (
         <footer className="custom-footer bg-dark text-light py-4">
-            <div className="container d-flex justify-content-between align-items-center">
+            <div className="container-fluid d-flex justify-content-between align-items-center">
                 <div className="footer-logo">
                     <img src={logo} alt="Company Logo" className="logo-img" />
                     <div className='slogan'>
-                        <p className="logo-text mt-2 quick-search">Quick Search</p>
+                        <p className="logo-text quick-search">Quick Search</p>
                         <hr className="slogan-separator" />
-                        <p className="logo-text mt-2 time-saver">Time Saver</p>
+                        <p className="logo-text  time-saver">Time Saver</p>
                         <hr className="slogan-separator" />
-                        <p className="logo-text mt-2 money-saver">Money Saver</p>
+                        <p className="logo-text  money-saver">Money Saver</p>
                     </div>
                 </div>
                 <div className="footer-links">
