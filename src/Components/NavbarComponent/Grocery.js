@@ -75,7 +75,7 @@ class Grocery extends Component {
     const { selectedSubCategory,products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <GroceryFilter
         selectedSubCategory={selectedSubCategory}
         onPriceChange={this.handleApplyPriceFilter}

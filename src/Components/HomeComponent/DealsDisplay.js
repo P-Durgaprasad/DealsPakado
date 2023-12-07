@@ -263,7 +263,7 @@ function DealsDisplay() {
         <div className='container-fluid '>
         <div className='deals-container-main'>
             <div className="deals-container">
-            <div className=''>
+            <div className='row'>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : currentDeals.length === 0 ? (

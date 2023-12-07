@@ -23,6 +23,8 @@
   justify-content: space-between;
   height: 19.5em;
   max-width: 100%;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
   /* border: 1px solid #e0e0e0; */
   padding:25px 10px 10px 10px;
   background-color: #fff;
@@ -34,7 +36,7 @@
   filter: none!important;
 }
 
-.main-deal-card:hover{    box-shadow: 0 3px 16px 0 rgba(0,0,0,.11); position: relative; z-index: 2; }
+.main-deal-card:hover{ border: 1px solid #d3472b;    box-shadow: 0 3px 16px 0 rgba(0,0,0,.11); position: relative; z-index: 2; }
 
 .deal-card {
   width: 100%;
@@ -70,7 +72,7 @@
   height: 18%;
   line-height: 1.10;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .deal-title {
@@ -186,7 +188,7 @@
 
 .offer-label {
   font-size: 12px;
-  background-color: #1c41d6;
+  background-color: #da624a;
   color: #fff;
   font-weight: bold;
   padding: 6px 10px;
@@ -679,6 +681,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    min-height: 380px;
   }
 
 
@@ -1016,3 +1019,5 @@
     font-size: 12px;
   }
 }  
+
+.loading{ margin: 0px auto;}
