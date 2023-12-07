@@ -399,8 +399,7 @@
   transition: background-color 0.3s; 
   border: 2px solid #1c41d6;
 }
-
-
+ 
  @media screen and (max-width : 320px) {
   .deals-container {
     display: flex;
@@ -660,7 +659,6 @@
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-    /* margin: 8px; */
   }
   .deal-title{ height: 54px;}
  .deals-container-main{
@@ -674,7 +672,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* height: 295px; */
     width: 100%;
     border: 1px solid #ccc;
     padding: 15px;
@@ -790,7 +787,6 @@
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-    /* margin: 8px; */
   }
 
   .main-deal-card {
@@ -906,13 +902,11 @@
 @media screen and (min-width: 770px) and (max-width: 1025px) {
   .deals-container {
     display: flex;
-    /* gap: 15px; */
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-    /* margin: 5px 30px; */
   }
 
   .main-deal-card {
@@ -921,10 +915,8 @@
     justify-content: space-between;
     height: 295px;
     width: 100%;
-    /* border: 1px solid #ccc; */
     padding: 5px;
     background-color: #fff;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     position: relative;
     overflow: hidden;
   }
@@ -1023,4 +1015,4 @@
   .offer-label {
     font-size: 12px;
   }
-} 
+}  

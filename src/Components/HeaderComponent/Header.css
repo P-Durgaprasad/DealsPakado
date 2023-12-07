@@ -130,7 +130,7 @@
     transform: translateY(0);
   }
 }
-
+ 
 @media screen and (max-width :320px) {
    .header-fill-bar {
     padding: 10px 15px;
@@ -310,4 +310,4 @@
   .nav-options a::after {
     height: 1px;
   }
-} 
+}  
