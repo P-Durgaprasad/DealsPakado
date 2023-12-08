@@ -43,7 +43,7 @@ function ProductBoard() {
         {brands.map(brand => (
           <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
             <div className='product' >
-              <img src={brand.logo} alt={`Product ${brand.id}`} className='productlogo' />
+              <img src={brand.logo} alt={`Product ${brand.title}`} className='productlogo' />
               <p className='producttitle'>{brand.title}</p>
             </div>
           </Link>
