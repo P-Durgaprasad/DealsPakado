@@ -72,7 +72,7 @@ class Electronics extends Component {
     const { selectedSubCategory, products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <ElectronicsFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}

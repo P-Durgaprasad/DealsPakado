@@ -35,7 +35,7 @@ class Under99 extends Component {
   render() {
     const {products, error } = this.state;
     return (
-      <div>
+      <div className='container-fluid '>
         {error ? (
           <p>Server Down! please Try Again</p>
         ) : (

@@ -74,7 +74,7 @@ class Appliances extends Component {
     const { selectedSubCategory, products, error } = this.state;
 
     return (
-      <div className='1234'>
+      <div className='container-fluid '>
         <AppliancesFilter
          selectedSubCategory={selectedSubCategory}
          onPriceChange={this.handleApplyPriceFilter}

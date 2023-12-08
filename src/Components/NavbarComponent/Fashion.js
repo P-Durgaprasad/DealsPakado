@@ -74,7 +74,7 @@ class Fashion extends Component {
     const { selectedSubCategory, products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <FashionFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}

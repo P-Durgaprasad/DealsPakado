@@ -9,7 +9,8 @@
   /* height: 25.5vh; */
   background-color: #fff;
   padding:20px 20px;
-  border: 1px solid black;
+  border: 1px solid #d3472b;
+  border-radius: 0.25rem;
 }
 
 #productlabetitle {
@@ -18,7 +19,7 @@
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #1c41d6;
+  background-color: #d3472b;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -57,7 +58,7 @@
   max-height: 4rem;
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.25rem;
 }
 
 .product img {
@@ -181,7 +182,7 @@
 
   .productboardmain {
     width: 100%;
-    padding: 5px;
+    padding: 15px;
   }
 
   .productlist {

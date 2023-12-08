@@ -72,7 +72,7 @@ class Sports extends Component {
     const { selectedSubCategory, products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <SportsFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}

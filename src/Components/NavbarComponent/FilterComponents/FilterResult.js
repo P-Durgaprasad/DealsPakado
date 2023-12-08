@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../HomeComponent/Css/NewCss.css';
 import ShareProduct from './ShareProduct';
+import { Col } from 'react-bootstrap';
 
 const FilterResult = ({ products }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -47,12 +48,14 @@ const FilterResult = ({ products }) => {
   return (
     <div className='deals-container-main'>
       <div className="deals-container">
+      <div className='row ' style={{width:'100%'}}>
         {products.length === 0 ? (
           <div className='no-deals-container'>
           <p className="no-deals-div">Currently, No Deals Are available</p>
           </div>
         ) : (
           currentDeals.map((deal) => (
+            <Col lg={2} md={2} sm={12} style={{marginBottom:'24px'}}>
             <div className='main-deal-card'key={deal.itemId}>
               <div key={deal.itemId} className="deal-card">
                 <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">
@@ -109,8 +112,12 @@ const FilterResult = ({ products }) => {
                 </div>
               </div>
             </div>
+            </Col>
           ))
         )}
+      
+      
+      </div>
       </div>
       <div className="pagination-container">
         <button

@@ -57,7 +57,7 @@ class Coupon extends Component {
     const { selectedCategory, products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <CouponFilter
           selectedCategory={selectedCategory} // Changed to selectedCategory
           onCategoryChange={this.handleCategoryChange} // Changed to onCategoryChange

@@ -76,7 +76,7 @@ class Baby extends Component {
     const { selectedSubCategory,products, error } = this.state;
 
     return (
-      <div>
+      <div className='container-fluid '>
         <BabyFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}
