@@ -21,7 +21,7 @@
 
   .main {
     flex-direction: column;
-    padding-top: 5px; 
+    padding-top: 25px;
     justify-content: flex-start; 
     align-items: center;
   }

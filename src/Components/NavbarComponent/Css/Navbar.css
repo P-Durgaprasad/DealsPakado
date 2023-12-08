@@ -100,8 +100,9 @@
 
   .menu-bar li a {
     display: flex;
-    padding: 5px;
+    padding:0px 5px;
     font-size: 14px;
+    width: 70px;
   }
 
   .menu-bar li a img {
@@ -110,7 +111,7 @@
   }
 
   .nav-text {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
