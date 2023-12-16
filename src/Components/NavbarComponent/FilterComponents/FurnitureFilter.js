@@ -20,6 +20,7 @@ const FurnitureFilter = ({
 
   return (
     <div className="product-filter">
+      <div className='col-sm-12 col-lg-9 col-md-9'>
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
@@ -71,6 +72,8 @@ const FurnitureFilter = ({
           </div>
         </div>
       </div>
+      </div>
+      <div className='col-sm-12 col-lg-3 col-md-3'>
       <div className="filter-section-price">
         <label id='price-label'>Set Price Range:</label>
         <div className="price-filter">
@@ -92,6 +95,7 @@ const FurnitureFilter = ({
         </div>
         <a href='/furniture' className='clear-filter'>Clear filter</a>
       </div>
+     </div>
     </div>
   );
 };

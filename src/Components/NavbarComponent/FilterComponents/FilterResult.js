@@ -48,14 +48,14 @@ const FilterResult = ({ products }) => {
   return (
     <div className='deals-container-main'>
       <div className="deals-container">
-      <div className='row ' style={{width:'100%'}}>
+      <div className='row '>
         {products.length === 0 ? (
           <div className='no-deals-container'>
           <p className="no-deals-div">Currently, No Deals Are available</p>
           </div>
         ) : (
           currentDeals.map((deal) => (
-            <Col lg={2} md={2} sm={12} style={{marginBottom:'24px'}}>
+            <Col lg={2} md={3} sm={12} style={{marginBottom:'24px'}}>
             <div className='main-deal-card'key={deal.itemId}>
               <div key={deal.itemId} className="deal-card">
                 <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">
