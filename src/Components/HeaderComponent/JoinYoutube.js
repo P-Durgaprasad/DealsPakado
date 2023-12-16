@@ -3,19 +3,15 @@ import logo from '../FooterComponent/Images/YouTube_Logo.png';
 
 const JoinYouTube = () => {
   const [isDesktop, setIsDesktop] = useState(false);
-  const channelLink = "https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA";
+  const channelLink = "https://www.youtube.com/channel/UCAM-fJg-odtigo5sQeEDv7A";
 
   const handleButtonClick = () => {
     if (isDesktop) {
-      // Open the YouTube link in a new tab.
       window.open(channelLink, "_blank");
     } else {
-      // Check if the YouTube app is installed on the user's device.
       const isYouTubeInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
-
-      // If the YouTube app is installed, open it. Otherwise, open the YouTube link in the browser.
       if (isYouTubeInstalled) {
-        window.open(`youtube://channel/UCwfaAHy4zQUb2APNOGXUCCA`);
+        window.open(`https://www.youtube.com/channel/UCAM-fJg-odtigo5sQeEDv7A`);
       } else {
         window.open(channelLink, "_blank");
       }

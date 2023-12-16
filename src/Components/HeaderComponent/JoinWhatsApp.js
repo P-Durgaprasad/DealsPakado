@@ -7,13 +7,9 @@ const JoinWhatsApp = () => {
 
   const handleButtonClick = () => {
     if (isDesktop) {
-      // Open the WhatsApp link in a new tab.
       window.open(channelLink, "_blank");
     } else {
-      // Check if WhatsApp is installed on the user's device.
       const isWhatsAppInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
-
-      // If WhatsApp is installed, open it. Otherwise, open the WhatsApp link in the browser.
       if (isWhatsAppInstalled) {
         window.open(`whatsapp://wa.me/?text=${channelLink}`);
       } else {

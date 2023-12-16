@@ -7,15 +7,11 @@ const JoinTelegram = () => {
 
   const handleButtonClick = () => {
     if (isDesktop) {
-      // Open the Telegram link in a new tab.
       window.open(channelLink, "_blank");
     } else {
-      // Check if Telegram is installed on the user's device.
       const isTelegramInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
-
-      // If Telegram is installed, open it. Otherwise, open the Telegram link in the browser.
       if (isTelegramInstalled) {
-        window.open(`tg://resolve?domain=my_telegram_channel`);
+        window.open(`tg://resolve?domain=dealspakado`);
       } else {
         window.open(channelLink, "_blank");
       }

@@ -20,7 +20,7 @@ const BabyFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="All Appliance's" />
+            <img className="filter-image" src={all} alt="All Appliances" />
           </div>
           <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
             <span className="option">All Items</span>
@@ -29,7 +29,7 @@ const BabyFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'BabyDress' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('BabyDress')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Babydress} alt="all" />
+            <img className="filter-image" src={Babydress} alt="BabyDress" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'BabyDress' ? 'selected-text' : ''}`}>
             <span className="option">Clothing</span>
@@ -38,7 +38,7 @@ const BabyFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'diapers' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('diapers')}>
           <div className='brand-image'>
-            <img className="filter-image" src={diapers} alt="all" />
+            <img className="filter-image" src={diapers} alt="Diapers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'diapers' ? 'selected-text' : ''}`}>
             <span className="option">Diapers and Changing</span>

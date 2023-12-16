@@ -7,15 +7,11 @@ const JoinInsta = () => {
 
   const handleButtonClick = () => {
     if (isDesktop) {
-      // Open the Instagram link in a new tab.
       window.open(channelLink, "_blank");
     } else {
-      // Check if the Instagram app is installed on the user's device.
       const isInstagramInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
-
-      // If the Instagram app is installed, open it. Otherwise, open the Instagram link in the browser.
       if (isInstagramInstalled) {
-        window.open(`instagram://share?url=https://www.instagram.com/dealspakado`);
+        window.open(`instagram://user?username=dealspakado`);
       } else {
         window.open(channelLink, "_blank");
       }

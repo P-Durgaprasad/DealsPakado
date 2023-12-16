@@ -23,7 +23,7 @@ const AppliancesFilter = ({
             <div className='brand-section'>
                 <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={All} alt="All Appliance's" />
+                        <img className="filter-image" src={All} alt="All Appliances" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
                         <span className="option">All Appliance's</span>
@@ -32,7 +32,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'Refrigerators' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Refrigerators')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={Refrigerator} alt="Refrigerator's" />
+                        <img className="filter-image" src={Refrigerator} alt="Refrigerators" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'Refrigerators' ? 'selected-text' : ''}`}>
                         <span className="option">Refrigerator's</span>
@@ -41,7 +41,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'WashingMachines' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('WashingMachines')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={Washing} alt="Refrigerator's" />
+                        <img className="filter-image" src={Washing} alt="WashingMachines" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'WashingMachines' ? 'selected-text' : ''}`}>
                         <span className="option">Washing Machine's</span>
@@ -50,7 +50,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'Televisions' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Televisions')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={TV} alt="Televisions's" />
+                        <img className="filter-image" src={TV} alt="Televisions" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'Televisions' ? 'selected-text' : ''}`}>
                         <span className="option">TV's</span>
@@ -59,7 +59,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'AirConditioners' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('AirConditioners')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={Ac} alt="AirConditioner's" />
+                        <img className="filter-image" src={Ac} alt="AirConditioners" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'AirConditioners' ? 'selected-text' : ''}`}>
                         <span className="option">AC's</span>
@@ -68,7 +68,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'WaterPurifiers' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('WaterPurifiers')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={Water} alt="AirConditioner's" />
+                        <img className="filter-image" src={Water} alt="AirConditioners" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'WaterPurifiers' ? 'selected-text' : ''}`}>
                         <span className="option">WaterPurifier's</span>
@@ -77,7 +77,7 @@ const AppliancesFilter = ({
 
                 <div className={`filter-option ${selectedSubCategory === 'MicrowaveOvens' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('MicrowaveOvens')}>
                     <div className='brand-image'>
-                        <img className="filter-image" src={Microwave} alt="MicrowaveOven's" />
+                        <img className="filter-image" src={Microwave} alt="MicrowaveOvens" />
                     </div>
                     <div className={`filter-text ${selectedSubCategory === 'MicrowaveOvens' ? 'selected-text' : ''}`}>
                         <span className="option">MicrowaveOven's</span>

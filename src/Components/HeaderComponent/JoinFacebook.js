@@ -3,12 +3,11 @@ import logo from '../FooterComponent/Images/Facebook_logo_.png';
 
 const JoinFacebook = () => {
   const [isDesktop, setIsDesktop] = useState(false);
-  const channelLink = "fb://page/my_facebook_page";
-  const fallbackUrl = "https://facebook.com/my_facebook_page";
+  const channelLink = "fb://page/profile.php?id=61554018497801";
+  const fallbackUrl = "https://www.facebook.com/profile.php?id=61554018497801";
 
   const handleButtonClick = () => {
     if (isDesktop) {
-      // Open the Telegram link in a new tab.
       window.open(channelLink, "_blank");
     } else {
     const isFacebookInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;

@@ -49,7 +49,7 @@ const BrandBoard = () => {
               <img
                 className="brandboard-brand-image"
                 src={brand.logo}
-                alt={`Brand ${brand.id}`}
+                alt={`Brand ${brand.brandName}`}
               />
             </div>
           </Link>

@@ -16,7 +16,7 @@ const CouponFilter = ({
     <div className='brand-section'>
       <div className={`filter-option ${selectedCategory === '' ? 'selected' : ''}`} onClick={() => onCategoryChange('')}>
         <div className='brand-image'>
-          <img className="filter-image" src={all} alt="All Codes" />
+          <img className="filter-image" src={all} alt="All CouponCodes" />
         </div>
         <div className={`filter-text ${selectedCategory === '' ? 'selected-text' : ''}`}>
           <span className="option">All Coupon's</span>
@@ -25,7 +25,7 @@ const CouponFilter = ({
 
       <div className={`filter-option ${selectedCategory === 'FashionCode' ? 'selected' : ''}`} onClick={() => onCategoryChange('FashionCode')}>
         <div className='brand-image'>
-          <img className="filter-image" src={fashioncode} alt="FashionCode" />
+          <img className="filter-image" src={fashioncode} alt="Shop women's fashion with exclusive coupon codes" />
         </div>
         <div className={`filter-text ${selectedCategory === 'FashionCode' ? 'selected-text' : ''}`}>
           <span className="option">Fashion</span>

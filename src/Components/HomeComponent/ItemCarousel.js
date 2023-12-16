@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import './Css/ItemCarousel.css';
-import { row } from 'react-bootstrap';
+// import { row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import useSWR from 'swr';
 import API from '../API_Config';

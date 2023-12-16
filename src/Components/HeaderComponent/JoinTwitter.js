@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../FooterComponent/Images/X_logo.png';
 
 const JoinTwitter = () => {
-  const channelLink = "https://x.com/PrasadPenumaka_?t=SQZsR4YYiDD_AvP6ZjrJVA&s=08";
+  const channelLink = "https://twitter.com/dealspakado";
 
   const handleTwitterButtonClick = () => {
     window.open(channelLink, "_blank");
