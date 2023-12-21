@@ -16,7 +16,7 @@
 
 @media screen and (max-width : 320px) {
   .home-main-div {
-    padding-top: 15px; 
+    /* padding-top: 15px;  */
   }
 
   .main {

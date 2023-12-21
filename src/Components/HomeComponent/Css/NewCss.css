@@ -419,11 +419,10 @@
     gap: 0px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 8px;
-    width: 97%;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
   }
 
   .main-deal-card {
