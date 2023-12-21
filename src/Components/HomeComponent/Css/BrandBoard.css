@@ -90,7 +90,8 @@
   }
 
   .brand-list {
-    gap: 5px;
+    gap: 1px;
+    justify-content: center;
   }
 
   .brand {
