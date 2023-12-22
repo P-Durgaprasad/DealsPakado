@@ -124,7 +124,7 @@
     overflow-x: auto;
     align-content: space-between;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     padding-left: inherit;
     padding-right: inherit;
   }
@@ -132,7 +132,6 @@
   .menubar {
     padding-top: 0px;
     padding-left: 10px;
-
   }
 
   .menu-bar li {
@@ -142,18 +141,16 @@
   }
 
   .menu-bar li a {
-    display: flex;
     padding: 5px;
     font-size: 14px;
   }
 
   .menu-bar li a img {
     width: 190%;
-    height: 45px;
   }
 
   .nav-text {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 

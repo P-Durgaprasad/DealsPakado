@@ -107,7 +107,10 @@
 .price-filter {
   display: flex;
   align-items: center;
-  justify-content: space between;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .price-filter input {
@@ -158,6 +161,8 @@
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
+    padding: 10px 10px;
+    margin-top: 2px;
   }
 
   .brand-section {
@@ -184,12 +189,13 @@
   .filter-section-price {
     width: 95%;
     border-top: 2px solid #ff6600;
-    padding: 10px;
+    padding: 10px 0px;
     align-self: center;
   }
 
   .filter-text {
     max-width: 70px;
+    text-align: center;
   }
 
   .filter-section {
@@ -202,12 +208,34 @@
     flex-direction: column;
     align-items: center;
   }
+
+  #price-label{
+    font-size: small;
+    margin-bottom: 5px;
+  }
+
+  .clear-filter{
+    font-size: small;
+    padding: 5px;
+  }
+  .price-filter{
+    width: 100%;
+  }
+
+  .price-filter input{
+    width: 13vh;
+  }
+
+  .price-filter input ::-ms-input-placeholder{
+    font-size: 2px;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
+    margin-top: 0px;
   }
 
   .brand-section {
@@ -228,7 +256,9 @@
   }
 
   .filter-text{
-    font-size: 10px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 70px;
   }
 
   .filter-section-price {
@@ -236,10 +266,6 @@
     border-top: 2px solid #ff6600;
     padding: 10px;
     align-self: center;
-  }
-
-  .filter-text {
-    max-width: 70px;
   }
 
   .filter-section {
