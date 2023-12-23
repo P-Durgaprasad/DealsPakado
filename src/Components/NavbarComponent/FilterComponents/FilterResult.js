@@ -56,7 +56,7 @@ const FilterResult = ({ products }) => {
             </div>
           ) : (
             currentDeals.map((deal) => (
-              <Col key={deal.itemId} xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} xxxl={3} style={{ margin: '5px 0' }}>
+              <Col key={deal.itemId} xs={12} sm={12} md={4} lg={4} xl={4} xxl={3} xxxl={3} style={{ margin: '5px 0' }}>
                 <div className='main-deal-card' key={deal.itemId}>
                   <div key={deal.itemId} className="deal-card">
                     <a href={deal.affiliateLink} className='brandUrl' target="_blank" rel="noopener noreferrer">

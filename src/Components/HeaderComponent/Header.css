@@ -239,16 +239,16 @@
 
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .header-fill-bar {
-    padding: 10px 25px;
+    padding: 20px 25px;
   }
 
   .logo {
-    height: 25px;
+    height: 35px;
   }
 
   .logo img {
     width: -webkit-fill-available;
-    height: 25px;
+    height: 35px;
   }
 
   .nav-options ul {
@@ -259,7 +259,7 @@
 
   .nav-options a {
     padding: 3px;
-    font-size: 12px;
+    font-size: small;
   }
 
   .selected a::before,

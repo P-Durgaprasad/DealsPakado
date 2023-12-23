@@ -189,7 +189,7 @@
   }
 
   .nav-text {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -201,7 +201,7 @@
     overflow-x: auto;
     align-content: space-between;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     padding-left: inherit;
     padding-right: inherit;
   }
@@ -226,7 +226,7 @@
   }
 
   .nav-text {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -270,7 +270,3 @@
     font-size: 13px;
   }
 } 
-
-.menubarview{
-  
-}

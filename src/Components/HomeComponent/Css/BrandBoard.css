@@ -1,20 +1,17 @@
 .brand-board-main {
   width: 100%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  /* / height: 25.5vh; / */
   background-color: #fff;
   padding:20px 20px;
   border: 1px solid #d3472b;
   border-radius: 0.25rem;
- 
-  
 }
-
 
 #label-title {
   position: absolute;
@@ -31,12 +28,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 13px;
- 
 }
 
 .brand-list {
   display: flex;
-  align-content: space-around; 
+  align-content: center; 
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -46,7 +42,6 @@
   flex-wrap: wrap;
   gap: 8px;
 }
-
 
 .brand {
   display: flex;
@@ -62,14 +57,10 @@
   border-radius: 0.25rem;
 }
 
-
 .brand img {
-  /* width: 5vw; */
-  /* width: 7vw; */
-  /* height: 7vh; */
   object-fit: contain;
-  width:60px ;
-  height:40px ;
+  width:80px ;
+  height:55px ;
 }
 .brand:hover {
   transform: translateY(-5px);
@@ -91,7 +82,6 @@
 
   .brand-list {
     gap: 1px;
-    justify-content: center;
   }
 
   .brand {
@@ -124,7 +114,6 @@
   }
 
   .brand-board-main {
-    width: 100%;
     padding: 10px 10px;
   }
   .brand img {
@@ -133,9 +122,7 @@
   }
 
   .brand-list {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 5px;
-    max-width: 95%;
   }
 
   .brand {
@@ -173,9 +160,7 @@
   }
 
   .brand-list {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 5px;
-    max-width: 95%;
   }
 
   .brand {
@@ -212,9 +197,7 @@
   }
 
   .brand-list {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 5px;
-    max-width: 95%;
   }
 
   .brand {

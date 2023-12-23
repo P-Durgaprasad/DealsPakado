@@ -501,7 +501,6 @@
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .deals-container {
     gap: 0px;
-    justify-content: flex-start;
     margin: 8px;
     padding: 0px;
   }
