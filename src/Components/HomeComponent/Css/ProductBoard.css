@@ -143,7 +143,6 @@
     padding: 10px;
     height: 29.85vh; 
   }
-  
 
   .productlist {
     gap: 2px;
@@ -151,6 +150,7 @@
   }
   .producttitle{
     width: 100%;
+    font-size: 10px;
   }
   .product {
     height: 6vmax;
@@ -172,52 +172,45 @@
     padding: 4px 8px;
     top: -24px;
   }
-
-  .producttitle {
-    font-size: 10px;
-  }
 }
 
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .productlistcontainer {
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .productboardmain {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
+    height: 29.85vh; 
   }
-
+  
   .productlist {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 5px;
-    max-width: 100%;
-    margin: 0px;
+    gap: 2px;
+    justify-content: center;
   }
-
-  .product {
-
+  .producttitle{
     width: 100%;
-    justify-content: flex-start;
+    font-size: 12px;
   }
-
+  .product {
+    height: 6vmax;
+    width: 26vmin;
+  }
+  .product img {
+    height: 30px;
+    padding: 0px 1px;
+  }
   .product:hover {
     transform: none;
     border-color: #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-
   #productlabetitle {
     font-size: 12px;
     padding: 4px 8px;
-    top: -16px;
-  }
-
-  .producttitle {
-    font-size: 10px;
+    top: -24px;
   }
 }
 
@@ -225,24 +218,29 @@
   .productlistcontainer {
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .productboardmain {
     width: 100%;
+    padding: 10px;
+    height: 29.85vh; 
   }
-
+  
   .productlist {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 5px;
-    max-width: 100%;
-    margin: 0px;
+    gap: 2px;
+    justify-content: center;
   }
-
-  .product {
+  .producttitle{
     width: 100%;
-    justify-content: flex-start;
+    font-size: 16px;
+  }
+  .product {
+    height: 6vmax;
+    width: 26vmin;
+  }
+  .product img {
+    height: 40px;
+    padding: 0px 1px;
   }
 
   .product:hover {
@@ -254,11 +252,7 @@
   #productlabetitle {
     font-size: 12px;
     padding: 4px 8px;
-    top: -16px;
-  }
-
-  .producttitle {
-    font-size: 10px;
+    top: -24px;
   }
 }
 
@@ -266,25 +260,29 @@
   .productlistcontainer {
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .productboardmain {
-    width: 30%;
-    padding-left: 1px;
-  }
-
-  .productlist {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 5px;
-    max-width: 95%;
-  }
-
-  .product {
-    height: 20px;
     width: 100%;
-    justify-content: flex-start;
+    padding: 10px;
+    height: 29.85vh; 
+  }
+  
+  .productlist {
+    gap: 2px;
+    justify-content: center;
+  }
+  .producttitle{
+    width: 100%;
+    font-size: 10px;
+  }
+  .product {
+    height: 6vmax;
+    width: 26vmin;
+  }
+  .product img {
+    height: 30px;
+    padding: 0px 1px;
   }
 
   .product:hover {
@@ -296,10 +294,6 @@
   #productlabetitle {
     font-size: 12px;
     padding: 4px 8px;
-    top: -16px;
-  }
-
-  .producttitle {
-    font-size: 10px;
+    top: -24px;
   }
 } 

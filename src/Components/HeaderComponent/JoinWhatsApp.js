@@ -1,5 +1,5 @@
 import React, { useState,useEffect  } from "react";
-import logo from './whatsapp.png';
+import logo from './whatsapp-footer.png';
 
 const JoinWhatsApp = () => {
   const [isDesktop, setIsDesktop] = useState(false);

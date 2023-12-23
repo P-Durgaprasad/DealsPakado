@@ -161,7 +161,7 @@
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
-    padding: 10px 10px;
+    padding: 10px 5px 0px 5px;
     margin-top: 2px;
   }
 
@@ -187,9 +187,7 @@
   }
 
   .filter-section-price {
-    width: 95%;
     border-top: 2px solid #ff6600;
-    padding: 10px 0px;
     align-self: center;
   }
 
@@ -224,10 +222,12 @@
 
   .price-filter input{
     width: 13vh;
+    height: 30px;
+    font-size:small ;
   }
 
-  .price-filter input ::-ms-input-placeholder{
-    font-size: 2px;
+  .price-filter button{
+    font-size: small;
   }
 }
 
@@ -235,7 +235,8 @@
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
-    margin-top: 0px;
+    padding: 10px 0px 0px 0px;
+    margin-top: 2px;
   }
 
   .brand-section {
@@ -246,7 +247,7 @@
   }
 
   .brand-image {
-    width: 60px;
+    width: 70px;
     height: 60px;
   }
 
@@ -255,16 +256,14 @@
     height: auto;
   }
 
-  .filter-text{
-    text-align: center;
-    font-size: 12px;
-    max-width: 70px;
+  .price-filter input{
+    width: 13vh;
+    height: 30px;
+    font-size:small ;
   }
 
   .filter-section-price {
-    width: 95%;
     border-top: 2px solid #ff6600;
-    padding: 10px;
     align-self: center;
   }
 
@@ -277,6 +276,21 @@
   .filter-section-brand {
     flex-direction: column;
     align-items: center;
+  }
+  .brand-image img{
+    width: 100%;
+    height: 100%;
+  }
+  #price-label{
+    font-size: small;
+  }
+
+  .filter-text{
+    max-width: 75px;
+    text-align: center;
+  }
+  .price-filter button{
+    font-size: small;
   }
 }
 
@@ -285,6 +299,8 @@
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
+    padding: 10px 0px 0px 0px;
+    margin-top: 2px;
   }
 
   .brand-section {
@@ -295,7 +311,7 @@
   }
 
   .brand-image {
-    width: 60px;
+    width: 70px;
     height: 60px;
   }
 
@@ -304,19 +320,15 @@
     height: auto;
   }
 
-  .filter-text{
-    font-size: 10px;
+  .price-filter input{
+    width: 13vh;
+    height: 30px;
+    font-size:small ;
   }
 
   .filter-section-price {
-    width: 95%;
     border-top: 2px solid #ff6600;
-    padding: 10px;
     align-self: center;
-  }
-
-  .filter-text {
-    max-width: 70px;
   }
 
   .filter-section {
@@ -328,6 +340,21 @@
   .filter-section-brand {
     flex-direction: column;
     align-items: center;
+  }
+  .brand-image img{
+    width: 100%;
+    height: 100%;
+  }
+  #price-label{
+    font-size: small;
+  }
+
+  .filter-text{
+    max-width: 75px;
+    text-align: center;
+  }
+  .price-filter button{
+    font-size: small;
   }
 }
 
