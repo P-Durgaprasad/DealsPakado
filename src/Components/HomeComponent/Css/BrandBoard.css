@@ -212,9 +212,9 @@
   }
 
   #label-title {
-    font-size: 18px;
+    font-size: 15px;
     padding: 4px 8px;
-    top: -32px;
+    top: -30px;
   }
 }
 
@@ -223,24 +223,24 @@
   .brand-list-container {
     width: 100%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .brand-board-main {
-    width: 30%;
-   padding-left: 10px;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .brand img {
+    width: 20vw;
+    height: 5vh;
   }
 
   .brand-list {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 5px;
-    max-width: 95%;
   }
 
   .brand {
-    height: 20px;
-    width: 100%;
+    height: 6vmax;
+    width: 26vmin;
   }
 
   .brand:hover {
@@ -250,8 +250,8 @@
   }
 
   #label-title {
-    font-size: 12px;
+    font-size: 15px;
     padding: 4px 8px;
-    top: -24px;
+    top: -30px;
   }
 } 

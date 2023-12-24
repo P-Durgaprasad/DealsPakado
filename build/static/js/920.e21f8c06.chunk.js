@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkdealpakado=self.webpackChunkdealpakado||[]).push([[920],{8920:(e,a,r)=>{r.r(a),r.d(a,{default:()=>n});r(9867);var l=r(2834);const n=function(){return(0,l.jsxs)("div",{children:[(0,l.jsx)("h2",{children:"Server Down"}),(0,l.jsx)("p",{children:"We apologize, but the server is currently unavailable. Please try again later."})]})}}}]);
-//# sourceMappingURL=920.e21f8c06.chunk.js.map
