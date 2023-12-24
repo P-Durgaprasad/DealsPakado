@@ -723,13 +723,8 @@
 
 @media screen and (min-width: 427px) and (max-width: 769px) {
   .deals-container {
-    display: flex;
     gap: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: flex-start;
-    align-items: center;
   }
 
   .main-deal-card {

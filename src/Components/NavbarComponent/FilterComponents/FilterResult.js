@@ -49,13 +49,14 @@ const FilterResult = ({ products }) => {
   return (
     <div className='deals-container-main'>
       <div className="deals-container">
-      <Row xs={1} sm={1} md={2} lg={4} xl={6} xxl={8} xxxl={3} style={{ width: '100%', margin: '0 auto' }}>
+      <Row xs={1} sm={1} md={2} lg={2} xl={3} xxl={4} xxxl={3} className="row-container">
           {products.length === 0 ? (
             <div className='no-deals-container'>
               <p className="no-deals-div">Currently, No Deals Are available</p>
             </div>
           ) : (
             currentDeals.map((deal) => (
+             
               <Col key={deal.itemId} xs={12} sm={12} md={4} lg={4} xl={4} xxl={3} xxxl={3} style={{ margin: '5px 0' }}>
                 <div className='main-deal-card' key={deal.itemId}>
                   <div key={deal.itemId} className="deal-card">
@@ -114,9 +115,10 @@ const FilterResult = ({ products }) => {
                   </div>
                 </div>
               </Col>
+              
             ))
           )}
-        </Row>
+          </Row>
       </div>
       <div className="pagination-container">
         <button
