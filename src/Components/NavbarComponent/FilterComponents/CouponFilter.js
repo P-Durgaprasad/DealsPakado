@@ -9,8 +9,8 @@ import food from '../Images/foodCodes.png';
 import movie from '../Images/MovieCodes.png';
 
 const CouponFilter = ({
-  selectedCategory, // Change selectedSubCategory to selectedCategory
-  onCategoryChange, // Change onSubCategoryChange to onCategoryChange
+  selectedCategory, 
+  onCategoryChange,
 }) => (
   <div className="product-filter">
     <div className='brand-section'>

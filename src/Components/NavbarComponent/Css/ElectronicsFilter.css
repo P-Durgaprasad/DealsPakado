@@ -363,6 +363,8 @@
   .product-filter {
     flex-direction: column;
     border-bottom: 2px solid #ff6600;
+    padding: 10px 0px 0px 0px;
+    margin-top: 2px;
   }
 
   .brand-section {

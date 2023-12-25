@@ -49,7 +49,7 @@ const FilterResult = ({ products }) => {
   return (
     <div className='deals-container-main'>
       <div className="deals-container">
-      <Row xs={1} sm={1} md={2} lg={2} xl={3} xxl={4} xxxl={3} style={{ width: '100%' }} className="row-container">
+      <Row xs={1} sm={2} md={3} lg={4} xl={5} xxl={6} xxxl={8} style={{ width: '100%' }} className="row-container">
 
           {products.length === 0 ? (
             <div className='no-deals-container'>
@@ -57,7 +57,7 @@ const FilterResult = ({ products }) => {
             </div>
           ) : (
             currentDeals.map((deal) => (
-              <Col key={deal.itemId} xs={12} sm={12} md={4} lg={4} xl={4} xxl={3} xxxl={3} style={{ margin: '5px 0' }}>
+              <Col key={deal.itemId} xs={12} sm={6} md={4} lg={4} xl={4} xxl={2} xxxl={2} style={{ margin: '5px 0' }}>
                 <Card className='main-deal-card' key={deal.itemId}>
                   <Card.Body>
                     <div className='deal-body-div'>

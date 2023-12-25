@@ -12,7 +12,7 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 0px;
 }
 
@@ -170,7 +170,7 @@
 
 .regular-price {
   text-decoration: line-through;
-  color: #000;
+  color: #6d6b6b;
   font-size: 14px;
   font-weight: 900;
   text-align: left;
@@ -231,7 +231,6 @@
   width: 80px;
   font-size: 12px;
   border: 1px solid;
-
 }
 
 .shop-now-button:hover {
@@ -394,7 +393,7 @@
   border: 2px solid #1c41d6;
 }
 
-/* 
+/*  
 @media screen and (max-width : 320px) {
   .deals-container {
     gap: 0px;
@@ -406,8 +405,9 @@
   }
   .main-deal-card {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: scroll;
   }
+
   .shop-now-button {
     display: inline-block;
     background-color: white;
@@ -489,8 +489,8 @@
   .pagination-button{
     font-size: 0.7rem;
   }
-} */
-
+}  */
+/* 
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .deals-container {
     gap: 0px;
@@ -545,10 +545,6 @@
     height: auto;
   }
 
-  /* .deal-image-div {
-    height: 60%;
-    width: 100%;
-  } */
   .deal-title-div {
     height: auto;
     line-height: 1.15;
@@ -626,7 +622,6 @@
     border: 1px solid #ccc;
   }
 
-
   .shop-now-button {
     display: inline-block;
     background-color: white;
@@ -669,10 +664,6 @@
     height: auto;
   }
 
-  /* .deal-image-div {
-    height: 60%;
-    width: 100%;
-  } */
   .deal-title-div {
     height: auto;
     line-height: 1.15;
@@ -757,7 +748,6 @@
     overflow: hidden;
   }
 
-
   .shop-now-button {
     display: inline-block;
     background-color: white;
@@ -775,7 +765,6 @@
     color: white;
   }
 
-
   .shopnow {
     width: 100%;
     height: 31px;
@@ -789,12 +778,6 @@
     width: 100%;
     height: auto;
   }
-
-
-  /* .deal-image-div {
-    height: 60%;
-    width: 100%;
-  } */
 
   .deal-title-div {
     height: 20%;
@@ -876,7 +859,6 @@
     overflow: hidden;
   }
 
-
   .shop-now-button {
     display: inline-block;
     background-color: white;
@@ -894,7 +876,6 @@
     color: white;
   }
 
-
   .shopnow {
     width: 100%;
     height: 31px;
@@ -909,20 +890,10 @@
     height: auto;
   }
 
-
-  /* .deal-image-div {
-    height: 60%;
-    width: 100%;
-  } */
-
   .deal-title-div {
-    /* height: 20%; */
     line-height: 1.15;
   }
 
-  .deal-title {
-    /* font-size: 0.9rem; */
-  }
 
   .brandName-info {
     height: 15%;
@@ -977,4 +948,4 @@
 
 .loading {
   margin: 0px auto;
-}
+} */
