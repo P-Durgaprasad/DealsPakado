@@ -5,16 +5,13 @@ import FashionFilter from './FilterComponents/FashionFilter';
 import API from '../API_Config';
 
 class Fashion extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedSubCategory: '',
-      minPrice: 0,
-      maxPrice: 200000,
-      products: [],
-      error: null,
-    };
-  }
+  state = {
+    selectedSubCategory: '',
+    minPrice: 0,
+    maxPrice: 200000,
+    products: [],
+    isLoading: true,
+  };
 
   componentDidMount() {
     this.fetchProducts();
@@ -24,7 +21,6 @@ class Fashion extends Component {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=fashion`;
 
-   
     const filterParams = [];
 
     if (selectedSubCategory) {
@@ -43,6 +39,8 @@ class Fashion extends Component {
       apiUrl += `&${filterParams.join('&')}`;
     }
 
+    this.setState({ isLoading: true }); // Set isLoading to true before fetching data
+
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {
@@ -51,37 +49,33 @@ class Fashion extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false });
       })
-      .catch((error) => {
-        this.setState({  });
+      .catch(() => {
+        this.setState({ isLoading: false });
       });
   };
 
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
 
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
   render() {
-    const { selectedSubCategory, products, error } = this.state;
+    const { selectedSubCategory, products, isLoading } = this.state;
 
     return (
-      <div className='container-fluid '>
+      <div className='container-fluid'>
         <FashionFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}
           onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
-          <p>Error fetching products: {error.message}</p>
+        {isLoading ? (
+          <p>Loading...</p>
         ) : (
           <FilterResult products={products} />
         )}

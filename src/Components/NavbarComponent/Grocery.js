@@ -3,6 +3,7 @@ import GroceryFilter from './FilterComponents/GroceryFilter';
 import FilterResult from './FilterComponents/FilterResult';
 import '../HomeComponent/Css/NewCss.css';
 import API from '../API_Config';
+
 class Grocery extends Component {
   constructor(props) {
     super(props);
@@ -11,11 +12,11 @@ class Grocery extends Component {
       minPrice: 0,
       maxPrice: 200000,
       products: [],
-      error: null,
+      isLoading: true,
     };
   }
 
-  componentDidMount() {   
+  componentDidMount() {
     this.fetchProducts();
   }
 
@@ -37,7 +38,6 @@ class Grocery extends Component {
     if (maxPrice <= 200000) {
       filterParams.push(`maxPrice=${maxPrice}`);
     }
-    
 
     if (filterParams.length > 0) {
       apiUrl += `&${filterParams.join('&')}`;
@@ -51,38 +51,33 @@ class Grocery extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false });
       })
-      .catch((error) => {
-        this.setState({  });
+      .catch(() => {
+        this.setState({ isLoading: false });
       });
   };
 
-
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
 
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
   render() {
-    const { selectedSubCategory,products, error } = this.state;
+    const { selectedSubCategory, products, isLoading } = this.state;
 
     return (
-      <div className='container-fluid '>
+      <div className='container-fluid'>
         <GroceryFilter
-        selectedSubCategory={selectedSubCategory}
-        onPriceChange={this.handleApplyPriceFilter}
-        onSubCategoryChange={this.handleSubCategoryChange}
+          selectedSubCategory={selectedSubCategory}
+          onPriceChange={this.handleApplyPriceFilter}
+          onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
-          <p>Error fetching products: {error.message}</p>
+        {isLoading ? (
+          <p>Loading...</p>
         ) : (
           <FilterResult products={products} />
         )}

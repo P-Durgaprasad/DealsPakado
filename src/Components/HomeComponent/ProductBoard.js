@@ -31,6 +31,7 @@ function ProductBoard() {
     { id: 10, logo: printer, title: 'Printer', value: 'printer' },
     { id: 11, logo: beauty, title: 'Beauty', value: 'Beauty' },
     { id: 12, logo: footware, title: 'Footware', value: 'Footware' }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   ];
 
   return (

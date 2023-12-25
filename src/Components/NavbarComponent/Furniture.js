@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ElectronicsFilter from './FilterComponents/FurnitureFilter';
+import FurnitureFilter from './FilterComponents/FurnitureFilter'; // Corrected import
 import FilterResult from './FilterComponents/FilterResult';
 import '../HomeComponent/Css/NewCss.css';
 import API from '../API_Config';
@@ -12,15 +12,14 @@ class Furniture extends Component {
       minPrice: 0,
       maxPrice: 200000,
       products: [],
-      error: null,
+      isLoading: true,
     };
   }
 
-  componentDidMount() { 
+  componentDidMount() {
     this.fetchProducts();
   }
 
-  // Function to fetch products based on filters
   fetchProducts = () => {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=HomeFurniture`;
@@ -39,10 +38,11 @@ class Furniture extends Component {
     if (maxPrice <= 200000) {
       filterParams.push(`maxPrice=${maxPrice}`);
     }
-    
+
     if (filterParams.length > 0) {
       apiUrl += `&${filterParams.join('&')}`;
     }
+
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {
@@ -51,39 +51,34 @@ class Furniture extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false });
       })
-      .catch((error) => {
-        this.setState({  });
+      .catch(() => {
+        this.setState({ isLoading: false });
       });
   };
 
-
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
 
   // Handle price filter change
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
   render() {
-    const { selectedSubCategory,products, error } = this.state;
+    const { selectedSubCategory, products, isLoading } = this.state;
 
     return (
-      <div className='container-fluid '>
-        <ElectronicsFilter
+      <div className='container-fluid'>
+        <FurnitureFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}
           onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
-          <p>Error fetching products: {error.message}</p>
+        {isLoading ? (
+          <p>Loading...</p>
         ) : (
           <FilterResult products={products} />
         )}

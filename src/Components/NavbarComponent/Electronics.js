@@ -1,22 +1,19 @@
+// Electronics.js
 import React, { Component } from 'react';
 import ElectronicsFilter from './FilterComponents/ElectronicsFilter';
 import FilterResult from './FilterComponents/FilterResult';
-import '../HomeComponent/Css/NewCss.css';
 import API from '../API_Config';
 
 class Electronics extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedSubCategory: '',
-      minPrice: 0,
-      maxPrice: 200000,
-      products: [],
-      error: null,
-    };
-  }
+  state = {
+    selectedSubCategory: '',
+    minPrice: 0,
+    maxPrice: 200000,
+    products: [],
+    isLoading: true,
+  };
 
-  componentDidMount() { 
+  componentDidMount() {
     this.fetchProducts();
   }
 
@@ -37,9 +34,12 @@ class Electronics extends Component {
     if (maxPrice <= 200000) {
       filterParams.push(`maxPrice=${maxPrice}`);
     }
+
     if (filterParams.length > 0) {
       apiUrl += `&${filterParams.join('&')}`;
     }
+
+    this.setState({ isLoading: true }); 
 
     fetch(apiUrl)
       .then((response) => {
@@ -49,37 +49,33 @@ class Electronics extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false, error: null });
       })
       .catch((error) => {
-        this.setState({  });
+        this.setState({ error, isLoading: false });
       });
   };
 
-
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
+
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
   render() {
-    const { selectedSubCategory, products, error } = this.state;
+    const { selectedSubCategory, products, isLoading } = this.state;
 
     return (
-      <div className='container-fluid '>
+      <div className='container-fluid'>
         <ElectronicsFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}
           onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
-          <p className="no-deals-div">Currently No Deals Are available</p>
+        {isLoading ? (
+          <p>Loading...</p>
         ) : (
           <FilterResult products={products} />
         )}

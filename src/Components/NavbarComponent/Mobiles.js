@@ -12,7 +12,7 @@ class Mobiles extends Component {
       minPrice: 0,
       maxPrice: 200000,
       products: [],
-      error: null,
+      isLoading: true,
     };
   }
 
@@ -21,7 +21,7 @@ class Mobiles extends Component {
   }
 
   fetchProducts = () => {
-    const { selectedBrand, minPrice,maxPrice } = this.state;
+    const { selectedBrand, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Mobiles`;
 
     // Construct the API URL based on filter selections
@@ -51,28 +51,23 @@ class Mobiles extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false });
       })
-      .catch((error) => {
-        this.setState({});
+      .catch(() => {
+        this.setState({ isLoading: false });
       });
   };
 
-
   handleBrandChange = (brand) => {
-    this.setState({ selectedBrand: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedBrand: brand }, this.fetchProducts);
   };
 
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
   render() {
-    const { selectedBrand, products, error } = this.state;
+    const { selectedBrand, products, isLoading } = this.state;
 
     return (
       <div className='container-fluid'>
@@ -81,8 +76,8 @@ class Mobiles extends Component {
           onBrandChange={this.handleBrandChange}
           onPriceChange={this.handleApplyPriceFilter}
         />
-        {error ? (
-          <p>Error fetching products: {error.message}</p>
+        {isLoading ? (
+          <p>Loading...</p>
         ) : (
           <FilterResult products={products} />
         )}

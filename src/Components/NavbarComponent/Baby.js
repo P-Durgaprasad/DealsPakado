@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import FilterResult from './FilterComponents/FilterResult';
-import '../HomeComponent/Css/NewCss.css'; 
 import BabyFilter from './FilterComponents/BabyFilter';
 import API from '../API_Config';
 
 class Baby extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedSubCategory: '',
-      minPrice: 0,
-      maxPrice: 200000,
-      products: [],
-      error: null,
-    };
-  }
+  state = {
+    selectedSubCategory: '',
+    minPrice: 0,
+    maxPrice: 200000,
+    products: [],
+    error: null,
+  };
 
   componentDidMount() {
     this.fetchProducts();
@@ -43,40 +39,24 @@ class Baby extends Component {
     }
 
     fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then((data) => {
-        this.setState({ products: data, error: null });
-      })
-      .catch((error) => {
-        this.setState({  });
-      });
+      .then((response) => response.json())
+      .then((data) => this.setState({ products: data, error: null }))
+      .catch((error) => this.setState({ error }));
   };
-
 
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
-
 
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
-      this.fetchProducts();
-    });
+    this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };
 
-
   render() {
-    const { selectedSubCategory,products, error } = this.state;
+    const { selectedSubCategory, products, error } = this.state;
 
     return (
-      <div className='container-fluid '>
+      <div className='container-fluid'>
         <BabyFilter
           selectedSubCategory={selectedSubCategory}
           onPriceChange={this.handleApplyPriceFilter}

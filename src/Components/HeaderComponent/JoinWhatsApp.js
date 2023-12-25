@@ -20,6 +20,7 @@ const JoinWhatsApp = () => {
 
   useEffect(() => {
     setIsDesktop(window.matchMedia("(hover: none)").matches);
+       // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

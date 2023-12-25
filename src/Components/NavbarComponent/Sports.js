@@ -12,9 +12,10 @@ class Sports extends Component {
       minPrice: 0,
       maxPrice: 200000,
       products: [],
-      error: null,
+      isLoading: true,
     };
   }
+
   componentDidMount() {
     this.fetchProducts();
   }
@@ -48,28 +49,27 @@ class Sports extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false, error: null });
       })
-      .catch((error) => {
-        this.setState({  });
+      .catch(() => {
+        this.setState({ isLoading: false });
       });
   };
 
-
   handleSubCategoryChange = (brand) => {
-    this.setState({ selectedSubCategory: brand }, () => {
+    this.setState({ selectedSubCategory: brand, isLoading: true }, () => {
       this.fetchProducts();
     });
   };
 
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
-    this.setState({ minPrice, maxPrice }, () => {
+    this.setState({ minPrice, maxPrice, isLoading: true }, () => {
       this.fetchProducts();
     });
   };
 
   render() {
-    const { selectedSubCategory, products, error } = this.state;
+    const { selectedSubCategory, products, isLoading, error } = this.state;
 
     return (
       <div className='container-fluid '>
@@ -78,7 +78,9 @@ class Sports extends Component {
           onPriceChange={this.handleApplyPriceFilter}
           onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : error ? (
           <p>Error fetching products: {error.message}</p>
         ) : (
           <FilterResult products={products} />
