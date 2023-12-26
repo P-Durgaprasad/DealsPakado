@@ -1,15 +1,15 @@
 import React from "react";
 import whatsapp from '../../HeaderComponent/whatsapp.png';
 
-const ShareProduct = ({ url, title ,imageUrl,price,MRP}) => {
+const ShareProduct = ({title ,imageUrl,price,MRP}) => {
   const formattedMessage = `
   🤩 **Snatch This Deal!** ${title} - Only Rs.${price} (Save Rs.${MRP - price})! 🤑
   
   ✨ **Don't Miss Out!** Hurry! Limited Stock Available. ⌛
   
-  👀 Check out this amazing product: ${encodeURIComponent(imageUrl)}"
+  👀 Check out this amazing product: ${(imageUrl)}"
   
-  🛒 **Grab Yours Now!** Click here: http://dealspakado.com/buyAt/${encodeURIComponent(url)}`;
+  🛒 **Grab Yours Now!** Click here: http://dealspakado.com/buyAt/${encodeURIComponent(title)}`;
 
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(

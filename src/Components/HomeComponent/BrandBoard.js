@@ -13,8 +13,7 @@ import swiggy from './Images/Swiggy_logo.svg.png';
 import bigbusket from './Images/BigBasket_Logo.png';
 import blinkit from './Images/blinkit_logo.webp';
 import { Link } from 'react-router-dom';
-import { Col } from 'react-bootstrap';
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 const brands = [
   { id: 1, logo: amazon, brandName: "Amazon" },
@@ -33,31 +32,28 @@ const brands = [
 
 const BrandBoard = () => {
   return (
-    <Col lg={4} sm={12} >
-    <div className="brand-board-main sm={8}">
-      <div className="brand-list-container">
-        <h1 id="label-title">Brand Board</h1>
+    <Container className="custom-container">
+      <div className="brand-board-main">
+        <div className="brand-list-container">
+          <h1 id="label-title">Brand Board</h1>
+        </div>
+        <Row className="d-flex justify-content-center custom-row">
+          {brands.map((brand) => (
+            <Col key={brand.id} xs={4} sm={4} md={4} lg={4}>
+              <Link to={`/brand/${brand.brndName}`} className="brand-link">
+                <div className='brand'>
+                  <img
+                    className="brandboard-brand-image img-fluid"
+                    src={brand.logo}
+                    alt={`Brand ${brand.brandName}`}
+                  />
+                </div>
+              </Link>
+            </Col>
+          ))}
+        </Row>
       </div>
-      <div className="brand-list">
-        {brands.map((brand) => (
-          <Link
-            to={`/brand/${brand.brandName}`}
-            key={brand.id}
-            className="brand-link "
-          >
-            <div className='brand'>
-              <img
-                className="brandboard-brand-image"
-                src={brand.logo}
-                alt={`Brand ${brand.brandName}`}
-              />
-            </div>
-          </Link>
-        ))}
-      </div>
-
-    </div>
-    </Col>
+    </Container>
   );
 };
 

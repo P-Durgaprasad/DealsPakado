@@ -12,11 +12,12 @@ const TitleSearch = () => {
     const fetchProductDetails = async () => {
       try {
         if (title) {
+          console.log(title);
           const url = `${API}/api/product/title?title=${encodeURIComponent(title)}`;
+          console.log(title);
           const response = await fetch(url);
           const data = await response.json();
 
-          // Assuming you want the first item in the array
           if (Array.isArray(data) && data.length > 0) {
             setProductDetails(data[0]);
           } else {

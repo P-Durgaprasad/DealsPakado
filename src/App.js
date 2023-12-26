@@ -50,7 +50,7 @@ function App() {
             <Route path='/babyitems' element={<Baby />} />
             <Route path='/sports' element={<Sports />} />
             <Route path="/server-down" element={<ServerDown />} />
-            <Route path="/buyAt/:affurl" element={<TitleSearch />} />
+            <Route path="/buyAt/:title" element={<TitleSearch />} />
           </Routes>
         </Suspense>
         <Footer />

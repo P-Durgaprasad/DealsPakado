@@ -156,9 +156,8 @@
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 426px) {
+@media screen and (min-width: 377px) and (max-width: 427px) {
   .menu-bar {
-    display: flex;
     flex-direction: row;
     align-items: flex-end;
     overflow-x: auto;
@@ -168,6 +167,7 @@
     padding-left: inherit;
     padding-right: inherit;
   }
+  
 
   .menubar {
     padding-top: 0px;

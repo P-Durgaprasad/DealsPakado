@@ -13,9 +13,7 @@ import printer from './Images/printer-78-64.png';
 import beauty from './Images/beauty-care-2-64.png';
 import footware from './Images/footware.png';
 import { Link } from 'react-router-dom';
-import { Col } from 'react-bootstrap';
-
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 function ProductBoard() {
   const brands = [
@@ -31,28 +29,28 @@ function ProductBoard() {
     { id: 10, logo: printer, title: 'Printer', value: 'printer' },
     { id: 11, logo: beauty, title: 'Beauty', value: 'Beauty' },
     { id: 12, logo: footware, title: 'Footware', value: 'Footware' }
-     // eslint-disable-next-line react-hooks/exhaustive-deps
   ];
 
   return (
-    <Col lg={4} sm={12}>
-    <div className='productboardmain'>
-      <div className='productlistcontainer'>
-        <h1 id="productlabetitle">Product Board</h1>
+    <Container className="custom-container">
+      <div className='productboardmain'>
+        <div className='productlistcontainer'>
+          <h1 id="productlabetitle">Product Board</h1>
+        </div>
+        <Row className="d-flex justify-content-center custom-row">
+          {brands.map(brand => (
+            <Col key={brand.id} xs={4} sm={4} md={4} lg={4}>
+              <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
+                <div className='product' >
+                  <img src={brand.logo} alt={`Product ${brand.title}`} className='productlogo' />
+                  <p className='producttitle'>{brand.title}</p>
+                </div>
+              </Link>
+            </Col>
+          ))}
+        </Row>
       </div>
-      <div className='productlist 1234'>
-        {brands.map(brand => (
-          <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
-            <div className='product' >
-              <img src={brand.logo} alt={`Product ${brand.title}`} className='productlogo' />
-              <p className='producttitle'>{brand.title}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
-
-    </div>
-    </Col>
+    </Container>
   );
 }
 

@@ -7,13 +7,12 @@
 .main {
   width: 100%;
   display: flex;
-  padding: 30px 0px 10px 0px;
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
   align-items: stretch;
 }
-
+/* 
 @media screen and (max-width : 320px) {
 
   .main {
@@ -81,4 +80,4 @@
     margin-top: 5px;
   }
 } 
-
+ */

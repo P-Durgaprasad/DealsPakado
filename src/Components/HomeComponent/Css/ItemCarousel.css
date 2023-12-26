@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-top: 5vmin;
 }
 
 .image-slider {
@@ -403,9 +404,7 @@
   top: 0;
   z-index: 4
 }
-
-
-
+/* 
 @media screen and (max-width : 320px) {
   .carousel-container {
     width: 100%;
@@ -453,37 +452,6 @@
 
 
 @media screen and (min-width: 770px) and (max-width: 1025px) {
-  .image-gallery-fullscreen-button,
-  .image-gallery-play-button {
-    padding: 15px
-  }
-
-  .image-gallery-thumbnail:hover {
-    border: 3px solid #337ab7
-  }
-
-  .image-gallery-fullscreen-button .image-gallery-svg,
-  .image-gallery-play-button .image-gallery-svg {
-    height: 24px;
-    width: 24px
-  }
-
-  .image-gallery-left-nav .image-gallery-svg,
-  .image-gallery-right-nav .image-gallery-svg {
-    height: 72px;
-    width: 36px
-  }
-
-  .image-gallery-slide-wrapper.image-gallery-thumbnails-left,
-  .image-gallery-slide-wrapper.image-gallery-thumbnails-right {
-    width: calc(100% - 87px)
-  }
-
-  .image-gallery-thumbnails-wrapper.image-gallery-thumbnails-left,
-  .image-gallery-thumbnails-wrapper.image-gallery-thumbnails-right {
-    width: 81px
-  }
-
   .carousel-container {
     width: 100%;
     height: 200px;
@@ -492,4 +460,4 @@
   .image-div{
     height: 200px;
   }
-}  
+}  */
