@@ -8,16 +8,18 @@
   justify-content: center;
   position: relative;
   background-color: #fff;
-  padding:10px 10px;
+  padding: 10px 10px;
   border: 1px solid #d3472b;
   border-radius: 0.25rem;
 }
+
 .custom-container {
-  --bs-gutter-x: 0rem; 
+  --bs-gutter-x: 0rem;
   padding-top: 2rem;
 }
+
 .custom-row {
-  --bs-gutter-x: 0.2rem; 
+  --bs-gutter-x: 0.2rem;
   --bs-gutter-y: 0.2rem;
 }
 
@@ -40,7 +42,7 @@
 
 .brand-list {
   display: flex;
-  align-content: center; 
+  align-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -57,25 +59,61 @@
   justify-content: center;
   background-color: #fff;
   border: 1px solid black;
-  padding:8px 8px;
+  padding: 8px 8px;
   width: 100%;
   max-height: 10vmin;
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
 }
-  .brand img {
-    object-fit: contain;
-    width: 15vmin;
-    height: 6vmin;
-  }
+
+.brand img {
+  object-fit: contain;
+  width: 15vmin;
+  height: 6vmin;
+}
 
 .brand:hover {
   transform: translateY(-5px);
   border-color: #ff6600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
+
+@media only screen and (max-width: 575.98px) {
+  .brand img{
+
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .brand img{
+
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .brand img{
+
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .brand img{
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brand img{
+
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .brand img{
+    
+  }
+}
 
 /* 
 @media screen and (max-width : 320px) {

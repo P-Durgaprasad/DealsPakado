@@ -10,7 +10,7 @@ import headphone from './Images/headphones-16-64.png';
 import shoe from './Images/shoes.png';
 import buds from './Images/earheadphones.png';
 import printer from './Images/printer-78-64.png';
-import beauty from './Images/beauty-care-2-64.png';
+import beauty from './Images/beauty-care-2-48.png';
 import footware from './Images/footware.png';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';

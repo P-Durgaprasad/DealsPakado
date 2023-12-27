@@ -2,7 +2,7 @@ import React from 'react';
 import './Css/BrandBoard.css';
 import amazon from './Images/Amazon_logo.svg.png';
 import flipkart from './Images/Flipkart_logo.svg.png';
-import ajio from './Images/Ajio-1200x800.png';
+import ajio from './Images/Ajio.png';
 import myntra from './Images/Myntra_logo.png';
 import tata from './Images/Tata_Cliq_logo.svg.png';
 import paytm from './Images/paytm_mall_logo.png';

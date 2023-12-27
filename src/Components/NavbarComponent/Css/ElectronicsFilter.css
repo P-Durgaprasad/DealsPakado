@@ -50,7 +50,6 @@
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
-  /* border: 2px solid transparent; */
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 6px;
 }
@@ -82,9 +81,9 @@
   font-weight: 600;
   color: #333;
   padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  text-align: left;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
 }
 
 
