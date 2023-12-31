@@ -40,7 +40,7 @@ const BrandBoard = () => {
         <Row className="d-flex justify-content-center custom-row">
           {brands.map((brand) => (
             <Col key={brand.id} xs={4} sm={4} md={4} lg={4}>
-              <Link to={`/brand/${brand.brndName}`} className="brand-link">
+              <Link to={`/brand/${brand.brandName}`} className="brand-link">
                 <div className='brand'>
                   <img
                     className="brandboard-brand-image img-fluid"

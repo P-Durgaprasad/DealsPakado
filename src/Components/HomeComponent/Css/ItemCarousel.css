@@ -426,19 +426,28 @@
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .carousel-container {}
 
-  .image-div {}
+  .image-div {
+    padding: 0px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .carousel-container {}
+  .carousel-container {
+  }
 
-  .image-div {}
+  .image-div {
+    padding: 0px
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-  .carousel-container {}
+  .carousel-container {
 
-  .image-div {}
+  }
+
+  .image-div {
+    padding: 0px;
+  }
 }
 
 /* 

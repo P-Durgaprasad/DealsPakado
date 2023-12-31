@@ -29,7 +29,7 @@
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #d3472b;
+  background-color: #9E3520;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -69,8 +69,8 @@
 
 .brand img {
   object-fit: contain;
-  width: 15vmin;
-  height: 6vmin;
+   width: 15vmin;
+height: 6vmin;
 }
 
 .brand:hover {
@@ -81,7 +81,11 @@
 
 @media only screen and (max-width: 575.98px) {
   .brand img{
-
+    width: 22vmin;
+    height: 7vmin;  
+  }
+  #label-title{
+    
   }
 }
 
@@ -105,13 +109,15 @@
 
 @media only screen and (min-width: 1200px) {
   .brand img{
-
+    width: 8vmin;
+    height: 4vmin;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .brand img{
-    
+    width: 12vmin;
+    height: 6vmin;
   }
 }
 

@@ -110,7 +110,7 @@ const FilterResult = ({ products }) => {
                         </Card.Link>
                       {/* </div> */}
                       <div className='whatsapp-share'>
-                        <ShareProduct title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} />
+                        <ShareProduct title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} MRP={deal.originalMRP} />
                       </div>
                     </div>
                   </Card.Body>

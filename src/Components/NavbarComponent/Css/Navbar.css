@@ -2,19 +2,21 @@
   background-color: #ffffff;
   padding-bottom: 0.5vw;
   margin-top: 1vh;
-  padding: 10px 10px 15px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .menu-bar {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: space-around;
   align-items: flex-end;
-  justify-content: space-around;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: inherit;
+  padding-right: inherit;
 }
 
 .menu-bar li {
@@ -79,21 +81,20 @@
   left: 0;
 }
  
-@media screen and (max-width : 320px) {
+@media screen and (max-width : 575px) {
   .menubar {
     padding-top: 0px;
   }
 
   .menu-bar {
-    display: flex;
-    flex-direction: row;
     align-items: flex-end;
-    overflow-x: auto;
     align-content: space-between;
     justify-content: space-between;
     gap: 10px;
     padding-left: 10px;
     padding-right: inherit;
+    flex-direction: row;
+    overflow: scroll;
   }
 
   .menu-bar li {
@@ -119,21 +120,20 @@
 
 }
 
-@media screen and (min-width: 321px) and (max-width: 376px) {
-  .menu-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    overflow-x: auto;
-    align-content: space-between;
-    justify-content: space-between;
-    gap: 20px;
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .menubar {
     padding-top: 0px;
+  }
+
+  .menu-bar {
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: inherit;
+    flex-direction: row;
+    overflow: scroll;
   }
 
   .menu-bar li {
@@ -143,31 +143,70 @@
   }
 
   .menu-bar li a {
-    padding: 5px;
+    display: flex;
+    padding:0px 5px;
     font-size: 14px;
+    width: 70px;
   }
 
   .menu-bar li a img {
-    width: 190%;
+    height: 45px;
   }
 
   .nav-text {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 427px) {
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+  .menubar {
+    padding-top: 0px;
+  }
+
+  .menu-bar {
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: inherit;
+    flex-direction: row;
+    overflow: scroll;
+  }
+
+  .menu-bar li {
+    margin: 5px 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  .menu-bar li a {
+    display: flex;
+    padding:0px 5px;
+    font-size: 14px;
+    width: 70px;
+  }
+
+  .menu-bar li a img {
+    height: 45px;
+  }
+
+  .nav-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .menu-bar {
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: flex-end;
-    overflow-x: auto;
     align-content: space-between;
     justify-content: space-between;
     gap: 20px;
     padding-left: inherit;
     padding-right: inherit;
   }
-  
 
   .menubar {
     padding-top: 0px;
@@ -180,62 +219,22 @@
   }
 
   .menu-bar li a {
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 14px;
   }
 
-  .menu-bar li a img {
-    width: 190%;
-  }
+
 
   .nav-text {
     font-size: 15px;
   }
 }
 
-@media screen and (min-width: 427px) and (max-width: 769px) {
+@media screen and (min-width: 1200px) {
   .menu-bar {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    overflow-x: auto;
-    align-content: space-between;
-    justify-content: space-between;
-    gap: 20px;
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-
-  .menubar {
-    padding-top: 0px;
-  }
-
-  .menu-bar li {
-    margin: 5px 0;
-    flex: 1;
-    text-align: center;
-  }
-
-  .menu-bar li a {
-    padding: 5px;
-    font-size: 14px;
-  }
-
-  .menu-bar li a img {
-    width: 190%;
-  }
-
-  .nav-text {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 770px) and (max-width: 1025px) {
-  .menu-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    overflow-x: auto;
     align-content: space-between;
     justify-content: space-between;
     gap: 10px;
@@ -261,12 +260,14 @@
     font-size: 14px;
   }
 
-  .menu-bar li a img {
-    width: 190%;
-    height: 45px;
+  .menu-bar li a img {  
+    height: 55px;
   }
 
   .nav-text {
     font-size: 13px;
   }
 } 
+@media screen and (min-width: 1201px) {
+ 
+}

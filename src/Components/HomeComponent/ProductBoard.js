@@ -11,7 +11,7 @@ import shoe from './Images/shoes.png';
 import buds from './Images/earheadphones.png';
 import printer from './Images/printer-78-64.png';
 import beauty from './Images/beauty-care-2-48.png';
-import footware from './Images/footware.png';
+import footwear from './Images/footware.png';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -28,7 +28,7 @@ function ProductBoard() {
     { id: 9, logo: buds, title: 'Ear Buds', value: 'Buds' },
     { id: 10, logo: printer, title: 'Printer', value: 'printer' },
     { id: 11, logo: beauty, title: 'Beauty', value: 'Beauty' },
-    { id: 12, logo: footware, title: 'Footware', value: 'Footware' }
+    { id: 12, logo: footwear, title: 'Footwear', value: 'Footware' }
   ];
 
   return (

@@ -14,7 +14,7 @@ function Home() {
 <div className="home-main-div container-fluid">
   <div className="main">
     <Container fluid>
-      <Row xs={1} sm={1} md={1} lg={3} xl={3} xxl={3} xxxl={3}>
+      <Row className="row-main" xs={1} sm={1} md={1} lg={3} xl={3} xxl={3} xxxl={3}>
         <Col>
           <BrandBoard />
         </Col>

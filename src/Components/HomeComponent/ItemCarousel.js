@@ -26,20 +26,20 @@ function ItemCarousel() {
     }
   );
   useEffect(() => {
-    if (fetchError) {
-      setError(fetchError);
-    } else if (carouselData) {
+    if (carouselData) {
       setData([...carouselData]);
-    }
+    }else if (fetchError) {
+      setError(fetchError);
+    } 
     setIsLoading(false);
-  }, [fetchError, carouselData]);
+  }, [carouselData,fetchError]);
 
   const handleChangeIndex = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 
   return (
-    
+
     <div className="carousel-container">
       {isLoading ? (
         <p>Loading...</p>

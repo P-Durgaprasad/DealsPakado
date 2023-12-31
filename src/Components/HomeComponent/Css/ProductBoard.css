@@ -8,7 +8,7 @@
   justify-content: center;
   position: relative;
   background-color: #fff;
-  padding:10px 10px;
+  padding: 10px 10px;
   border: 1px solid #d3472b;
   border-radius: 0.25rem;
 }
@@ -19,7 +19,7 @@
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #d3472b;
+  background-color: #9E3520;
   color: white;
   font-weight: bold;
   padding: 0.5rem 0.5rem;
@@ -50,7 +50,7 @@
   justify-content: flex-start;
   background-color: #fff;
   border: 1px solid black;
-  padding:8px 8px;
+  padding: 8px 8px;
   width: 100%;
   max-height: 10vmin;
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
@@ -60,8 +60,8 @@
 
 .product img {
   height: 6vmin;
-  width: 10vmin;
-  padding:0 5px;
+  width: 6vmin;
+  padding: 0 5px;
   object-fit: contain;
 }
 
@@ -72,39 +72,74 @@
 }
 
 .producttitle {
-  color: #ff6600;
-  font-size: 1.5vmax;
+  color: #C95100;
+  font-size: 1vmax;
   font-weight: bold;
   overflow: hidden;
   margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 575.98px) {
-
+  .producttitle{
+    font-size: 2.5vmin;
+  }
+  .product {
+    padding: 4px 4px;
+  }
+  .product img {
+    height: 10vmin;
+    width: 10vmin;
+    padding: 0 3px;
+  }
 }
 
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-
+  .producttitle{
+    font-size: 1rem;
+  }
+  .product {
+  }
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-
+  .producttitle{
+    font-size: 1rem;
+  }
+  .producttitle{
+    
+  }
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-
+  .producttitle{
+    
+  }
+  .product {
+  }
 }
 
 
 @media only screen and (min-width: 1200px) {
+  .producttitle{
+    
+  }
+  .product {
+  }
 
+  .product img{
+
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-
+  .producttitle{
+    
+  }
+  .product {
+  }
 }
 
 /* 

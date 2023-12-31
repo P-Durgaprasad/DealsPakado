@@ -5,6 +5,7 @@ import rice from '../Images/rice.png';
 import snacks from '../Images/snacks.png';
 import HouseHolds from '../Images/HouseHolds.png';
 import Body from '../Images/Body.png';
+import DryFruits from '../Images/dryfruits.png';
 
 const GroceryFilter = ({
   selectedSubCategory,
@@ -63,6 +64,14 @@ const GroceryFilter = ({
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Bodycare' ? 'selected-text' : ''}`}>
             <span className="option">Personal Care</span>
+          </div>
+        </div>
+        <div className={`filter-option ${selectedSubCategory === 'Dryfruits' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Dryfruits')}>
+          <div className='brand-image'>
+            <img className="filter-image" src={DryFruits} alt="Dryfruits" />
+          </div>
+          <div className={`filter-text ${selectedSubCategory === 'Dryfruits' ? 'selected-text' : ''}`}>
+            <span className="option">Dry Fruits</span>
           </div>
         </div>
       </div>

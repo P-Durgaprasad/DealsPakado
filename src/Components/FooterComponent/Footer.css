@@ -209,9 +209,32 @@
   margin: 20px 0;
 }
 
+@media only screen and (max-width: 575.98px) {
+ 
+}
 
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  
+}
 
-@media screen and (max-width : 320px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+}
+
+@media only screen and (min-width: 1400px) {
+
+}
+
+/* 
+@media (max-width: 576px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -220,10 +243,6 @@
     right: 1px;
     bottom: 5px;
   }
-
-  /* .follow-on {
-    display: none;
-  } */
   .social-links {
     width: 100%;
     gap: 1px;
@@ -234,7 +253,7 @@
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 376px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -254,7 +273,7 @@
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 426px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -274,10 +293,6 @@
     font-size: 9px;
   }
 
-  .whatsapp {
-    width: 100px;
-  }
-
   .footer-links {
     width: 100%;
     height: 30px;
@@ -289,21 +304,18 @@
     gap: 1px;
     margin-bottom: 10px;
   }
-
   .media-links {
     width: 13%;
   }
-
   .quick-offer-links a {
     font-size: 10px;
   }
-
   .footer-text {
     font-size: 11px;
   }
 }
 
-@media screen and (min-width: 427px) and (max-width: 769px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -324,36 +336,29 @@
   .whatsapp {
     width: 100px;
   }
-
   .footer-links {
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
     height: 30px;
   }
 
   .social-links {
-    width: 50%;
+    width: 100%;
     height: auto;
     gap: 1px;
     margin-bottom: 10px;
   }
-
   .media-links {
     width: 13%;
   }
-
   .quick-offer-links a {
     font-size: 10px;
   }
-
   .footer-text {
     font-size: 11px;
   }
 }
 
-
-@media screen and (min-width: 770px) and (max-width: 1025px) {
+@media (min-width: 1200px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -365,11 +370,6 @@
 
   .whatsapp {
     width: 100%;
-    height: 30px;
-  }
-
-  .whatsapp-img {
-    width: 30px;
     height: 30px;
   }
 
@@ -392,16 +392,13 @@
     gap: 1px;
     margin-bottom: 10px;
   }
-
   .media-links {
     width: 13%;
   }
-
   .quick-offer-links a {
     font-size: 10px;
   }
-
   .footer-text {
     font-size: 11px;
   }
-}   
+}  */

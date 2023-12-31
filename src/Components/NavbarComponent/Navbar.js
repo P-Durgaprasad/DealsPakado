@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { row } from 'react-bootstrap';
 import './Css/Navbar.css';
 
 import mobileIcon from './Images/mobile-icon.png';
@@ -17,85 +16,78 @@ import Sports from './Images/Sports.png';
 
 function Navbar() {
   return (
-
-
     <nav className='container-fluid '>
-
       <div className='menubar menubarview'>
-
         <ul className="menu-bar">
           <li className="selected">
             <Link to="/deals">
-              <img src={Deals} alt="Best_Deals" className='nav-img' />
+              <img src={Deals} alt="Best Deals - Special Offers" className='nav-img' />
               <div className='nav-text'>Deals </div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/mobiles">
-              <img src={mobileIcon} alt="Mobiles" className='nav-img' />
+              <img src={mobileIcon} alt="Mobile Phones - Latest Models" className='nav-img' />
               <div className='nav-text'>Mobiles</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/fashion">
-              <img src={fashionIcon} alt="Fashion" className='nav-img' />
+              <img src={fashionIcon} alt="Fashion - Trendy Clothing" className='nav-img' />
               <div className='nav-text'>Fashion</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/electronics">
-              <img src={appliancesIcon} alt="Electronics" className='nav-img' />
+              <img src={appliancesIcon} alt="Electronics - Gadgets and Appliances" className='nav-img' />
               <div className='nav-text'>Electronics</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/furniture">
-              <img src={furnitureIcon} alt="Home & Furniture" className='nav-img' />
+              <img src={furnitureIcon} alt="Home & Furniture - Stylish Décor" className='nav-img' />
               <div className='nav-text'>Furniture</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/appliances">
-              <img src={electronicsIcon} alt="Appliances" className='nav-img' />
+              <img src={electronicsIcon} alt="Appliances - Home Essentials" className='nav-img' />
               <div className='nav-text'>Appliances</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/babyitems">
-              <img src={Personal} alt="Baby_Items" className='nav-img' />
+              <img src={Personal} alt="Baby Items - Adorable Products" className='nav-img' />
               <div className='nav-text'>Baby's</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/sports">
-              <img src={Sports} alt="sports" className='nav-img' />
+              <img src={Sports} alt="Sports - Fitness and Recreation" className='nav-img' />
               <div className='nav-text'>Sports</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/grocery">
-              <img src={Grocery} alt="Grocery" className='nav-img' />
+              <img src={Grocery} alt="Grocery - Fresh and Pantry Items" className='nav-img' />
               <div className='nav-text'>Grocery</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/under99">
-              <img src={store} alt="Under@99" className='nav-img' />
+              <img src={store} alt="Products Under $99 - Affordable Deals" className='nav-img' />
               <div className='nav-text'>Under@99</div>
             </Link>
           </li>
           <li className="selected">
             <Link to="/coupon">
-              <img src={coupon} alt="coupon" className='nav-img' />
+              <img src={coupon} alt="Coupons - Money-saving Offers" className='nav-img' />
               <div className='nav-text'>Coupons</div>
             </Link>
           </li>
         </ul>
-
-
       </div>
     </nav>
-
   );
 }
 

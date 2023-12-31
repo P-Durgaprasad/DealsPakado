@@ -3,7 +3,7 @@ import whatsapp from '../../HeaderComponent/whatsapp.png';
 
 const ShareProduct = ({title ,imageUrl,price,MRP}) => {
   const formattedMessage = `
-  🤩 **Snatch This Deal!** ${title} - Only Rs.${price} (Save Rs.${MRP - price})! 🤑
+  🤩 **Snatch This Deal!** ${title} - Only Rs.${price} (Save Rs.${MRP-price})! 🤑
   
   ✨ **Don't Miss Out!** Hurry! Limited Stock Available. ⌛
   
@@ -23,7 +23,6 @@ const ShareProduct = ({title ,imageUrl,price,MRP}) => {
       window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(formattedMessage)}`);
     }
   };
-
   return (
     <>
     <button type="button" onClick={handleShare} className=" btn-share">

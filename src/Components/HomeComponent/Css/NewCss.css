@@ -108,7 +108,7 @@
 .brand-name-rating {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
   align-items: center;
@@ -163,7 +163,7 @@
   justify-content: space-between;
   align-items: flex-end;
   align-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 2px;
 }
@@ -199,12 +199,13 @@
 
 .shopnow {
   width: 100%;
-  max-height: 40px;
+  /* max-height: 40px; */
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
 }
 
 .whatsapp-share .btn-share {
@@ -392,7 +393,29 @@
   transition: background-color 0.3s;
   border: 2px solid #1c41d6;
 }
+@media only screen and (max-width: 575.98px) {
+ 
+}
 
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+}
+
+@media only screen and (min-width: 1400px) {
+  
+}
 /*  
 @media screen and (max-width : 320px) {
   .deals-container {
