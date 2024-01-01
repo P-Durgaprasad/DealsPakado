@@ -24,7 +24,6 @@ class Furniture extends Component {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=HomeFurniture`;
 
-    // Construct the API URL based on filter selections
     const filterParams = [];
 
     if (selectedSubCategory) {
@@ -62,7 +61,6 @@ class Furniture extends Component {
     this.setState({ selectedSubCategory: brand }, this.fetchProducts);
   };
 
-  // Handle price filter change
   handleApplyPriceFilter = ({ minPrice, maxPrice }) => {
     this.setState({ minPrice, maxPrice }, this.fetchProducts);
   };

@@ -24,7 +24,6 @@ class Grocery extends Component {
     const { selectedSubCategory, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Grocery`;
 
-    // Construct the API URL based on filter selections
     const filterParams = [];
 
     if (selectedSubCategory) {

@@ -186,7 +186,7 @@
 
 .offer-label {
   font-size: 12px;
-  background-color: #da624a;
+  background-color:#9D3520;
   color: #fff;
   font-weight: bold;
   padding: 6px 10px;
@@ -235,7 +235,7 @@
 }
 
 .shop-now-button:hover {
-  background-color: #2874f0;
+  background-color: #ff6600;
   color: white;
 }
 

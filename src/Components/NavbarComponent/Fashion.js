@@ -39,7 +39,7 @@ class Fashion extends Component {
       apiUrl += `&${filterParams.join('&')}`;
     }
 
-    this.setState({ isLoading: true }); // Set isLoading to true before fetching data
+    this.setState({ isLoading: true });
 
     fetch(apiUrl)
       .then((response) => {

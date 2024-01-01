@@ -12,7 +12,7 @@ class Appliances extends Component {
       minPrice: 0,
       maxPrice: 200000,
       products: [],
-      error: null,
+      isLoading: true,
     };
   }
 
@@ -50,10 +50,10 @@ class Appliances extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ products: data, error: null });
+        this.setState({ products: data, isLoading: false, error: null });
       })
       .catch((error) => { 
-        this.setState({  });
+        this.setState({ error, isLoading: false });
       });
   };
 
@@ -71,7 +71,7 @@ class Appliances extends Component {
   };
 
   render() {
-    const { selectedSubCategory, products, error } = this.state;
+    const { selectedSubCategory, products, isLoading  } = this.state;
 
     return (
       <div className='container-fluid '>
@@ -80,9 +80,9 @@ class Appliances extends Component {
          onPriceChange={this.handleApplyPriceFilter}
          onSubCategoryChange={this.handleSubCategoryChange}
         />
-        {error ? (
-          <p>Error fetching products: {error.message}</p>
-        ) : (
+        {isLoading ? (
+          <p>Loading...</p>
+        ):(
           <FilterResult products={products} />
         )}
       </div>

@@ -75,8 +75,6 @@ const GroceryFilter = ({
           </div>
         </div>
       </div>
-      {/* </div> */}
-      {/* <div className='col-sm-12 col-lg-3 col-md-3'> */}
       <div className="filter-section-price">
         <label id='price-label'>Set Price Range:</label>
         <div className="price-filter">
@@ -98,7 +96,6 @@ const GroceryFilter = ({
         </div>
         <a href='/grocery' className='clear-filter'>Clear filter</a>
       </div>
-      {/* </div> */}
     </div>
   );
 };

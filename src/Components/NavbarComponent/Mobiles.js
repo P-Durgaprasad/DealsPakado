@@ -24,7 +24,6 @@ class Mobiles extends Component {
     const { selectedBrand, minPrice, maxPrice } = this.state;
     let apiUrl = `${API}/api/product/byCategory?category=Mobiles`;
 
-    // Construct the API URL based on filter selections
     const filterParams = [];
 
     if (selectedBrand) {
