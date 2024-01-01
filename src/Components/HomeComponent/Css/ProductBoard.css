@@ -140,9 +140,6 @@
   .producttitle{
     font-size: 0.8rem;
   }
-  .product {
-  }
-
   .product img{
     height: 6vmin;
     width: auto;
@@ -153,10 +150,7 @@
   .producttitle{
     font-size: 0.8rem;
   }
-  .product {
-  }
-
-  .product img{
+   .product img{
     height: 6vmin;
     width: auto;
   }

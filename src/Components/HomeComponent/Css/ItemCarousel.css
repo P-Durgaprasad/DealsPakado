@@ -414,40 +414,49 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .carousel-container {}
-
-  .image-div {}
+  .carousel-container {
+    width: 100%;
+  }
+  .image-div{
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .carousel-container {}
-
-  .image-div {}
+  .carousel-container {
+    width: 100%;
+  }
+  .image-div{
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  .carousel-container {}
-
-  .image-div {
+  .carousel-container {
+    width: 100%;
+  }
+  .image-div{
+    height: auto;
     padding: 0px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .carousel-container {
+    width: 100%;
   }
-
-  .image-div {
-    padding: 0px
+  .image-div{
+    height: auto;
+    padding: 0px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .carousel-container {
-
+    width: 100%;
   }
-
-  .image-div {
+  .image-div{
+    height: auto;
     padding: 0px;
   }
 }
