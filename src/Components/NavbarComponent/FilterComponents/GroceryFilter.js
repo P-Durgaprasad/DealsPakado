@@ -20,7 +20,6 @@ const GroceryFilter = ({
 
   return (
     <div className="product-filter">
-      {/* <div className='col-sm-12 col-lg-9 col-md-9'> */}
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>

@@ -72,7 +72,6 @@ class Appliances extends Component {
 
   render() {
     const { selectedSubCategory, products, isLoading  } = this.state;
-
     return (
       <div className='container-fluid '>
         <AppliancesFilter
