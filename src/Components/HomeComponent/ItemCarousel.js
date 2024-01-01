@@ -44,7 +44,7 @@ function ItemCarousel() {
       {isLoading ? (
         <p>Loading...</p>
       ) : error ? (
-        <p>Server Down, Please Try again !</p>
+        <p>Server is currently offline, please try again later</p>
       ) : data.length === 0 ? (
         <div className="empty-deals">
           <p className="no-deals-div">Currently, No Deals Are Available</p>

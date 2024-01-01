@@ -69,8 +69,8 @@
 
 .brand img {
   object-fit: contain;
-   width: 15vmin;
-height: 6vmin;
+  width: 15vmin;
+  height: 6vmin;
 }
 
 .brand:hover {
@@ -80,45 +80,53 @@ height: 6vmin;
 }
 
 @media only screen and (max-width: 575.98px) {
-  .brand img{
+  .brand img {
     width: 22vmin;
-    height: 7vmin;  
+    height: 7vmin;
   }
-  #label-title{
-    
-  }
+
+  #label-title {}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .brand img{
-
+  .brand img {
+    width: 22vmin;
+    height: 7vmin;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .brand img{
-
+  .brand img {
+    width: 22vmin;
+    height: 7vmin;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  .brand img{
-
+  .brand img {
+    width: 12vmin;
+    height: 3.3vmin;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .brand img{
-    width: 8vmin;
-    height: 4vmin;
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .brand img {
+    width: 16vmin;
+    height: 6vmin;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .brand img{
-    width: 12vmin;
+  .brand img {
+    width: 20vmin;
     height: 6vmin;
   }
+}
+  @media only screen and (min-width: 2000px) {
+    .brand img {
+      width: 20vmin;
+      height: 6vmin;
+    }
 }
 
 /* 

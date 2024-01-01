@@ -15,7 +15,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 5vmin;
 }
 
 .image-slider {
@@ -406,9 +405,12 @@
 }
 
 @media only screen and (max-width: 575.98px) {
-  .carousel-container {}
-
-  .image-div {}
+  .carousel-container {
+    width: 100%;
+  }
+  .image-div{
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {

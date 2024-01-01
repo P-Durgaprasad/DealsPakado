@@ -57,7 +57,7 @@ const FilterResult = ({ products }) => {
             </div>
           ) : (
             currentDeals.map((deal) => (
-              <Col key={deal.itemId} xs={12} sm={6} md={4} lg={4} xl={4} xxl={2} xxxl={2} style={{ margin: '5px 0' }}>
+              <Col key={deal.itemId} xs={12} sm={6} md={4} lg={4} xl={3} xxl={2} xxxl={2} style={{ margin: '5px 0' }}>
                 <Card className='main-deal-card' key={deal.itemId}>
                   <Card.Body>
                     <div className='deal-body-div'>
