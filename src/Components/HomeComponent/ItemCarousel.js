@@ -45,10 +45,6 @@ function ItemCarousel() {
         <p>Loading...</p>
       ) : error ? (
         <p>Server is currently offline, please try again later</p>
-      ) : data.length === 0 ? (
-        <div className="empty-deals">
-          <p className="no-deals-div">Currently, No Deals Are Available</p>
-        </div>
       ) : (
         <ImageGallery
           items={data.map((item) => ({

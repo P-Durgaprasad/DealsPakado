@@ -29,14 +29,19 @@ const TitleSearch = () => {
 
     const redirectToAffiliate = async () => {
       if (productDetails && productDetails.affiliateLink) {
-        window.open(productDetails.affiliateLink, '_blank');
-        setHasRedirected(true); 
-      } else {
-        console.error('No affiliate link available for redirection.');
-      }
-    };
+
+          const newWindow = window.open(productDetails.affiliateLink, '_blank');
+
+          if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+            alert('Pop-ups are blocked. Please enable pop-ups to proceed.');
+          } else {
+            setHasRedirected(true);
+          }
+        }
+      };
 
     if (!hasRedirected && productDetails) {
+      // Trigger pop-up on component mount
       redirectToAffiliate();
     } else {
       fetchProductDetails();
@@ -49,4 +54,5 @@ const TitleSearch = () => {
     </div>
   );
 };
+
 export default TitleSearch;
