@@ -168,7 +168,7 @@ const FilterResult = ({ products }) => {
                         Shop Now
                       </Card.Link>
                       <div className='whatsapp-share'>
-                        <ShareProduct affurl={deal.affiliateLink} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} MRP={deal.originalMRP} />
+                        <ShareProduct affurl={deal.affiliateLink} affsite={deal.affiliateSite} title={deal.itemTitle} imageUrl={deal.imageUrl} price={deal.offerPrice} MRP={deal.originalMRP} />
                       </div>
                     </div>
                   </Card.Body>

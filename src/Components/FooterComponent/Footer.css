@@ -114,7 +114,7 @@
   position: fixed;
   bottom: 5px;
   right: 5px;
-  width: 170px;
+  width: 200px;
   height: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -135,7 +135,7 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  width: 30px;
+  width: 34px;
   height: 30px;
   border: none;
   background-color: transparent;
@@ -186,11 +186,6 @@
 
 .follow-on {
   animation: blink 1s linear infinite;
-  color: green;
-  font-size: 15px;
-  border-radius: 4px;
-  font-weight: bold;
-
 }
 
 @keyframes blink {

@@ -1,17 +1,18 @@
 import React from "react";
 import whatsapp from '../../HeaderComponent/whatsapp.png';
 
-const ShareProduct = ({ affurl, title, imageUrl, price, MRP }) => {
+const ShareProduct = ({ affurl, affsite, title, imageUrl, price, MRP }) => {
   const formattedMessage = `
-  🎉 **Exciting News!** ${title} is now available at a special price of Rs.${price} (Save Rs.${MRP - price})! 🎁
+  🎉 **Exciting News!** 🌟 Brace yourselves! The enchanting ${title} is now up for grabs at an unbelievable price of Rs.${price} on ${affsite}! 🚀 Save a whopping Rs.${MRP - price} - that's a steal! 💰 Original MRP: Rs.${MRP}! 🎁
   
-  🚀 **Hurry Up!** Limited Stock Available. ⏳
+  🔥 **Hurry Up!** ⏳ Limited stock available. Seize this golden opportunity before it slips away!
   
-  👀 Dive into this fantastic deal: ${imageUrl}"
+  👀 Dive into bliss with this fantastic deal! 🌈 Check it out here: ${imageUrl}"
   
-  🛒 **Grab Yours Now on DealsPakado ** Click here ${affurl} for more details.
-
-  ✨ Don't miss out on more amazing deals at DealsPakado.com! 🌟`;
+  🛒 **Grab Yours Now on DealsPakado!** Click here ${affurl} for more details. 🛍️
+  
+  ✨ Explore more jaw-dropping deals at DealsPakado.com! 🌟 Your exclusive Offer Price is waiting! 💥 Don't miss out - shop smart! 🌟`;
+  
 
 
 
@@ -26,7 +27,6 @@ const ShareProduct = ({ affurl, title, imageUrl, price, MRP }) => {
     const whatsappLink = isMobile()
       ? `whatsapp://send?text=${encodeURIComponent(formattedMessage)}`
       : `https://web.whatsapp.com/send?text=${encodeURIComponent(formattedMessage)}`;
-
     window.open(whatsappLink);
   };
 

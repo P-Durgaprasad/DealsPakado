@@ -77,8 +77,6 @@ const FashionFilter = ({
           </div>
         </div>
       </div>
-      {/* </div> */}
-      {/* <div className='col-sm-12 col-lg-3 col-md-3'> */}
       <div className="filter-section-price">
         <label id='price-label'>Set Price Range:</label>
         <div className="price-filter">

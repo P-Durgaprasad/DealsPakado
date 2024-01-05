@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="footer-text text-center mt-3">
                 &copy; {new Date().getFullYear()} dealspakado.com. All rights reserved.
             </div>
-            <div className='social-media'>
+            <div className='follow-on social-media'>
                 {/* <p className='follow-on'>Follow on</p> */}
                 <JoinFacebook />
                 <JoinWhatsApp />
