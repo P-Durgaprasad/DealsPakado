@@ -18,9 +18,9 @@
   padding-top: 2rem;
 }
 
-.custom-row {
-  --bs-gutter-x: 0.2rem;
-  --bs-gutter-y: 0.2rem;
+.custom-one {
+  --bs-gutter-x: 0.2rem !important;
+  --bs-gutter-y: 0.2rem !important;
 }
 
 #label-title {
@@ -36,7 +36,7 @@
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-size: 0.8rem;
 }
 

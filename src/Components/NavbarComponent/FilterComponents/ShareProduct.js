@@ -13,10 +13,6 @@ const ShareProduct = ({ affurl, affsite, title, imageUrl, price, MRP }) => {
   
   ✨ Explore more jaw-dropping deals at DealsPakado.com! 🌟 Your exclusive Offer Price is waiting! 💥 Don't miss out - shop smart! 🌟`;
   
-
-
-
-
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent

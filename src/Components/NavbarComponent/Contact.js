@@ -60,6 +60,7 @@ const Contact = () => {
 
                 <button type="submit" className="btn btn-primary">Send</button>
               </form>
+              <p className="mt-3">You can also reach us at: <strong>contact@dealspakado.com</strong></p>
             </div>
           </div>
         </div>

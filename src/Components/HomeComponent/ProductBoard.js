@@ -37,7 +37,7 @@ function ProductBoard() {
         <div className='productlistcontainer'>
           <h1 id="productlabetitle">Product Board</h1>
         </div>
-        <Row className="d-flex justify-content-center custom-row">
+        <Row className="d-flex justify-content-center custom-one">
           {brands.map(brand => (
             <Col key={brand.id} xs={4} sm={4} md={4} lg={4}>
               <Link to={`/product/${brand.value}`} key={brand.id} style={{ textDecoration: 'none' }}>
