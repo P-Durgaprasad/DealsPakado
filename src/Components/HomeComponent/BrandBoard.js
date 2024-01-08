@@ -45,7 +45,7 @@ const BrandBoard = () => {
                   <img
                     className="brandboard-brand-image img-fluid"
                     src={brand.logo}
-                    alt={`Brand ${brand.brandName}`}
+                    alt={`Logo of ${brand.brandName}`}
                   />
                 </div>
               </Link>

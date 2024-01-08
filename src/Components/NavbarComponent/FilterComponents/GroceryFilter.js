@@ -23,7 +23,7 @@ const GroceryFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="all" />
+            <img className="filter-image" src={all} alt="All Groceries - Explore a variety of groceries for best deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
             <span className='option' >All Groceries</span>
@@ -32,7 +32,7 @@ const GroceryFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'food' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('food')}>
           <div className='brand-image'>
-            <img className="filter-image" src={rice} alt="Food" />
+            <img className="filter-image" src={rice} alt="Rice, Atta, Dal - Best deals on essential food items" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'food' ? 'selected-text' : ''}`}>
             <span className="option">Rice, Atta, Dal</span>
@@ -41,7 +41,7 @@ const GroceryFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'snacks' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('snacks')}>
           <div className='brand-image'>
-            <img className="filter-image" src={snacks} alt="snacks" />
+            <img className="filter-image" src={snacks} alt="Snacks - Enjoy delicious snacks with best discounts" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'snacks' ? 'selected-text' : ''}`}>
             <span className="option">Snacks</span>
@@ -50,7 +50,7 @@ const GroceryFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'HouseHolds' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('HouseHolds')}>
           <div className='brand-image'>
-            <img className="filter-image" src={HouseHolds} alt="HouseHolds" />
+            <img className="filter-image" src={HouseHolds} alt="Household's - Best deals on household items" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'HouseHolds' ? 'selected-text' : ''}`}>
             <span className="option">Household's</span>
@@ -59,7 +59,7 @@ const GroceryFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Bodycare' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Bodycare')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Body} alt="BodyCare" />
+            <img className="filter-image" src={Body} alt="BodyCare - Personal care products with best offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Bodycare' ? 'selected-text' : ''}`}>
             <span className="option">Personal Care</span>
@@ -67,7 +67,7 @@ const GroceryFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Dryfruits' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Dryfruits')}>
           <div className='brand-image'>
-            <img className="filter-image" src={DryFruits} alt="Dryfruits" />
+            <img className="filter-image" src={DryFruits} alt="Dry Fruits - Best deals on healthy dry fruits" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Dryfruits' ? 'selected-text' : ''}`}>
             <span className="option">Dry Fruits</span>

@@ -25,7 +25,7 @@ const FashionFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="all" />
+            <img className="filter-image" src={all} alt="All Fashion - Explore a variety of fashion items for best deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
             <span className="option">All Fashion's</span>
@@ -34,7 +34,7 @@ const FashionFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Mens' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Mens')}>
           <div className='brand-image'>
-            <img className="filter-image" src={men} alt="all" />
+            <img className="filter-image" src={men} alt="Men's Fashion - Stay stylish with exclusive men's fashion items and best deals" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Mens' ? 'selected-text' : ''}`}>
             <span className="option">Men's</span>
@@ -43,7 +43,7 @@ const FashionFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Womens' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Womens')}>
           <div className='brand-image'>
-            <img className="filter-image" src={women} alt="all" />
+            <img className="filter-image" src={women} alt="Women's Fashion - Explore trendy women's fashion for best deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Womens' ? 'selected-text' : ''}`}>
             <span className="option">Women's</span>
@@ -52,7 +52,7 @@ const FashionFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Kids' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Kids')}>
           <div className='brand-image'>
-            <img className="filter-image" src={kids} alt="Kids" />
+            <img className="filter-image" src={kids} alt="Kids Fashion - Discover fashionable items for kids" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Kids' ? 'selected-text' : ''}`}>
             <span className="option">Kid's</span>
@@ -61,7 +61,7 @@ const FashionFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Mens_accessories' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Mens_accessories')}>
           <div className='brand-image'>
-            <img className="filter-image" src={men_access} alt="Mens_accessories" />
+            <img className="filter-image" src={men_access} alt="Men's Accessories - Enhance your look with exclusive accessories for men and best offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Mens_accessories' ? 'selected-text' : ''}`}>
             <span className="option">Men's Accessories</span>
@@ -70,7 +70,7 @@ const FashionFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Womens_accessories' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Womens_accessories')}>
           <div className='brand-image'>
-            <img className="filter-image" src={women_access} alt="Womens_accessories" />
+            <img className="filter-image" src={women_access} alt="Women's Accessories - Accessorize with stylish items for women and get the best discounts"/>
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Womens_accessories' ? 'selected-text' : ''}`}>
             <span className="option">Women's Accessories</span>

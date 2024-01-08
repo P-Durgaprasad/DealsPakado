@@ -13,7 +13,7 @@ const Footer = () => {
         <footer className="custom-footer bg-dark text-light py-4">
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <div className="footer-logo">
-                    <img src={logo} alt="Company Logo" className="logo-img" />
+                    <img src={logo} alt="www.dealspakado.com" className="logo-img" />
                     <div className='slogan'>
                         <p className="logo-text quick-search">Quick Search</p>
                         <hr className="slogan-separator" />

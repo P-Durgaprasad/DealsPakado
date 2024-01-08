@@ -25,7 +25,7 @@ const ElectronicsFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="all" />
+            <img className="filter-image" src={all} alt="All Electronics - Explore a variety of electronic devices" />
           </div>
           <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
             <span className="option">All Electronics</span>
@@ -34,7 +34,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Laptops' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Laptops')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Laptops} alt="Laptops" />
+            <img className="filter-image" src={Laptops} alt="Laptops - Explore a wide range of laptops for all needs" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Laptops' ? 'selected-text' : ''}`}>
             <span className="option">Laptops</span>
@@ -43,7 +43,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'GamingLaptop' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('GamingLaptop')}>
           <div className='brand-image'>
-            <img className="filter-image" src={GamingLaptop} alt="Gaming Laptops" />
+            <img className="filter-image" src={GamingLaptop} alt="Gaming Laptops - Experience high-performance gaming with these laptops" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'GamingLaptop' ? 'selected-text' : ''}`}>
             <span className="option">Gaming Laptops</span>
@@ -52,7 +52,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Desktops' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Desktops')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Desktops} alt="Desktops" />
+            <img className="filter-image" src={Desktops} alt="Desktops - Find powerful desktop computers for various tasks" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Desktops' ? 'selected-text' : ''}`}>
             <span className="option">Desktops</span>
@@ -61,7 +61,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'ComputerAccessories' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('ComputerAccessories')}>
           <div className='brand-image'>
-            <img className ="filter-image" src={accessories} alt="Accessories" />
+            <img className ="filter-image" src={accessories} alt="Computer Accessories - Enhance your setup with computer accessories" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'ComputerAccessories' ? 'selected-text' : ''}`}>
             <span className="option">Accessories</span>
@@ -70,7 +70,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Headphones' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Headphones')}>
           <div className='brand-image'>
-            <img className="filter-image" src={headphones} alt="Headphones" />
+            <img className="filter-image" src={headphones} alt="Headphones - Enjoy immersive audio with high-quality headphones" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Headphones' ? 'selected-text' : ''}`}>
             <span className="option">Headphones</span>
@@ -79,7 +79,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Smartwatch' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Smartwatch')}>
           <div className='brand-image'>
-            <img className="filter-image" src={smartwatch} alt="Smart Watches" />
+            <img className="filter-image" src={smartwatch} alt="Smart Watches - Stay connected with stylish and functional smartwatches" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Smartwatch' ? 'selected-text' : ''}`}>
             <span className="option">Smart Watches</span>
@@ -88,7 +88,7 @@ const ElectronicsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'Camera' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Camera')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Camera} alt="Cameras" />
+            <img className="filter-image" src={Camera} alt="Cameras - Capture moments with high-quality cameras" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Camera' ? 'selected-text' : ''}`}>
             <span className="option">Cameras</span>

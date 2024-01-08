@@ -25,7 +25,7 @@ const JoinWhatsApp = () => {
 
   return (
     <button className="whatsapp_text" onClick={handleButtonClick}>
-    <img src={logo}  className='whatsapp-img' alt="WhatsApp logo" />
+    <img src={logo}  className='whatsapp-img' alt="Follow us on whatsapp for the latest updates and deals" />
   </button>
   );
 };

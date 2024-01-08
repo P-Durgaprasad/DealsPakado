@@ -24,7 +24,7 @@ const FurnitureFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="all" />
+            <img className="filter-image" src={all} alt="All Furniture - Explore a variety of furniture items for best deals and offers" />
           </div>
           <div className='filter-text'>
             <span className={`option ${selectedSubCategory === '' ? 'selected-text' : ''}`}>All Furniture's</span>
@@ -33,7 +33,7 @@ const FurnitureFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'HomeOffice' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('HomeOffice')}>
           <div className='brand-image'>
-            <img className="filter-image" src={HomeOffice} alt="Home & Office" />
+            <img className="filter-image" src={HomeOffice} alt="Home & Office Furniture - Create a productive space with the best deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'HomeOffice' ? 'selected-text' : ''}`}>
             <span className="option">Home & Office</span>
@@ -41,7 +41,7 @@ const FurnitureFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Kitchen' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Kitchen')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Kitchen} alt="Kitchen" />
+            <img className="filter-image" src={Kitchen} alt="Kitchen Furniture - Upgrade your kitchen with stylish furniture and best discounts" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Kitchen' ? 'selected-text' : ''}`}>
             <span className="option">Kitchen</span>
@@ -49,7 +49,7 @@ const FurnitureFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Bedroom' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Bedroom')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Bedroom} alt="Bedroom" />
+            <img className="filter-image" src={Bedroom} alt="Bedroom Furniture - Relax in style with the best bedroom furniture deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Bedroom' ? 'selected-text' : ''}`}>
             <span className="option">Bedroom</span>
@@ -57,7 +57,7 @@ const FurnitureFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Bathroom' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Bathroom')}>
           <div className='brand-image' >
-            <img className="filter-image" src={Bathroom} alt="Bathroom" />
+            <img className="filter-image" src={Bathroom} alt="Bathroom Furniture - Elevate your bathroom with stylish furniture and best discounts" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Bathroom' ? 'selected-text' : ''}`}>
             <span className="option">Bathroom</span>
@@ -65,7 +65,7 @@ const FurnitureFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Outdoor' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Outdoor')}>
           <div className='brand-image'>
-            <img className="filter-image" src={Outdoor} alt="Outdoor" />
+            <img className="filter-image" src={Outdoor} alt="Outdoor Furniture - Enjoy the outdoors with the best outdoor furniture deals and offers" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Outdoor' ? 'selected-text' : ''}`}>
             <span className="option">Living Room</span>

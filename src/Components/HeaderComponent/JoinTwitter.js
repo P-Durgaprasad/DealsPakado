@@ -10,7 +10,7 @@ const JoinTwitter = () => {
 
   return (
     <button className="twitter-text" onClick={handleTwitterButtonClick}>
-      <img src={logo} className='twitter-img' alt="Twitter logo" />
+      <img src={logo} className='twitter-img'alt="Follow us on Twitter for the latest updates and deals"/>
     </button>
   );
 };

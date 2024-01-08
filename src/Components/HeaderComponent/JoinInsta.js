@@ -24,7 +24,7 @@ const JoinInsta = () => {
 
   return (
     <button className="instagram_text" onClick={handleButtonClick}>
-      <img src={logo} className='instagram-img' alt="Instagram logo" />
+      <img src={logo} className='instagram-img' alt="Follow us on Instagram for exciting deals and updates" />
     </button>
   );
 };

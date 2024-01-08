@@ -20,7 +20,7 @@ const SportsFilter = ({
       <div className='brand-section'>
         <div className={`filter-option ${selectedSubCategory === '' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('')}>
           <div className='brand-image'>
-            <img className="filter-image" src={all} alt="all" />
+            <img className="filter-image" src={all} alt="All Sports - Explore a wide range of sports products"/>
           </div>
           <div className={`filter-text ${selectedSubCategory === '' ? 'selected-text' : ''}`}>
             <span className="option">All Sports</span>
@@ -28,7 +28,7 @@ const SportsFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'MensSportswear' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('MensSportswear')}>
           <div className='brand-image'>
-            <img className="filter-image" src={MensSports} alt="Mens Sportswear" />
+            <img className="filter-image" src={MensSports} alt="Men's Sportswear - Browse and shop for Men's sports clothing"/>
           </div>
           <div className={`filter-text ${selectedSubCategory === 'MensSportswear' ? 'selected-text' : ''}`}>
             <span className="option">Mens Sportswear</span>
@@ -37,7 +37,7 @@ const SportsFilter = ({
 
         <div className={`filter-option ${selectedSubCategory === 'WomensSportswear' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('WomensSportswear')}>
           <div className='brand-image'>
-            <img className="filter-image" src={WomensSports} alt="Womens Sportswear" />
+            <img className="filter-image" src={WomensSports} alt="Women's Sportswear - Explore Women's sports clothing"/>
           </div>
           <div className={`filter-text ${selectedSubCategory === 'WomensSportswear' ? 'selected-text' : ''}`}>
             <span className="option">Womens Sportswear</span>
@@ -45,7 +45,7 @@ const SportsFilter = ({
         </div>
         <div className={`filter-option ${selectedSubCategory === 'Game' ? 'selected' : ''}`} onClick={() => onSubCategoryChange('Game')}>
           <div className='brand-image'>
-            <img className="filter-image" src={games} alt="Game Accessories" />
+            <img className="filter-image" src={games} alt="Game Accessories - Find deals on gaming accessories" />
           </div>
           <div className={`filter-text ${selectedSubCategory === 'Game' ? 'selected-text' : ''}`}>
             <span className="option">Game Accessories</span>

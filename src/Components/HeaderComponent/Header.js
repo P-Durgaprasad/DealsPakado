@@ -27,7 +27,7 @@
         <div className="header-fill-bar">
           <div className="logo">
             <Link to="/">
-              <img itemProp="image" src={logo} alt="Logo" />
+              <img itemProp="image" src={logo} alt="www.dealspakado.com" />
             </Link>
           </div>
           <div className="nav-div">

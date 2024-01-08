@@ -1,4 +1,4 @@
-import React ,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../FooterComponent/Images/Facebook_logo_.png';
 
 const JoinFacebook = () => {
@@ -10,14 +10,14 @@ const JoinFacebook = () => {
     if (isDesktop) {
       window.open(channelLink, "_blank");
     } else {
-    const isFacebookInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
+      const isFacebookInstalled = window.matchMedia("(platform: iphone)").matches || window.matchMedia("(platform: android)").matches;
 
-    if (isFacebookInstalled) {
-      window.open(channelLink, "_blank");
-    } else {
-      window.open(fallbackUrl, "_blank");
+      if (isFacebookInstalled) {
+        window.open(channelLink, "_blank");
+      } else {
+        window.open(fallbackUrl, "_blank");
+      }
     }
-  }
   };
   useEffect(() => {
     setIsDesktop(window.matchMedia("(hover: none)").matches);
@@ -25,7 +25,7 @@ const JoinFacebook = () => {
 
   return (
     <button className="facebook_text" onClick={handleButtonClick}>
-      <img src={logo} className='facebook-img' alt="Facebook logo" />
+      <img src={logo} className='facebook-img' alt="Join us on Facebook for updates and more" />
     </button>
   );
 };
